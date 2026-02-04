@@ -207,7 +207,8 @@ zR({ name: "review", getPromptForCommand: () => "You are an expert code reviewer
 | 06 | [06-code-review-and-security.md](06-code-review-and-security.md) | 코드 리뷰, 보안 리뷰 스킬 프롬프트 |
 | 07 | [07-team-and-collaboration.md](07-team-and-collaboration.md) | 팀 메시징, 플랜 승인, 멀티 에이전트 협업 프로토콜 |
 | 08 | [08-retry-and-error-handling.md](08-retry-and-error-handling.md) | 권한 시스템, 샌드박스, 에러 처리, 재시도 로직 |
-| 09 | [09-api-call-structure.md](09-api-call-structure.md) | 실제 API 호출 메시지 구조: 요청 조립, 스트리밍, 캐시, 전체 예시 |
+| 09 | [09-api-callstructure.md](09-api-callstructure.md) | 실제 API 호출 메시지 구조: 요청 조립, 스트리밍, 캐시, 전체 예시 |
+| 10 | [10-webfetch-tool-implementation.md](10-webfetch-tool-implementation.md) | WebFetch 도구 내부 구현: 권한 시스템, 캐싱, 리다이렉션 처리 |
 
 ---
 
@@ -363,6 +364,7 @@ Claude Code는 계층적 프롬프트 시스템을 사용한다:
 | 출력 스타일/페르소나 | 4 |
 | 스킬 프롬프트 | 8 |
 | 내부 운영 프롬프트 | 13 |
+| **도구 구현 분석** | 1 (WebFetch) |
 
 ---
 
