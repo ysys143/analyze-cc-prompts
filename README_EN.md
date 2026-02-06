@@ -2,10 +2,82 @@
 
 An analysis and extraction of all prompt strings embedded in Claude Code CLI v2.1.29.
 
-**Source:** `/Users/jaesolshin/.nvm/versions/node/v20.18.1/lib/node_modules/@anthropic-ai/claude-code/cli.js`
-**Version:** 2.1.29
+**Version Analyzed:** 2.1.29 (Native Installer)
+**Source:** `~/.local/share/claude/versions/2.1.29` (171MB Mach-O binary)
+**Extraction Method:** `strings` command + JavaScript code extraction
+**Extracted Code:** 13MB, 152,283 lines of minified JavaScript
 **Build Time:** 2026-01-31T20:12:07Z
-**File Size:** ~11MB (6428 lines, minified/bundled)
+
+---
+
+## Installation Methods
+
+Claude Code provides **two installation methods**:
+
+### 1. Native Installer (Official Recommended)
+
+```bash
+# Installation path
+~/.local/share/claude/versions/
+├── 2.1.20  (173MB)
+├── 2.1.29  (171MB) ← Analyzed version
+├── 2.1.32  (172MB)
+└── 2.1.33  (173MB)
+```
+
+**Characteristics:**
+- Mach-O 64-bit ARM64 binary (compiled executable)
+- Bun runtime + JavaScript code + native modules bundled together
+- No Node.js required
+- Auto-update support
+- Multiple versions can coexist
+
+### 2. npm Package
+
+```bash
+# Installation path
+~/.nvm/versions/node/v20.18.1/lib/node_modules/@anthropic-ai/claude-code/cli.js
+```
+
+**Characteristics:**
+- JavaScript source file (minified but directly readable)
+- Requires Node.js v18+
+- Managed via npm
+- Easy code analysis
+
+### Comparison
+
+| Aspect | Native Installer | npm Package |
+|--------|------------------|-------------|
+| **Node.js Required** | [X] No | [O] Yes |
+| **File Format** | Binary (Mach-O) | JavaScript |
+| **Size** | 171MB | 11MB + node_modules |
+| **Code Analysis** | Requires extraction | Direct access |
+| **Execution Speed** | Fast (Bun) | Moderate (Node.js) |
+| **Best For** | Servers, CI/CD, restricted environments | Local development |
+
+### Extracting Code from Native Binary
+
+Although the native installer is a binary, the JavaScript code can be extracted using the `strings` command.
+
+**Extraction Process:**
+```bash
+# 1. Extract all strings from binary
+strings ~/.local/share/claude/versions/2.1.29 > strings_output.txt
+
+# 2. Find JavaScript code location by version marker
+grep -n "// Version: 2.1.29" strings_output.txt
+
+# 3. Extract the code range (e.g., lines 114470-266752)
+sed -n '114470,266752p' strings_output.txt > extracted_code.js
+```
+
+**Why is this possible?**
+- JavaScript is an interpreted language, not compiled to machine code
+- The native binary bundles Bun runtime + JavaScript code as plain text strings
+- `strings` command extracts all readable text from binaries
+
+For detailed extraction methodology, see [BINARY_EXTRACTION.md](BINARY_EXTRACTION.md).
 
 ---
 

@@ -58,28 +58,117 @@ soul이 '성격'이라면, 이 프로젝트에서 분석한 것은 '업무 매�
 
 ---
 
-## 1. Claude Code 모듈 위치
+## 1. Claude Code 설치 방식과 위치
 
-### npm 글로벌 설치 경로
+Claude Code는 **두 가지 설치 방식**을 제공한다:
 
+### 1.1 Native Installer (공식 권장)
+
+```bash
+# macOS/Linux
+~/.local/share/claude/versions/
+├── 2.1.20  (173MB)
+├── 2.1.29  (171MB)
+├── 2.1.32  (172MB)
+└── 2.1.33  (173MB)
+
+# 실행 파일
+~/.local/bin/claude -> ~/.local/share/claude/versions/2.1.33
 ```
+
+**구조:**
+- **Mach-O 64-bit ARM64 바이너리** (컴파일된 실행 파일)
+- Bun 런타임 + JavaScript 코드 + 네이티브 모듈이 하나로 번들링
+- Node.js 설치 불필요
+- 자동 업데이트 지원
+- 여러 버전 동시 보관 가능
+
+### 1.2 npm 패키지
+
+```bash
+# npm 글로벌 설치 경로
 ~/.nvm/versions/node/v20.18.1/lib/node_modules/@anthropic-ai/claude-code/
-```
 
-nvm을 사용하지 않는 경우 `npm root -g`로 글로벌 모듈 경로를 확인할 수 있다.
-
-### 디렉토리 구조
-
-```
+# 디렉토리 구조
 @anthropic-ai/claude-code/
-├── cli.js              # 핵심 파일. 모든 로직과 프롬프트가 번들링된 단일 파일 (~11MB)
+├── cli.js              # 핵심 파일 (~11MB, JavaScript)
 ├── package.json        # 버전 정보, 의존성
-├── vendor/             # 서드파티 라이브러리 (ripgrep 바이너리 등)
+├── vendor/             # 서드파티 라이브러리
 ├── scripts/            # 설치 스크립트
 └── node_modules/       # 의존성 모듈
 ```
 
-**핵심:** Claude Code의 모든 동작은 `cli.js` 하나에 번들링되어 있다. 시스템 프롬프트, 에이전트 정의, 도구 설명, 스킬 프롬프트, 권한 시스템 등이 전부 이 파일 안에 있다.
+**구조:**
+- **JavaScript 소스 파일** (minified, 직접 읽기 가능)
+- Node.js 필요
+- npm으로 업데이트 관리
+- 코드 분석 용이
+
+### 1.3 두 방식 비교
+
+| 항목 | Native Installer | npm 패키지 |
+|------|------------------|-----------|
+| **Node.js 필요** | [X] 불필요 | [O] 필수 (v18+) |
+| **설치 권한** | 사용자 디렉토리만 | sudo 필요할 수 있음 |
+| **파일 형식** | 바이너리 (Mach-O) | JavaScript |
+| **크기** | 171MB | cli.js 11MB + node_modules |
+| **업데이트** | 자동 (installer) | `npm update -g` |
+| **버전 관리** | 여러 버전 보관 | 단일 버전 |
+| **코드 분석** | strings 추출 필요 | 직접 읽기 가능 |
+| **실행 속도** | 빠름 (Bun) | 보통 (Node.js) |
+| **적합 환경** | 서버, CI/CD, 제한된 환경 | 개발자 로컬 환경 |
+
+### 1.4 선택 가이드
+
+**Native Installer를 선택해야 하는 경우:**
+- Node.js 설치가 어렵거나 금지된 환경
+- 여러 프로젝트에서 Node.js 버전이 다른 경우
+- 기업 보안 정책으로 npm registry 접근 제한
+- CI/CD 환경에서 빠른 배포
+- 더 빠른 실행 속도 필요
+
+**npm 패키지를 선택해야 하는 경우:**
+- 개발자 로컬 환경 (Node.js 이미 설치됨)
+- 코드 분석 및 연구 목적
+- 기존 npm 워크플로우와 통합
+- 디스크 공간 효율성 중요
+
+**핵심:** Native와 npm 모두 동일한 기능을 제공하며, JavaScript 코드(시스템 프롬프트, 에이전트 정의, 도구 설명 등)는 두 방식 모두에 포함되어 있다.
+
+### 1.5 Native 바이너리에서 코드 추출
+
+Native installer는 바이너리 형태지만, 내부의 JavaScript 코드를 추출할 수 있다. 자세한 방법은 [BINARY_EXTRACTION.md](BINARY_EXTRACTION.md) 참조.
+
+**핵심 원리:**
+- JavaScript는 컴파일 언어가 아님 (인터프리터 언어)
+- Bun 런타임 + JavaScript 코드를 번들링한 것
+- JavaScript 코드는 바이너리 내에 **평문 문자열**로 저장됨
+- `strings` 명령어로 추출 가능
+
+**추출 요약:**
+```bash
+# 1. 바이너리에서 모든 문자열 추출
+strings ~/.local/share/claude/versions/2.1.29 > strings_output.txt
+
+# 2. 버전 마커로 JavaScript 코드 위치 찾기
+grep -n "// Version: 2.1.29" strings_output.txt
+
+# 3. 해당 범위 추출 (예: 114470-266752 라인)
+sed -n '114470,266752p' strings_output.txt > extracted_code.js
+
+# 결과: 13MB, 152,283줄의 minified JavaScript 코드
+```
+
+**Native vs npm 코드 비교:**
+| | Native v2.1.29 (추출) | npm v2.1.33 |
+|---|---|---|
+| 크기 | 13MB | 11.3MB |
+| 라인 수 | 152,283 | 7,587 |
+| 형식 | Minified | Minified |
+| 번들러 | Bun | (미확인) |
+| 추가 내용 | Bun 런타임 코드 포함 | 외부 의존성 분리 |
+
+이 프로젝트는 Native v2.1.29에서 추출한 코드를 분석한 결과다.
 
 ---
 
