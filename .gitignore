@@ -1,0 +1,7 @@
+
+# Native binary analysis artifacts
+native/
+npm/
+*.strings.txt
+*_extracted.js
+test_binary*
