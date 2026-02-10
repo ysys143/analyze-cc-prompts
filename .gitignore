@@ -5,3 +5,14 @@ npm/
 *.strings.txt
 *_extracted.js
 test_binary*
+
+# npm package - large binaries (not needed for prompt analysis)
+npm_*/vendor/
+npm_*/node_modules/
+npm_*/*.wasm
+.DS_Store
+
+# Common excludes
+.env
+.venv/
+node_modules/
