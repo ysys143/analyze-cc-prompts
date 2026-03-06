@@ -1,0 +1,80 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772808785329,
+  "projectRoot": "/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy",
+  "techStack": {
+    "languages": [
+      {
+        "name": "Python",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "pyproject.toml"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": "pytest",
+    "lintCommand": "ruff check",
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "__pycache__": {
+      "path": "__pycache__",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1772808785315,
+      "keyFiles": [
+        "main.cpython-312.pyc",
+        "proxy.cpython-312.pyc"
+      ]
+    },
+    "dumps": {
+      "path": "dumps",
+      "purpose": null,
+      "fileCount": 64,
+      "lastAccessed": 1772808785322,
+      "keyFiles": [
+        "2026-03-06T143832.813-req.json",
+        "2026-03-06T143832.813-res.json",
+        "2026-03-06T144737.788-req.json",
+        "2026-03-06T144737.788-res.json",
+        "2026-03-06T144742.569-req.json"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "analyze.py",
+      "accessCount": 48,
+      "lastAccessed": 1772812128055,
+      "type": "file"
+    },
+    {
+      "path": "proxy.py",
+      "accessCount": 2,
+      "lastAccessed": 1772810265336,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

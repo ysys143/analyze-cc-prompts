@@ -1,0 +1,211 @@
+{
+  "numStartups": 2,
+  "customApiKeyResponses": {
+    "approved": [
+      "nZVA3J9EW5A-f1pWswAA",
+      "3s8OV9n_MSg-2jSX0gAA"
+    ],
+    "rejected": []
+  },
+  "tipsHistory": {
+    "new-user-warmup": 1,
+    "plan-mode-for-complex-tasks": 1,
+    "terminal-setup": 1,
+    "shift-enter-setup": 1,
+    "memory-command": 1,
+    "theme-command": 1,
+    "status-line": 1,
+    "prompt-queue": 1,
+    "enter-to-steer-in-relatime": 1,
+    "todo-list": 1,
+    "ide-upsell-external-terminal": 1,
+    "install-github-app": 1,
+    "install-slack-app": 1,
+    "drag-and-drop-images": 1,
+    "paste-images-mac": 1,
+    "double-esc-code-restore": 1,
+    "continue": 1,
+    "shift-tab": 1,
+    "image-paste": 1,
+    "desktop-app": 2,
+    "web-app": 2,
+    "mobile-app": 2
+  },
+  "promptQueueUseCount": 1,
+  "cachedGrowthBookFeatures": {
+    "tengu_event_sampling_config": {},
+    "tengu_frond_boric": {},
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_cicada_nap_ms": 0,
+    "tengu_miraculo_the_bard": false,
+    "tengu_miraculo_the_bard2": false,
+    "tengu_chomp_inflection": false,
+    "tengu_marble_sandcastle": true,
+    "tengu_granite_whisper": false,
+    "tengu_quartz_falcon": null,
+    "tengu_desktop_upsell": {
+      "enable_shortcut_tip": false,
+      "enable_startup_dialog": false
+    },
+    "tengu_streaming_text": false,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_marble_whisper": false,
+    "tengu_turtle_carbon": true,
+    "tengu_pr_status_cli": true,
+    "tengu_ccr_bridge": false,
+    "tengu_mcp_elicitation": false,
+    "tengu_keybinding_customization_release": true,
+    "tengu_post_compact_survey": false,
+    "tengu_claudeai_mcp_connectors": true,
+    "tengu_scratch": false,
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 10000,
+      "maxExportBatchSize": 400,
+      "maxQueueSize": 8192
+    },
+    "tengu_grey_wool": true,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_quiet_hollow": false,
+    "tengu_marble_anvil": true,
+    "tengu_tool_pear": false,
+    "tengu_scarf_coffee": false,
+    "tengu_amber_quartz": false,
+    "tengu_thinkback": false,
+    "tengu_glacier_2xr": false,
+    "tengu_basalt_3kr": false,
+    "enhanced_telemetry_beta": false,
+    "tengu_pebble_leaf_prune": false,
+    "tengu_swinburne_dune": false,
+    "tengu_coral_fern": false,
+    "tengu_summarize_tool_results": false,
+    "tengu_bergotte_lantern": false,
+    "tengu_sotto_voce": true,
+    "tengu_system_prompt_global_cache": false,
+    "tengu_streaming_tool_execution2": true,
+    "tengu_moth_copse": false,
+    "tengu_tool_search_unsupported_models": [
+      "haiku"
+    ],
+    "tengu_fgts": false,
+    "tengu_plan_mode_interview_phase": false,
+    "tengu_attribution_header": false,
+    "tengu_session_memory": false,
+    "tengu_tool_input_aliasing": false,
+    "tengu_permission_explainer": true,
+    "tengu_destructive_command_warning": false,
+    "tengu_plum_vx3": false,
+    "tengu_immediate_model_command": false
+  },
+  "firstStartTime": "2026-03-06T14:43:25.355Z",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "userID": "36b51f28e4f0a812cf7c551a3af24cd6751752adc5c5784a6eb2246b8961c913",
+  "cachedChromeExtensionInstalled": false,
+  "changelogLastFetched": 1772808424888,
+  "oauthAccount": {
+    "accountUuid": "8490898f-8cd9-4ac9-8cea-a0675eb02dda",
+    "emailAddress": "ysys143@gmail.com",
+    "organizationUuid": "0ea4de60-8809-48f3-ab4d-5d3432b0261d",
+    "hasExtraUsageEnabled": false,
+    "billingType": "prepaid",
+    "accountCreatedAt": "2024-03-15T14:53:36.679207Z",
+    "subscriptionCreatedAt": "2025-06-04T02:18:23.089919Z",
+    "displayName": "Jaesol",
+    "organizationRole": "admin",
+    "workspaceRole": "workspace_developer",
+    "organizationName": "Jaesol’s Individual Org"
+  },
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.70",
+  "projects": {
+    "/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastCost": 0.9320822499999999,
+      "lastAPIDuration": 151234,
+      "lastAPIDurationWithoutRetries": 151219,
+      "lastToolDuration": 36125,
+      "lastDuration": 356487,
+      "lastLinesAdded": 2,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 74598,
+      "lastTotalOutputTokens": 6485,
+      "lastTotalCacheCreationInputTokens": 52469,
+      "lastTotalCacheReadInputTokens": 737856,
+      "lastTotalWebSearchRequests": 1,
+      "lastFpsAverage": 9.08,
+      "lastFpsLow1Pct": 311.94,
+      "lastModelUsage": {
+        "claude-sonnet-4-6": {
+          "inputTokens": 1515,
+          "outputTokens": 5607,
+          "cacheReadInputTokens": 737856,
+          "cacheCreationInputTokens": 52469,
+          "webSearchRequests": 1,
+          "costUSD": 0.85460925
+        },
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 73083,
+          "outputTokens": 878,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.077473
+        }
+      },
+      "lastSessionId": "b48e2724-fb6a-403d-a468-00d8f6cd620e",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 3223,
+        "frame_duration_ms_min": 0.04341700000077253,
+        "frame_duration_ms_max": 69.65729099999999,
+        "frame_duration_ms_avg": 1.1355038830279776,
+        "frame_duration_ms_p50": 1.1468539999987115,
+        "frame_duration_ms_p95": 1.956635799993819,
+        "frame_duration_ms_p99": 2.846417339988984,
+        "pre_tool_hook_duration_ms_count": 14,
+        "pre_tool_hook_duration_ms_min": 0,
+        "pre_tool_hook_duration_ms_max": 1,
+        "pre_tool_hook_duration_ms_avg": 0.6428571428571429,
+        "pre_tool_hook_duration_ms_p50": 1,
+        "pre_tool_hook_duration_ms_p95": 1,
+        "pre_tool_hook_duration_ms_p99": 1,
+        "hook_duration_ms_count": 1,
+        "hook_duration_ms_min": 1,
+        "hook_duration_ms_max": 1,
+        "hook_duration_ms_avg": 1,
+        "hook_duration_ms_p50": 1,
+        "hook_duration_ms_p95": 1,
+        "hook_duration_ms_p99": 1
+      }
+    }
+  },
+  "githubRepoPaths": {
+    "ysys143/analyze-cc-prompts": [
+      "/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts"
+    ]
+  },
+  "clientDataCache": {
+    "data": null,
+    "timestamp": 1772808434670
+  },
+  "lastReleaseNotesSeen": "2.1.70",
+  "penguinModeOrgEnabled": true,
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "metricsStatusCache": {
+    "enabled": true,
+    "vcsAccountLinkingEnabled": false,
+    "timestamp": 1772808735249
+  }
+}

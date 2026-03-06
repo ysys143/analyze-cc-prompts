@@ -1,0 +1,44 @@
+Proxy listening on http://localhost:8082
+Dumps directory: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps
+Upstream: https://api.anthropic.com
+
+Usage: ANTHROPIC_BASE_URL=http://localhost:8082 claude
+[2026-03-06T152636.670] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152636.670-req.json
+[2026-03-06T152636.670] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152636.670-res.json (streamed, 39 events)
+[2026-03-06T152651.867] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152651.867-req.json
+[2026-03-06T152651.867] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152651.867-res.json (streamed, 23 events)
+[2026-03-06T152655.955] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152655.955-req.json
+[2026-03-06T152655.955] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152655.955-res.json (streamed, 16 events)
+[2026-03-06T152710.465] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152710.465-req.json
+[2026-03-06T152710.465] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152710.465-res.json (streamed, 35 events)
+[2026-03-06T152713.698] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152713.698-req.json
+[2026-03-06T152713.698] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152713.698-res.json (streamed, 60 events)
+[2026-03-06T152718.093] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152718.093-req.json
+[2026-03-06T152718.093] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152718.093-res.json (streamed, 31 events)
+[2026-03-06T152726.564] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152726.564-req.json
+[2026-03-06T152726.564] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152726.564-res.json (streamed, 33 events)
+[2026-03-06T152736.227] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152736.227-req.json
+[2026-03-06T152736.227] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152736.227-res.json (streamed, 23 events)
+[2026-03-06T152750.263] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152750.263-req.json
+[2026-03-06T152750.263] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152750.263-res.json (streamed, 34 events)
+[2026-03-06T152753.823] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152753.823-req.json
+[2026-03-06T152753.823] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152753.823-res.json (streamed, 23 events)
+[2026-03-06T152800.459] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152800.459-req.json
+[2026-03-06T152800.459] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152800.459-res.json (streamed, 30 events)
+[2026-03-06T152808.260] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152808.260-req.json
+[2026-03-06T152808.260] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152808.260-res.json (streamed, 12 events)
+[2026-03-06T152813.076] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152813.076-req.json
+[2026-03-06T152813.076] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152813.076-res.json (streamed, 8 events)
+[2026-03-06T152823.324] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152823.324-req.json
+[2026-03-06T152823.324] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152823.324-res.json (streamed, 17 events)
+[2026-03-06T152834.173] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152834.173-req.json
+[2026-03-06T152834.173] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152834.173-res.json (streamed, 468 events)
+[2026-03-06T152859.322] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152859.322-req.json
+[2026-03-06T152859.322] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152859.322-res.json (streamed, 288 events)
+[2026-03-06T152918.687] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152918.687-req.json
+[2026-03-06T152918.687] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152918.687-res.json (streamed, 62 events)
+[2026-03-06T152929.260] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152929.260-req.json
+[2026-03-06T152929.260] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152929.260-res.json (streamed, 59 events)
+[2026-03-06T152933.386] REQ  → /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152933.386-req.json
+[2026-03-06T152933.386] RES  ← /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T152933.386-res.json (streamed, 12 events)
+

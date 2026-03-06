@@ -1,0 +1,3837 @@
+{
+  "status": 200,
+  "events": [
+    {
+      "type": "message_start",
+      "message": {
+        "model": "claude-sonnet-4-6",
+        "id": "msg_01Va85DfZHLgdcP5YR3qzcHg",
+        "type": "message",
+        "role": "assistant",
+        "content": [],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 3,
+          "cache_creation_input_tokens": 2274,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 2274,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 0,
+          "service_tier": "standard",
+          "inference_geo": "global"
+        }
+      }
+    },
+    {
+      "type": "content_block_start",
+      "index": 0,
+      "content_block": {
+        "type": "thinking",
+        "thinking": "",
+        "signature": ""
+      }
+    },
+    {
+      "type": "ping"
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": "The user wants"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": " me to search"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": " for Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": "API latest version 2026 "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": "release notes."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "thinking_delta",
+        "thinking": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "signature_delta",
+        "signature": "EvIBCkYICxgCKkDG/W88PnK4rYdc1wKL7DbDs1I3+UhnY0AfVduEDTLCrNYB8Kaio713GmsuCB8Erwv5qkBRRT5gzt084QFQmrx5EgxhBegk36EzG9CTvuQaDKoHBmmu1Dh00zOahCIw6PB00maUny+2sFJ+g8wfQftnj3PA8aFah1cyS+XxliIheWBArLqaTWXVvkNyIkvKKlqY78AXXlw4l115RqXYj8VeVSJNOaOTnNfHD1zY2yaTIdQcWIHko6lZ86oIHTStW5BpxrfL7yHqrtgoeNOBgkNzD29Zopw1mbZjxXqT1D1uDBIRvh6eOKCG5kYYAQ=="
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 0
+    },
+    {
+      "type": "content_block_start",
+      "index": 1,
+      "content_block": {
+        "type": "server_tool_use",
+        "id": "srvtoolu_01RfbZdyvLr5pvA7mQiHfn5V",
+        "name": "web_search",
+        "input": {},
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"que"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ry\": \"FastAP"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "I "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "latest vers"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ion 2026 "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "release "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "notes change"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "s\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 1
+    },
+    {
+      "type": "content_block_start",
+      "index": 2,
+      "content_block": {
+        "type": "web_search_tool_result",
+        "tool_use_id": "srvtoolu_01RfbZdyvLr5pvA7mQiHfn5V",
+        "content": [
+          {
+            "type": "web_search_result",
+            "title": "Release Notes - FastAPI",
+            "url": "https://fastapi.tiangolo.com/release-notes/",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Releases · fastapi/fastapi",
+            "url": "https://github.com/fastapi/fastapi/releases",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "fastapi · PyPI",
+            "url": "https://pypi.org/project/fastapi/",
+            "encrypted_content": "EpoiCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDDVSOFXr2bakhrRdGhoMbaA8WH3VVFVh0iR3IjBK+TytBiRujD5PDVTFmUWA29cZjnKRErZR1wxcq3fkvKctBtJnmfthXvu8zvxB/TIqnSGJbtvgMcdn910e9HLrma5+ZZNRybTkQnnprssvPyfVTyJ1yfmCP5FErLs7XsHrQJDfVU2dDR548t6raBC1zG8GBMeQbSGhTN9wA7+Em6lvsvkJKeKLWpbxaw6vkat3ebyBcytPXvlkHvRwwzdoEAgBr2uaK85h/IobkvbFzo7QhrEYqkYlIRr0ShqdDmqkUzuo7y5Wv2hWzKhcoRqVSDg9z70z7bJ2v9CY+z41HlR/ahG8tm/a3+6Gzx1HkRe70/yAVLh2cpRq25a1KOEM7tcGvTx/PJfB9uWfdzEn8wFtubdIl+EABr3dYsT2BAeeACTGRe+LVirPfYhutRft5Or09loOmgS5kyAzAHCT8znh6IyKAfLb/3iZh1JA7PhsSinYFbk26mM4X72MojhIP44i6WhM5hAf1pVpr6xgGWkgn1ZtZK+cBxcNndtfRedyio2CE/XU+hqSICfD91dKqr+ykJVMXno7lcx6eF29xCD+Vz1mxc8N+MGIuhb7kmRByG5V6GqdGqXe41iLyl5EOtOk4gY/meKXhIsxfQ8eHoHPGqnsOf+eiesFpcJ10B4bg9mxRZUbJMQHIl9M8fIXqsq8WrxCXVkWM61TsvqH/SU/NyjPJvLAKb5mD6UNTunbN1ejgfCAr291dgqjGAYEW2Kk/cc38+djQF2D4gYZGURG/6WCU1ZfkptW5itiyEmMSODvxtER/LAqcpHtNUxsXziLq/o8uFKPGgNY3OVOqjL8OTAL6PuBdBfXaYqz5flawG+1hV+3KMLtzqAI/QdE0sSn7L15jokkVT0+3ZN4vJZIFP/ed1gdBHUpkdyCMzWtTya+mA7VaddjLhlEl0YyLF9xujqMQJq+6IL2spOT8KD8i0SDoxQsmloJvZOsm/t1XZxhQ9IcJSj5oFGzxk+ATZ3Hi9c3AIq/LFfWEXt+X1OFhsr0KY5sOPFigmTwKDgRBGyyKsnb/E2LTCNfPmpWF53LznzsKgiIK4tgHQ3bMB81h/b0LDKPYD89XOm8QZN3PiqoTV3BkZxMhUyhqe/PJoiW0HeSRO5amGlvqxQbV6leuMyBmClc/fmrHbsd2kM42u4xYjAXTippDnlMgVtn48SjUjfrzla+RPzoj9W3l0P6oHyRbQoCFhboJ0mDM3N0fPgsE89pbvUMoMXczZOW1R39GqSLuv5/tv5cBkr3ufwUYb9nZrihJrhuzIZO060rjwVaaJ7X1zHJ2XqCt/oOd5AwcQyJZiVlSFrLnZYtaM/oCtM0/KiyCUZPlKT7T8qiaaPPEfKLNpub5kOS2Cp03tN3tbml7e7P9tnAd9Eng/pPcBnPn4egB2v7dycOg/yxAA93XnJI6cfRP7Al1riaBfak3ttrKmUpQuvHkHSf4RlYDhiDe1Wfv8PqgZwZXktJrz8ENvEzLEujxpSt5Wmlvsm8MDlrWGC7R12zXZ/idSOftp/ulkB0l4F4YSEFf7zx3nsQk8xtiiyvvhQzBZPWwFhY367aryl9g1N+1FJquJsor8yjI+tPvtv0jgkHgQqekvC+E+roRbFSLb5RWJDd6B4WkVAectR3vSO0EvEENPgtM8ou99c52TG1raaju72JhJdSQqNejnjeN798XVU8etthbpMJK2YDNbZWbILSX/mHAJD/1jXoiwtyKerFoGVEZ5jNntlZpCxfp+q2SM3JDu3dPLA0QcnBa6SU4rdS1p88hNM4ezH9rVNQ1T+i92g4HxNoE0FcE6/I2CeKSfB0GostUzgnSpStjXL246J8VOJRqmj5PuN1EixeedSt0LTPHv6kT0MXa+9OVf49I1i1J9iKJscb4MHn6wVxuQ02PjVR3Fm7VfCbDYynjoQNrxgKycLQteqgnILz6XAEoD+VgQYXMNR2MgFAJlqYZuEqsKPF4TgNCp2OecZNGB1JdDFZnlalp33I6fmcq5K753aa49Fo4aALyH61yUy6y98ufBDRwyFHI0L7C3N63zb+sGi32fMqNl/yJv/pcIhpihGjdYXCbxkTC/EXhmzoDimfAMrE+kEAbNZYJnpNf0CFCwxsdIDJ5Q8YScmDR1szrm3KYQ9n4Nrp/9NZNBmp4FdM7f99wZlkopeIf2TzsAkcA2tP2QOf5zyrIG0H74C/Nd9xXxJwXcmqCDBC2MLvVA8qz9G07MvNE0f1NSg7hGrAalCSuqHHkE9Rbve21WQxe/GDGpIzv79P0ichBMd6teskIBdKvIFElcyXGBNjBq4LEVKZYqP91l34xW4LEHbh0P4K+O3P7IgF4Je2AEvV0uAhKdpHW02So0aHZIwFTz7ohTdGZY+hqJi39wwa43cFhYPFyaoggn3rrhZL+fNfiNa1TcWT9spX6sBe0hPYa73SNwcMhIPAYQO4S9jlZERC0XM6nQ1wiI+rU+iRj7pm5s9xc4MrkZ0zIGRFORq0S/5EcK8dRNl9ua9N2fKO8GuJ0J6XhVFI5aPLy4zE1kQ15agW5p0VSXEXUxic9OBRX3b9phgoMn/qv+GsgdGBm8EOErPJeHyxqax9FJFpih+7Y7mV2yms6uuTGPP14/mTro4lG5tsptc44k53Vi0nnajJgBFN0TbrWwUTN1MTr63M5ZtT1kyRDkiOFxTHY9AcO+l6aw922ryZT9+yt5Wkk3KhOTy0/BTYtub5LPdDoKiqf6cw2Xk4YIXEF6fIRALDh6GFqu0VCaTN+WWXLNt1oNuSAvXATg3bxNGvP/RB9Ccwg3p8gh5UZhyy1/fOVgTbaWUfaIcidsqgBXJ+rdTVnbeZDPcGoJQHRdVuXZi6ux91HRqMfn7JhVrax6sq1JEPk7xzp83WSD1BZ/aHJl21gXLHD0DSqD/yTlL3IDEM8jqPHZfY/RxOb0sAM8pec2WrtUUEOGRMnz6yx7dGzUPQnrDeaRybQX5Q6uPyn56KDzHotAtsrrvJO/mTVMfRD0vJYp+KedpvfBdBvwESKqyUew3INq5x6fOJlgVT9aiaw2wMKfdKIYW/EhnLphj2r4SaSamDClSx/YIAtRFERC8s9LVU1lXAwvfU3QL6MOEE8CeIwRIu/2Fj0fI/o5b6oJIlj69D2U3KnGAo+S17J1tvikQkpsA8cDMUeWZSOWntfUYuP7CQgZSDb+x5rDNLVYHLbP1tlFauqltSIcs6PDrtQJoEXaHVgqV8vuOylw3Zu4Yo2IZsVNknon+kObAm3/vh6H79US36ZTRNYKt6YCRPKKruouUFC+DuLXuyb/gd7gwQLKgwTsXmccJ+fu1SME9GYBnqWhVqZNgNdHiu6DrcJDLweNJjOEie8Xt7dLuHGX7OZUJULPM+c5QsoA/euuKVXmmzJrefQHkb011Z0hiaI3sJGma8m9vbgT8wMZZEHwfi2Js4rugCBc2CCxfflDw6RRoikx/hLOrMOvBl6WoTJqwQPRUyrSgZn2ePFtFKGIiuOf5V9DeWUtlcWl75/7QDSjaQQxC97FASVm8pjRgFoaqGrB/onQM71TVKFPXkarwb7ITsoD/wBFM92K3W5Ff7RWJMNDMOSDZeGvgC+3EIRdZmg2pU8JBDwnr0i9hU4xT/ikXJbttSGu8lthZ2GL/+blnDlh7towwo2am6iF2o6gnlj8QmgX1CLp9TjtCwuCiOgEQspWdUNxPzEjhOxKUpcylXgHI6AGnNaV23Y23RfGeoCTk7TCfQeCqRcZ/L+4J6MAFPQjmrKg4N8dtliDkq6ocfxWlTGfUHG8KZbsXedt+MXKAnmLb0QQ+EXfCXehiYEoajo64SW2GJjKJ5oCQrzrqRU5d1w40IbU0UpwwyGqk5IDAb0gKtkqTYyrCIOGeDm+OewKhW5HkW/r/Y0Y/qs6qId2KGLB+sn3ZHBSSCuHH8k0ymtiQu8Pv7v1NSWj6ksAbbHnxm+pKGz0WCMZ4bKMR01gu34S8xQXxdj2ESlckX3pIQaMy+Vb4JpOEOZH62/dNHQOuVREldaAXwRpE5t6CpyguFs4ZSD92ytTwt3uDUAH5pYvwwPIcxaSLnm4tf9A1Zmh9cWEWO+O2TZL9CKaQNBA5uX0MTJUPDftk7DqB9aJjulHKBJYidsDMzIvi8Mcr7te14qaArRd8Vxnbz9sqg42HxDFRW2DCznHDsW7pUpp5y5gu35HlAkFTg85DEmhtP5A1acNIY2Yzl8JcTHkuwGT9bZc3hgiTgIZqQtVyj5JsQr1KRB81wOYQ39Xh1Fh59RkkfnNW4xbG/bJKEpmsbwCtUBQaqhixPc59els4ILmukJ0I4RabojlAVXpmw/ptgWTZaskJaH0W6jVFs5X6VwZYpeX8BamllzP1Z0ejNmLEbyV38zZHuxqEuVgxu+F0k7wfK/Fny1qWx+kfYjoy3WIQikh7tWWfj8hwlq2lCNJR+//qmPX9xX9MnyfgvuRdvvRJx4RyTzU8Kgj2EfH4zuNYt7dbiEoxJDLhm7IV8e8iN3STqgo44p9JCXRH2UYI9PZzCWLhpGb4uyFSuzHs7XllrSkQTZVaurEsdCu3VPFFx9dqQT7auxCgivUKosh7XUfxAXSvLFixRxXbUPVl4Bl2yBtfVHQDaIS0GMO9GBJFLRZ2tmA188ZGGQxEOIbbUS543GTiN2aF/yes8iY4CVk8L3eAEDysVtFYKAqgjgiyL3b2s77TivyJYA3Ers6Q74+fhGKKPSZ+oH+p6aOI+1ZXcmDLrqLkWgB2YKzrEX1hnhw66dQQp1vh9M1vKS+5arwDBrV67DFJLdb5DqZwAHGkVad/77VaPe6MiMEEuG2EbG5dMxjwVbpM3dqbZTMZ3+uoiY/XPiEvOysylCf+M7LEP8XKGp/YAiFu2/BiI47+9t1CgiiJalEHTAPAsMedJ9L5x57v9HrwfQLR4o42MPNBvRzZrmfHihkLaPjGuC65CDoUCuTXeoqeo6Te18kNP2lS9jPVA/is1/tZ/EIPp0p9voxtWU+OAWIEmHWzaiaCPnaUxSG6wHFLwMmn9N878OBabg0ItJZVj4VylAF+CWsGcja48LiPqiFJviXzEUoxm5TmvnmzTMPom42omucqQVriP4u21QJGKtHtO/xPfJKnwl6X3HoHLLFxda79oz6wmVXFtNqdQpuwubTEzMwI7h0kmG364dEcyH3+SPKk48uN5cNDhrOWP6KSx+YUM/K5EUlMVBx3DIWjFvJtD0MBT4+MJk27+QfGDNN7OWjRWdDMI2HLQ+/jU9ZaweDWTzLTBY1cQmBEcDbMsLfRYNh4VxUl8XdpEM6lN6iSp7ViA09ELDlXZa+A+BM9IUkDYtztNRYb3n023oOimDyz+980/pXfW2d0XXKVHh9yB5JDCEijbjAwVIW/gDJjVrCpMarjbMn4sB8Q3A5Xobsg0/nbBIzb28GAksuV/ea4qL/XKHbjM5iENFPEpWp5kr7aO5wd+De9Laq6lyYgLuQy2R2nmIexWSE2s31xRAoK2n77t+Wz+MM2UB6uF1/sYLJJTn/eQmu77qXRidWflNt1lgi/jGQXuBfWTbaAQJCZXpxSqI4NRuQDvWMAonBqetMOm7d5YFaSdYSiFbclfibAT87gmlLQi6bwhm2GDTPmgNj3evu2yuIcI3GmgdVXSIqR2qgY2Enu/twGb9OPApPO4MwfACi5aT8XUukA80RoKJ+rSCJW+/Dh8/JqLKnM2Wwk5WtDWgnOzy0t/Zl65VntcDo+jHBgD",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "fastapi-cli/release-notes.md at main · fastapi/fastapi-cli",
+            "url": "https://github.com/fastapi/fastapi-cli/blob/main/release-notes.md",
+            "encrypted_content": "EtYdCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDFHMx6s3YvB97h8RnhoMWN9rW+1nxFtFCVKfIjB65DcYGXpZNnJ1xVn2jzzE7byabLJh1FOzuLV3wtUVmliUw7o4C/Lldsfsjf0fy38q2RxcRcAm7gL7VJ2mumbiAX2klGX9druuuSO11ak1Xjly5elNhXg7kQsgQo6s7QYnksn+dfX/rhakJB1s8ybt5Q3hYYd0LcB2kAUQf7zWgCbc8z9Ow2zQNx51OglqCYcr5SOP7LW6um6H3vN/PiYNLHYD4DINdBIrqwzMtcEWuQBDSkW2BeW0DELdGDd3qDB12EVMq3cSXLihAkyP1zx8wRZCxShRfTOglDiMP3HuioSeINI3pD+85NkCBqp7fMpAM5jv4RSMJxkORF2EAeP820RExnQ7RPKjAFsC2T2Tl4VbCtDP2p9myJ9VQW8FymO08xgco0NIcOMt1HKIEtLLfOrSi2mZ7fi6jBeuvhAoP6KRr7oCh3ZAuEldc7YbyOtJIL2wR0dKIKNOPyOMONeWggFu27qZsZcam6PIrXlyY1tCGkYjBnnyMXmNQ0ghf+pxblliAp3tjCp5wYZf3uw/c+f0VPrGOFsjcmpGH611Vnrpu5+P00acUg3/EHpozA9E5vdbws4os044jee50djtQ9+CYriMuP3ikXAcIx4G6qWbR44cAJELNLYaQlkDrc5ck/IcyyOO5nBGAX1+c43K/4dlKhpzGNUVOwm4RusyJYxnMKI6nJMnLcA8EENpBHqqqsTDZoxnizHvdNyjw1yf8InwiLfqz97zSXDw20ckUnnqr0r1T7gFTjkzhnyc5qjPLMMTwI1dsweZHYsmEGqXSGM5ip9duqkaGKsvu+/h26DECDWeb+knL7yapLi4JgYJXOsdVyuk1ISm4kKAWlQwy54QEjbvEcpUL+46MXyKCR2om4D0eNC3bpMMDORh6YuxvzsuD6l4U7900sCJUfh9FHnAXOTBQaZyGyAQ6ScrTAZZUn9x196FnhLQeURzU76/2SwGZ6whjVeW4BdC8YdMHJXj6ez0GVIy8ne/8+oKHwUrnomF3okuA4lZJ4QQeAy9avwAkiNnzN/6cWnX4/UeFTOxm0znZJOOzg8rOhF8VosCoxa56vg5y5loXVtl612Eid5eVewhiqbxnIa45Y5a7JmEx7AEghJzkOw9/NZT08kE52PKZimUdaFOu9VNV8yp0Vp2tUoIv4LHXSMwN3//tiPnvO+RstALtMV01I5em1EPxHMBg404R3dA1SYRR3RORMQAVEypu3dtfILaWcUiIU/ZWMZlkjlW/DkAguGK6XQHWeigYvtsVxJ3oC8wHvYzXaqx4R2/UeQK6IS8TebYGDEJLDmQOVfEYWjJUZI3glm16HGErfwyz7dGtF0wULbfbQkt24BNl0ZpefXpLLMsvlCFe6kd5UdGdgNeJbqUGgHgwsmjmxMOSbEbL/5sqvOdQGbYQq9OEQJiv1UuryLiJ2rp8Pd8eha9rGaElMkiIcWC0aj4dIzP4p0U8jnJQTOh5qHus0PojU0CMD0SSbHC82OQMDcsXGn8Ld03OOnLcUjPzdvFh3H1DD9pxFt4xqmYK6LZ/Gng2KaCnhE7Ga6Jhyy1nwBxLCqLv2bNSHJrioqtI8g0O9GntgAwRp6oI5rVuV6xdzqaGHrGD71y4VbN2vK3yubEKpXzrksKCnC6CiioeYyE1h7SDompbfAx4dSfpVe8ybKj1IG/HmJpJBJk+cA5+Mk17iFI/rrTsL9Y4e2myIfTgSNJkN+jUCvnENvcR826vOHoZXDxkILHWvMj4DyPYOGIRq2vcl1NF9FIybaLl42aEYfWG06mY2h5EsbfH+ztjeTaM99e6Wh5dDw9Yg2BZLbzJ7qGcZRKaHFJN/a+2o/RhxneGK89RYtDRPayabWFIqD6TunhWu6WavydlKVCzMqo2d3qnTINuhO2A0xRUgaqOQjx+BArb+rSfJAMaPaXqUh0vZWI1MHkUFxtqBC6/p4PC3p9BzF0PvxX59JGLsig4TeCAKHZNQ5FuhV9TR2T9q8/w8LZ5cGVqXydEehrDl0zxEKFZlykq/qcetflPs2PR2/s8Ths5qm5tDmAlSZQDpiETcZ6h5ONpOf5ynZS+HZL6WQiifB4GKeXQAuMo5wiODUNh9BIny8MYzbPuP4Y7nMbIcnGScU90HQFfyLBfJ14hvgRTrXbB7RJev6hveJaZsDNX9kP/2h74mjkIxpMkMqwjozKdUTmWkip2PnZOayYfJw+kpGndbedYn7fgw6xlybkaHMQX1iFx/Gv/slQjWdkraQ3GYtEylkoSNee9Vi0OJFjJPY3YLlVZdB+j7szBVBqTfW+v42n2OvNwRnDfdcqogg9w1PKuW104cAQPp5/R12AQIbs4g2SZRPNYuNgaV+p7gBJQfBkaA2MKSlwryDDCOrbyGApK4JIq64Xhjmes7sW50Qh25dQOS0ycqanc55RC6MkDjEZIq31j7DbmiBJUsOll5NsaOK8ywMmCAajc9dfK+n8Ki6T5Uf3NnYv6aLi85Hb7j2KCIs5zbeNoTJZhZbLsUo75GfgRN2Xt79OC8JQwjIma+fc7MGVmIIKVOuS4Fpaqv+87hirbw42tybLyOfFqo8xgK/Bn/xtXnLxrscq4JXPbkToQBAOZqpb44o5bCwDK8IfJLkKg2wViUEMmKIQJcyC8MLyozwzn938vy0VzisDnsz/MerZpZfb30i/eCi3tYwx4UV89fU/wB7jWD3VAqEXyWTmDOXDIaVRixlkuRMMQJWwtU+Fzrkzvkoow0gww4qIv9deZw2h0/TPuHT1igDjP/PXvgfv1fxlxNMUtZBBp+yAM11RwCnlslgWm0O58Yca1aeohTsTakgq2ssTR0JzfP93v8XZbXECKWlGZ4IM+2RAdmtpnHFyai9IqV5h5kCQuJqIgFL98/wcupCXy7ki58T8azLFfOc/Q/0Q/P4Uy+fbnWfmy5MP/U3FNaa3uJGB8gR7ZzXcFJP4GA5vk/SZdxrkW0b3GRIusscZuTT78hEOarOC72cCCE9FZrMVUmZ+62cmEAWmzVRIt2vTb5vUVP7vcEKNqrCqwoambtfLgnynxO0OPlMHaryDdHsgVARc1XzRfd5N0oUNiKcSHPbCB+WRDaANcU4MWi8fReawNYWmkv/AYwxcmDPKcfqS7NstRJMk7C29BphNZIDfZE9V1QwD2KixON0hHWKbYeLqO1k31NnEaczhf5eZbZ1aTdBbd+GFcmQKRi5C06VNpB7AIsRuTkY9SelACqGefs1jXNqeeM6UG0jrc1GzII09KuVpY3ybJvsLKvvRCQ1f/CqIqsA3lEGd7W8eFvhHRk4NGm2UyiUj9AVLtzBT7sOnKnm0Hyc86BgwS1BRgBEdO1GN58DoGWXjRJAmx6TsRNszInbqFBMiMnHfT3eKTu3tiupH2KA4DGoBpB6pe2XOdqvs0vXxo2xCWBs+ZtCu2UlHLy9PwnINjSyCmAFxFYPcknW1XOVETGIOfcJOHECyRFTijLCNN1fo3K3YXdsr9TF55lU2IgNxEvaqDbDhu3C8pYIIR/nVjMys1/dblVbXsCc/N7NXWFcPKvwqfjS+L3P6ca4LpOi72iWVLOi07bztDR58+unk2ZEmSUKZNpVR9TmP9ERIgtk6f/v+cIegw2NivWjfAdoZo2oh+jyPm0PS46VAh2vv/3DuR35TidUzb/sZkQZo2BBs85pvdlvVRklYMnVw9QhNlfQKt7LiOSHpqIgM4Fdj/6Nwj5cPcI7mb2zRchWPyMNG2eA/SecQeaykpNI4Cr5RZrm+BbZlNJF+rf4mtK85qpzKYdrPV114/UDrVuNLQZxGY5JK+qi6GqzSWERbb8jDJxOD2KWWr2RTBkFqTraPHYR94T+2g1EtmUJRcNJBVl9c8pGxQN+vyb+5XDaFUO5SkpluIrmySjwkpEa+bVmiAfW3/JImO1rIED6XBZoCWy5W3RaXUrEgl0Oc8JAWxyQ4Ub/dYudYudsmJxJAfFkElrIK5udJ/a/InxcBRocUnNWmmp+CmgjeLa2qSpYt+1gBJ0sJKjCzm/C/FrEG9UZpun6MYpbo+8ix2Ww+cMqj/uo1KZ+dny3iMlMuWRz4Xj+yTozKfveTpU7FbHBUs9Ftvb9RSj/zwxH0vYZvxAJAEB3S2uu4cnEvoFaSmwo7Jn9Kkga7Y8egUJcsOhwxYNHz9J07cTN+8sqDrjbXutrvmo8gmqIGqFJCIUly/+4xyBdBPfv3jLERUtkapOlOlTq8bcM2tjH3VjsrrZWRMmsJ5QzC+7AwUjCSwEuaKbAZJ5XyledMvH0bmoKvaa55VnEnWhJWjGpaSJqwEULFTnDmHmlj1S2Clir5ZuOBHQKfmGGp60KH1ItkFbJjN//uhpGWySS0/qmBMSqPOBMsfIJkLPyDMfSm1X36aXhC336x/sfp1SHI7pcolVgCA+KDwFLjkFPV2GsJy/f8nZbr1DI/ENup5L404nLIABP0mmLADm4yO3Eu//vpRj7ykbNJ0XH0l0pFQqhEvtWNTC7tFRdHyqGhAlWIiBf8UiBowG14nh4U3P3Yiw81QV7J07jPdAWrYgq/djRaPamNPUcMxSdga1nqZ8xy49Zbz+hxSPSH/G9zl1wIXGYgcqm6WtdVXribG3gXLsJs/l0YwrLYnJFZWpM4d2XsLziVfzHV8WeoUnrZGEYGWsyFNDUHFMGzj4rpc5hmDT/vyIRKZBbrG2I/SH1/canqN84hM87cUGfj0ZAsjHN2C257+QJshDIOCbNes/ZN0AY2hiHS2uqSngjCoye4AnZipC7jShb6tnBWntBv3/vwdfcxtv/dy+pFZCYFXGvdSVRN2dnww6wMtHUXlsEhvc95J5miGmsF9t3kAmZ46lbTzv0McP1R0U5Nl+Ybpoo9terXum7vGHt1Hz59ArzaVSl8+c3VL7lVT5rK7CS/q5t/3HLsgH5x0jmDpsbLC3wGfGwjPTvdoPtDp39UavSJWLp4ViLfVNmjGAM=",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Release Notes - FastAPI Utilities",
+            "url": "https://fastapi-utils.davidmontague.xyz/release-notes/",
+            "encrypted_content": "EqMCCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDBXS8vEO3uOlt0LS5BoMoOgpwIOm5zMWCri0IjC01D8PNYJBNgGw+pxb9r2e6An2n3V/Bo3zeAo+EHiqho9znq/ooZcqprpWnrOEk2wqpgG2cYu6tMmmj7OrLLkH4INW7ZnhBPjFxyczsiOANCaaIqKvxt8RBXOBu9VKzO+awUodAHVTfxEBz3aMJsybX3oHEx2uFNeqSjLnoGtgrMuOvdz1BIGtR+NPWUeRCQM4dtuby9GPracXeCz/aHvpsYeGp2VNLt7vHNVKlCymzD6bwZeAOzEmlqPKb3vaZNmMdTAPI9WuDWU+t3OWqiO7v3t3gprsZ3dXGAM=",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Version History and Release Notes | fastapi/fastapi | DeepWiki",
+            "url": "https://deepwiki.com/fastapi/fastapi/8.1-version-history-and-release-notes",
+            "encrypted_content": "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",
+            "page_age": "4 weeks ago"
+          },
+          {
+            "type": "web_search_result",
+            "title": "Release Notes - stac-fastapi",
+            "url": "https://stac-utils.github.io/stac-fastapi/release-notes/",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Releases · fastapi/sqlmodel",
+            "url": "https://github.com/fastapi/sqlmodel/releases",
+            "encrypted_content": "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",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Release Notes - FastAPI Project Documentation",
+            "url": "https://datascientest-fastapi-project-group-25.github.io/fastAPI-project-docs/app/release-notes/",
+            "encrypted_content": "EsUcCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDCq98bENj2lh/4/SQxoMVJJ+WTSqMpobH6wmIjD/CsiMSNpfsc2zem5mb5HGqNsxjO3RtTt7bPe9aGZK0BRR202jQDWTqtPHJwHHBxcqyBspTpm65oVJOC73eZZoPooBTJ6KanCYLgrhJx6rf2PY1/K9UWKlHOpddkiIiKs8jhqBfSmKZKOgpNh6f7rnMswRfxghRjWK4g2q/yTUawQps7crIXxLIzW6Ea+DBFNaIVmnNtHjDhh+0ZZnyWF29z916saIu9Z5zrS+pVHTyb+SaaV4vopeEOWBnAtfTYkparzsQmsfu0xXSFGm9LZGsSZb01ncDBu06xKUGkmKSu8wBrzqr2rRM1oIplmeMNNzymnWR0Ea3I3VHkduHpY6hyNXcherHVa956v2+MfAlNWEfv9uc9aJULHK9sS0d1nxQiKAQBn66S7Ku5qwXG6gux3GPqG4+Bbn0/flDp0EM/QzqclQdjJ0Z+78c0lfy6FrdGHMcsr2czGj/PNnSjD4zPX57HchP11VkA7sI+3Ozb3ilTKrVe/67kXFJp9HwGVyUKoxajYaLmdibKBIizWsi+/Kln7fGfZq6u7qnurY5EtdLJzKv1Ga/iyJC3tbpddlWWRKKuxL4A5OvSD4mYq+taBqTeRtgqR/d4bfkhXD5RYJ9o1A+P8VPDbqi/ZEKSIQR6lUqXAznMBnvk9di731RUZtoB9NvaXYbZuna/9C9rkSl23VCzKXuq1HATP9ummX3BVWygkVySaFdDd+Ej2jiBiEwm0eaffFRFudxmFnLk7D6zK/Sy5qo4q2/UQQrrGDK01mrPZEDRml0Ljyus07VdpEPsge/VhFrYcmdzY7apqmU3bE77/h+3Fae+aqhK6k2bk0wsjHhyi10+N38U52NQaBaW/EnfCXRFRHdOOpm1f6PCKHFjcJ7IL0+IbBzFEn/hJkNbdHdRs7x2L71isKRb1bXhTTv+kY/WUW80MfRC5pxhgdIoWX+gcn1tIiBXZE/7rBJJtejO49dxMXJP4TJqID2a4IhJeXGTihIi25dybxzdXDA/xGLO2O1uB9m31r4am2nZBLKRKa4kJh/PcWlezlyNt5BOqf1dXdt3+x+uw4V4yXyJocSBuVgMPzlIRw9gduHtpootp3Xu0jKBS8lz2TmqFDl5BMKxWrh5B2hFyPRGPmSp5YRILmaDlau2vpUYtLAo1BUINMQMeVlPR94WANhvhZ6L6qNCZJzx0hCNuil8VdwFR6IxewX5tjS8UTBmErVX6XSwUUfA3oBn5RvAt1pVlnOIClbGBG9CmdxSkdFNyMgZu8yy3FEZHwmvMUiXgR1gPJwgCLgmhA4e7Wh8y331fhueQGMEo4UmTkkbtb4NBO02wm5vFm8TWJDzhskCcWQjqU1tZ7YeYi3ShaJ8+em+CGMeUgLXDI7+pL5A0wl1FvdTVDRBn6Az8YobzFOiv31MNsSrV2y3Z2JVTF7OXdE3s8s4GOKStvp5FftrCOyIhZ2f2M+Qv3VyOO12JQi04CpOgmMHvYw/NwAtPIkbXCAq3MXnCah29IOWmf9mjk3afdT/gOGlfhDisFZLnFe9v6RfoStSHQloAzkMJ0ap1I5+nVJiaxOaW/DePuU7eeaiOJ9hdkwda6GPlRdOG58AYMJJ2rFZVA31r54PPeLlhS8gn1JTe/I3phsDmdHuuEAYA3aQ8UxtrHV/rmwM6Q7GGneBrdAFO+j3WGBEi+seobQhOl5okev+C8qFFvkuTBRs7ahc5376IG40vYmKeZb1OPgulCZrAAPeapDIbJs9f7zmXqkK9KJsuvsAjEhDMM9STr05j5mlnugbNiXkb3ggU7Jv0MRB6Ad+jw2BzdZVbFam2oDuTmhX76/svnZvfcCJBYxtSHVZGhCksVxn5EKBVYwZor3/hMUV/Wk/ojTxa1zQsWn3AX/s7/Wyrelaem0S7idcANplMT6PzHPqO3AfbMG7MwkfQMPcpIGRTs3g2hddaH3qsQ+ChScfLPBTEoClGy2K2otGoly1Zthsy+lg+NT7+zvppkByVvMiCZ9Yao37NGvS3oE0sR35rYu/dfEj3GXWdrXja0lPvXE22BM9xUamM5NjFif9PZamG10jv5J8gueRDW4fFnJsQTQ29qHWRNI1SrgRRftbFhrQ8AReNhAAn68dha++JKdnO1T/U8hxqbqiYCXIxZcK9OxLg9ApaF3O/JGIXJa/EXaTnhizoHj8Ubo/ml91w6A67wWElVQXYpoWE+/ExAoxLXPvAEMP4IBlDkwdCZZY19P4/bFsIcAO3sKwngpMgfN6/uTGS0K3vSQ5aZX0LbXCSYVrIjcUGfJ+0OC4WZjtdagIbkhaltb4SqLjVk+icPTSy9QCRnW+Unr8g9qGN1HVYGeQoCwxF/q3fGnzLVF3lJZnHRLnQb2x595Grh0SHFqU6lNp85enrKUvkXsAhOGjsRI2YyzXb7AdJBkrDVRQaFV68DWkCG6gnbfPkF0SZEZTPZX0JPN55vO88tsfwJxa0munvftoBr5EsvOW+CJ6fz+BBiLB++sCEt2z6RVoqNBbAYNIcxGEAuKEx7AYTJKFwzPFaD7JCdPRo4wt81EEWjjKPYGpF0sMaQC3IwxsL+YH5qxmNfVU9Ra9tWjEfh5JFBQmVlbAEfrP2sRSjF8QKjvw/kP04dkOuAvnpMeJGYB0zpsdxCCegqDQISz4Kk8ihscOxGXDkwCgNbeSpFL93SfOmEX6a1ZWhW6DUXZtMcQ7W13mhya0Mnf1gSG/EhKyXmRDDHKmiflx4bfz/rQB/351TJvszcYsZoWa2W18JTZRtoBx12jouv3yu+/SgZgikJB82Rw0IHHMP7xXyhN1Ku1a9Y6bNStJYN+dGJ0tvb+f4SS4LeZCCpPLCn9ujPdxyWMfMAATasMLuFX8Zcuu0lDIo/SVJhM0WCgg6lCTrqh8w19N4kszbpQ8RIve1WiX/GWSFVxWy2UCLl7FbMeeJ67Jns7nW2fb1EHAYj9ZmtB8k+Ud4iSBjUOiFQcSlAwarLzoIAkGngjI8IWNkessMsAOZ68Z8QbIueuRKUFaTQFziQ+m19ywY3AZy9OnvgpFR+oS+TepfzzTbm+IkbjPKlFhAOdDMDHHSiRtlpsoX6YlVvt9lec5wUBoaegm5Y4RHor922UfNnQJHsviRfNeLbKTZLOPUenp0V/ry+pjblbkMZW4jmnt57jlIwLD7WM7j8kbecQb0rfuxS4kjvH+eyDAwQgsk/u525smgljure8fQ+wD7tJy1eMVr6TB+XGCkqeyldCVPHVMMJrtyUFid5TiBsP9Jc1e8le4OLi+UtZb+cPZOIKQqMHzkcuWmv7DHtZGymqC1uLUli+OhX1fye9JyXfkbEu2QIQiPYPU+xLdrlboHXwHZnMvPk8ouKNMJfde6hLbERxrGXB0dcyU0PQIg8t8TfWXc9tBtuSjAQ7ihptgme2xUK5o2LuPEUwGi9N0hJ5tpUTcA/MHaopUp5jWRYKax2alHcyMP4N+DLDCLz/ykwU2KFMFqkBnjJ78R7VCXh7z7QMM5+p4gUZELDS28nDXu5MtOLpj6NYeoPOR2HHsO9+7xOXrG0YTgfj+jLWaukwIQ4k12kREI5szarsPAPId3QomvqaM9CkwNah2BUH9kMlFUFdz/g5Z03+ai2eZEF4py8OMsppGahcz3e+wp+KLIscqede9LGYIdPt5pyRrmhEVyXRENyEP/Ytdvx5KoH0r9JSXwx6Vwu+zv84Y1xB6gV2bo4L84r8n+11vPfj9raOjQLS6SzqyavVpay1aJR2/JBG0f/j9sTjysMhfLFuW168+sGBrs7LW40+VIgccVlzZwEz2dhRS5f3Ap53n63ZaTZANYgw7S1/3/IgSbWR9e4Kx6K4ztUNZVeQ+l77kHgcYteYE0Wwv1FaQZduUC+O9j4GtaBlFj4PpUnSO7CqEZf5z7RqR57nKPDUnbB7A13KRxJaUYF26Tb4qZOGaFMnoBuCj8STXimYUXe8wAjnfBeMG8HCMJpKs5T7y00kx9WyxBUio7VNEhXYyVPNXXXJanu1LaaaOfl7Ng2tDT+tbYqUWgnFnDXXAw5i2Owv4B9KoKdx++8LTNCVGL+FWq0I44hiu1SIM+70SmARwy9pLM8F9XzKCFKiOyOXWf+UFlK8fZFiugCuvR75U6eHseu6FbdDG/rXBRvGHLnAe8OZ+6Vp6PTXsNmRFoixg/EGzdB4owJsf9qzTml7soBv5rpdshTKx5oCcJE/no2BgKQUDVKzkrIAATTFA/bfz+BowMkUJ4oSTY4Ngw8nDbqewEXJ0OwzpenN5jJTx4wBkLXXAVZnAMPc9fsl1nI9phEWKMTAArUjxb5d5t3oDN4V/OiPhNuhvJEdycJlt6Lp/zhY1kXxfPnq6ZhVSW191EsX+0NyDEA6kFBmOXel9nm0hUJCnN9OOGJT+TV2X5VEWK62bu8EVJcK924gQDzGZXxDZOQVnf0Ta6m4xE+Z+5k7K7gv2lP8WVgHe0I0Xq0sz8oV+FsIJrPsdIJDvhlzdZMr1R2hJhfF6EoRTIJbx0mLj+CGsp6HKVZ5QiehWXQ5sK+Wdizw6/b5WUYQHc1K0pQ31PFpHEO69WsEQliracN2jt9vLeSfMX0r5KDjEzF9mK8nn3oMo5bqae6QzxwcEaSHEhrUJl/5+GwZqshTkro710sUBjFFM1z+i7cmLEXyhhJBpQTaGjgDwZ9bZX0bmTzP9Vg5NgfDwkE66sAXEQ9/Donzqu3cimVO9WR2ETrHFNH0MzA+sJo1dgxku3Djg1Wakpx1OVMGeq5VtMYAw==",
+            "page_age": null
+          },
+          {
+            "type": "web_search_result",
+            "title": "Release Notes - FastAPI RESTful",
+            "url": "https://fastapi-restful.netlify.app/release-notes/",
+            "encrypted_content": "EqMCCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDDktk3uNc9oa/WdMsBoMC4DMfkWtGRz9Ns27IjCj6ikRpZMaFe+qKtpxWYoXnkcLSZaLvvNa4LmSwIxJ8YEfJmHJvXcrMNphc+HvOdsqpgFmMmAl6CxcLjfAqC2e/DCCkbdFnSB9SG7oaT9sqo/uFveug20y2M39yV0eTYP9lNnbD1ClCYvCY32MjMjRJs2jdayogtf9y4FTaCiHSSJ0aPQiELcWMtEWN7YiIJdsstCNfyZ+3GlidwCGMznpyhmfpADIFZzCYMeqzTaeLBPGjk0BxJqh3nTRgaCwMHJGxkBXxuDiXUPefl7+zgmekqgXQGESJgguGAM=",
+            "page_age": null
+          }
+        ],
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 2
+    },
+    {
+      "type": "content_block_start",
+      "index": 3,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "Here"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " is"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " comprehensive"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " summary"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " of the latest"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "API** release"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " notes and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " changes in"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "2026"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": ","
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " based"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " on the search results:\n\n---"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n## "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "🚀 Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "API Latest"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " Version"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " (2026) —"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " Release Notes &"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " Changes\n\n### 📦"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " Latest"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": " Version"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 3,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 3
+    },
+    {
+      "type": "content_block_start",
+      "index": 4,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "FastAPI · Pydantic · Pydantic :: 2 · Intended Audience · Developers · Information Technology · System Administrators · Operating System · OS Independe...",
+          "url": "https://pypi.org/project/fastapi/",
+          "title": "fastapi · PyPI",
+          "encrypted_index": "Eo8BCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDETDqcR2f0p9AwiUUxoM+ZUO35/CF5FkVsYtIjDn2EN+wFf/P7vKNlYwnvj+RkKH4ypAAd7RRuLad4BasdvpwwfTsBBFvGVbYaXJC10qEwsaXHBI5HEkMfidqz+chdIg6cMYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "The"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " latest version is"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ".135"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ".1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "**, released on **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "March"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " 1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026**."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Recent"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " versions"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " include:\n- `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.135.1` –"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Mar"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " 1, 2026"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- `0.135.0"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "` – Mar"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " 1, 2026"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- `0.134.0"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "` – Feb 27"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026\n- `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.133.1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "` – Feb 25"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026\n- `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.133.0` –"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Feb 24"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026\n- `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.132.0` –"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Feb 23"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026\n- `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.131.0` –"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": " Feb 22, 2026"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- `0.130."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": "0` – Feb 22"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 4,
+      "delta": {
+        "type": "text_delta",
+        "text": ", 2026"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 4
+    },
+    {
+      "type": "content_block_start",
+      "index": 5,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n---"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n###"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "🆕"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " Key"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " Changes & Highlights"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "✅"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " Strict"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " Content"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "Type Checking"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " ("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "New"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": " Behavior"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": ")"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 5,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 5
+    },
+    {
+      "type": "content_block_start",
+      "index": 6,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Now FastAPI checks, by default, that JSON requests have a Content-Type header with a valid JSON value, like application/json, and rejects requests tha...",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "Eo8BCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDGJr6Cm8zc17nmomXxoMeCcDkbU59SBAslpuIjAa/FJgN27CVwPmnroj5UrnUxqxNsN8M/XoRfavfKy+NLIbTZTbwFM50OUZ46yGhA4qE776PFN0nxH+gWvf04sizr1guN4YBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Now FastAPI checks, by default, that JSON requests have a Content-Type header with a valid JSON value, like application/json, and rejects requests tha...",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "EpEBCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDMx9W5lnG3g2m+fcWhoMC3Y7LdqshswV3fvUIjCPHReWjlBqkeEzQzNbbAudP7IMXTMkhet/XvsJeQPeFKjz6TXVzhFyyGiY6ro63/oqFQd+Js+VXr/Oo1iBKFgzns5qglfYhxgE"
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "API now checks"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": ","
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " by"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " default, that JSON"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " requests"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " have"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " `Content-Type` header with"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " valid"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " JSON"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " value ("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "like"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " `application"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "/json`),"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " and rejects requests that"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " don't."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " If"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " clients"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " don't send a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " valid"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " `Content-Type` header,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " this"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " can"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " be"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " disabled with"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " `strict_content_type="
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "False`. New"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " docs"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " are available:"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": " **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "Strict Content-Type Checking**"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 6,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 6
+    },
+    {
+      "type": "content_block_start",
+      "index": 7,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n####"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": "🐍"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " Python"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " 3.8"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " Support"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": " Dropped"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 7,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 7
+    },
+    {
+      "type": "content_block_start",
+      "index": 8,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "Any Python 3.8 installer would just refuse to install the latest version of FastAPI and would only install 0.124.4. Only marking it as a \"breaking cha...",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpEBCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDDafqW7/OpdfiW2dtRoM0ex6/tOgOVJ8cVtFIjCPwu1XX9Ss7eOoRV0QYoQ4vo3XtHBucUbAmd3rf2H89uJzs5y2aMIcSPOm68pHlTMqFTLHo7Kmey8yBNZ4p2tYJuHINAMaeRgE"
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "Any"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " Python "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "3.8 installer"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " will"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " now refuse"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " to install the"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " latest version of FastAPI and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " will only"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " install `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "0"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": ".124"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": ".4"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "`. This is marked"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " as a \""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "breaking change\" to"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " make"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " it visible"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " The internal"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " syntax"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " has"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " been upgraded"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": " to **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "Python 3.9"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "+"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 8,
+      "delta": {
+        "type": "text_delta",
+        "text": "**."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 8
+    },
+    {
+      "type": "content_block_start",
+      "index": 9,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 9,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 9
+    },
+    {
+      "type": "content_block_start",
+      "index": 10,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "⚰️ Remove Python 3.8 from CI and remove Python 3.8 examples from source docs. ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "Eo8BCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDEhSl7AVFsv+8DJaUhoMxK78QLACtw+XYSYlIjAn7IGk4SG0fOw4LdL3i3w1S3CUcW28ICiU7joVLTRth2rfRU/4GqrHTSEHvdlJAhwqE9kMjfQTdNNHEnFFt8xBXs2DzL8YBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": "Python"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " 3.8 has"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " been removed"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " from CI"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": ","
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " and Python"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " 3.8"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " examples"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " have been removed from source"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": " docs"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 10,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 10
+    },
+    {
+      "type": "content_block_start",
+      "index": 11,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "♻️ P"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "ydantic v"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": " Intern"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "als"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": " Removed"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 11,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 11
+    },
+    {
+      "type": "content_block_start",
+      "index": 12,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "♻️ Simplify internals, remove Pydantic v1 only logic, no longer needed. ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDPQ9yv5odJbo4zGk0RoMcVFTnUCwMMtAjZNgIjAfPnUByNtgrq3kEREoq40hgNy2wUJXNQBq+TLrsbQFAEDxeNLumuJ1w4puyT5J5iwqFEH9dTUsG1KZdyg3Nmw8LYRLMopnGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "♻️ Refactor internals, cleanup unneeded Pydantic v1 specific logic. ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDOWG7wQPRzo0NV0d0hoMxoFqN3sSAeCrQMG6IjDn0nnRjFJID6kheZzTm+lwljx++24yw+L4ZA48ansH2Louzy/lpY/sAjFn79gVSqcqFHBsW+fOKgaN7tusnHvYmTOf+1lQGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "Pydantic v1-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "only"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " logic"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " has been simplified"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " removed from"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " intern"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "als,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " with a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " cleanup"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " of un"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "needed"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " Pydantic v1-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "specific"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": " logic"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 12,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 12
+    },
+    {
+      "type": "content_block_start",
+      "index": 13,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n####"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "🔄"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "on"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "_event"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "` Re"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "-implemented"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " for"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " St"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "arlette"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": " Compatibility"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 13,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 13
+    },
+    {
+      "type": "content_block_start",
+      "index": 14,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "♻️ Re-implement on_event in FastAPI for compatibility with the next Starlette, while keeping backwards compatibility. ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDE9c/jR2/lFHkqGkEhoM/Lbx5z1HiLMjeZJSIjAB0pDPv3lHizhN+kSSFfnV2kzefjSqQHnWuEpOckjOHZzTWHD2vs74cruiiMesfGUqFBFqJmn09CV8KeyIMBmueLkksq+qGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": "`on_event` has been"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " re"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": "-implemented in"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": "API for"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " compatibility"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " with the"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " next"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " Starlette version,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " while"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " keeping"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " backwards"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 14,
+      "delta": {
+        "type": "text_delta",
+        "text": " compatibility."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 14
+    },
+    {
+      "type": "content_block_start",
+      "index": 15,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n####"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "⬆️ St"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "arlette Version"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": " Upgrade"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 15,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 15
+    },
+    {
+      "type": "content_block_start",
+      "index": 16,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "⬆️ Upgrade Starlette supported version range to starlette>=0.40.0,<1.0.0.",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDMhQaHCwfsUZP3EYehoM9/mDfiac1p1w9xVcIjDxnyz2rfJv+A+iU8uSLj4aWYaOk7jG6+veuZr7JMGp2yoW2irF9K7o0Us1VnYuYfgqFE3JYwBSQv1WEqS2fVqVkcXHDK6hGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": "The supported"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": " Starlette version range"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": " has"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": " been upgraded"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": " to `st"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": "arlette>=0.40"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": ".0,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": "<1"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 16,
+      "delta": {
+        "type": "text_delta",
+        "text": ".0.0`."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 16
+    },
+    {
+      "type": "content_block_start",
+      "index": 17,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 17,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 17
+    },
+    {
+      "type": "content_block_start",
+      "index": 18,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "This also upgrades Starlette from >=0.40.0 to >=0.46.0, as it's needed to properly unrwap and re-raise exceptions from exception groups. ",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDKF39IiXW42Mh8CN8RoMbb63zxuUCu0pZVvWIjDUe5gQe4/zNw3SLC9aNfgnvjvh8K9B+OoSZlliC3DA5AVEQ81BPnPNz+KWlLjvgVQqFOOq2fFMaW2iITlyH7B5WV1dNEJwGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "A"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " further"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " upgrade to"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " Starlette `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": ">="
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "0.46"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": ".0` was"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " made"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": ", as"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " it"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "'s needed"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " to"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " properly"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " unw"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "rap and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " re-raise"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " exceptions from"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " exception"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": " groups"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 18,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 18
+    },
+    {
+      "type": "content_block_start",
+      "index": 19,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "🔁"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": " Dependencies"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": ":"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": " `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "Depends()"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "` and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": " `Security"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "()"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "` Now"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": " Hash"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "able"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 19,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 19
+    },
+    {
+      "type": "content_block_start",
+      "index": 20,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "♻️ Make the result of Depends() and Security() hashable, as a workaround for other tools interacting with these internal parts. ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDIHhYDWnU7cbMI05QhoMKPUu9LwFEwSxjTrvIjCD6zVhAe8BlTp7ojKk6ssRhrNtCKrqdhuZuPwOnJrQJbxt/ggkexoGSZb2d9T6VmYqFB9PsHiWeM6zIc88Zg8qnYAfozE1GAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "The result"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " of `Depends()` and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " `Security()` has"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " been made hashable, as"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " wor"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "karound for other"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " tools"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " inter"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "acting with these"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " internal"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": " parts"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 20,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 20
+    },
+    {
+      "type": "content_block_start",
+      "index": 21,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "🐛 Bug"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": " Fix"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": ": JSON"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": " Schema"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": " `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "$"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "ref`"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 21,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 21
+    },
+    {
+      "type": "content_block_start",
+      "index": 22,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "🐛 Fix handling of JSON Schema attributes named \"$ref\". ",
+          "url": "https://fastapi.tiangolo.com/release-notes/",
+          "title": "Release Notes - FastAPI",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDDTc/ok2XA31d/Q95BoMTtpPYfX+Vznez2n/IjDRsOE1l5ek1He9gEwm+S5dOVuyN+1MgdtpBrwtbVOkOgi2tR9JYewVErGjL6iOvWEqFLw1uW0qThx55sGtvdW740yMrPwbGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": "A bug fix was applied"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " for"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " the handling"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " of JSON Schema attributes"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " named"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": " `\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": "$ref\"`"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 22,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 22
+    },
+    {
+      "type": "content_block_start",
+      "index": 23,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "📖"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": " New"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": " Documentation"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 23,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 23
+    },
+    {
+      "type": "content_block_start",
+      "index": 24,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "... New docs: Server-Sent Events (SSE). ",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDFMP7G+4xNhVjYx+mhoMMvJpOappN7GAig6pIjBF9EPHvVj9YIIcebrbT1294441heBiAZ6PY59ku64AJekMLb3lLFRa6Esgvygv4hkqFABtGnQTBVKCnUxwuCNMrbQbbLuYGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "New docs: Stream JSON Lines. And new docs: Stream Data. ",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "EpMBCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDAPAcLssma+OkwC72BoM1MdyQVkoK0iCSwAnIjBYzyR3wEsMrj8oKYpu1rwdrmWvVA4ZBUk1LibCyltZc/G2j54r6B7O+49htZB+r64qF9vjmRz/WmGdRjxoW0t1tz7jOrX5puD7GAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "New"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " documentation"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " has been added for"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": ":"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Server"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "Sent Events (SSE)**"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Stream"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " JSON"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " Lines"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "**\n- **Stream"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": " Data"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 24,
+      "delta": {
+        "type": "text_delta",
+        "text": "**"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 24
+    },
+    {
+      "type": "content_block_start",
+      "index": 25,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n####"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": " "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "➖"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": " `"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "api-slim"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "` Dropped"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 25,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 25
+    },
+    {
+      "type": "content_block_start",
+      "index": 26,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "➖ Drop support for fastapi-slim, no more versions will be released, use only \"fastapi[standard]\" or fastapi. ",
+          "url": "https://github.com/fastapi/fastapi/releases",
+          "title": "Releases · fastapi/fastapi",
+          "encrypted_index": "EpABCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDA4sokUgur8LNv2yMxoMCN6u6Wugn2EeKyEaIjBbPIBI7r23t5jULBcvC9BMrnOXQWRqLdfh5ChBkpPruwHrACI3apMRwRgfTBmdaCoqFBuu0log1GM44QNh8F8XPD8CqZJAGAQ="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "Support"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " for `fastapi-slim`"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " has been dropped —"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " no"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " more"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " versions"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " will be released."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " Users"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " should use"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " only"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": " `\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "fastapi["
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "standard"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "]\"` or `fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "api`"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 26,
+      "delta": {
+        "type": "text_delta",
+        "text": "."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 26
+    },
+    {
+      "type": "content_block_start",
+      "index": 27,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 27,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n#### 🌐 Python"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 27,
+      "delta": {
+        "type": "text_delta",
+        "text": " Version"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 27,
+      "delta": {
+        "type": "text_delta",
+        "text": " Requirements"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 27,
+      "delta": {
+        "type": "text_delta",
+        "text": " Updated"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 27,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 27
+    },
+    {
+      "type": "content_block_start",
+      "index": 28,
+      "content_block": {
+        "citations": [],
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "citations_delta",
+        "citation": {
+          "type": "web_search_result_location",
+          "cited_text": "pip install fastapi Copy PIP instructions · Latest version · Released: Mar 1, 2026 · FastAPI framework, high performance, easy to learn, fast to code,...",
+          "url": "https://pypi.org/project/fastapi/",
+          "title": "fastapi · PyPI",
+          "encrypted_index": "Eo8BCioIDRgCIiQwZWE0ZGU2MC04ODA5LTQ4ZjMtYWI0ZC01ZDM0MzJiMDI2MWQSDIr+BGHsE5RJluFiwxoMSwKIco2yibIWOh8RIjAFfL1XovsIVuCGBshfpYpUe/Wh5gHt9gZQSUjqizZXXxhLeNUx0B04OVOWAFJyzEQqE/heBQfBfOhi1s6OktIKmBoMF6AYBA=="
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "Fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "API now **"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "requires Python "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": ">=3.10"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "** and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": " supports"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": " Python "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "3.10, 3."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "11, "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "3.12, "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": "3.13, and 3"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 28,
+      "delta": {
+        "type": "text_delta",
+        "text": ".14."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 28
+    },
+    {
+      "type": "content_block_start",
+      "index": 29,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n---"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n\n### 📚"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " Where"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " to Find Full"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " Release Notes"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n-"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " **Official"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " Docs:**"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " ["
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "fastapi.tiangolo."
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "com/release-notes]("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "https://fastapi.tiang"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "olo.com/release-notes"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "/)"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **GitHub"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": " Releases:** [github.com/"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "api/fastapi/releases]("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "https://github.com/fast"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "api/fastapi/releases)"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "\n- **Py"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "PI:** [pypi.org"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "/project/fastapi]("
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "https://pypi.org/"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 29,
+      "delta": {
+        "type": "text_delta",
+        "text": "project/fastapi/)"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 29
+    },
+    {
+      "type": "message_delta",
+      "delta": {
+        "stop_reason": "end_turn",
+        "stop_sequence": null
+      },
+      "usage": {
+        "input_tokens": 4,
+        "cache_creation_input_tokens": 18635,
+        "cache_read_input_tokens": 2274,
+        "output_tokens": 1328,
+        "server_tool_use": {
+          "web_search_requests": 1,
+          "web_fetch_requests": 0
+        }
+      },
+      "context_management": {
+        "applied_edits": []
+      }
+    },
+    {
+      "type": "message_stop"
+    }
+  ]
+}

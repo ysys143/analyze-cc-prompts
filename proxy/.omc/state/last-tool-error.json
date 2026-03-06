@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/jaesolshin/Documents/GitHub/test_local_cc/index.html\",\"offset\":919,\"limit\":95}",
+  "error": "File content (986317 tokens) exceeds maximum allowed tokens (60000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content.",
+  "timestamp": "2026-03-06T14:55:39.039Z",
+  "retry_count": 3
+}

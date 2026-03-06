@@ -1,0 +1,10 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-03-06T15:26:40.857Z"
+  }
+}

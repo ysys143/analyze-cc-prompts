@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"uv run python analyze.py 2>&1\",\"description\":\"Regenerate index.html with remaining dumps\"}",
+  "error": "Exit code 2\n/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.venv/bin/python3: can't open file '/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/analyze.py': [Errno 2] No such file or directory\n\n/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.venv/bin/python3: can't open file '/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/analyze.py': [Errno 2] No such file or directory",
+  "timestamp": "2026-03-06T15:09:11.532Z",
+  "retry_count": 1
+}

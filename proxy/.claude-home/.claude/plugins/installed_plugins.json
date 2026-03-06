@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "plugins": {
+    "pyright-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-06T15:26:56.558Z",
+        "lastUpdated": "2026-03-06T15:26:56.558Z",
+        "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,976 @@
+2026-03-06T15:26:11.880Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.880Z [DEBUG] MDM settings load completed in 4ms
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.json
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.local.json
+2026-03-06T15:26:11.884Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.884Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:11.885Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.885Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.885Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T15:26:11.910Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-06T15:26:11.910Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-06T15:26:11.910Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-06T15:26:11.910Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.910Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.910Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T15:26:11.910Z [DEBUG] CA certs: useSystemCA=false, envPath=undefined, configPath=undefined, extraCertsPath=undefined
+2026-03-06T15:26:11.910Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-06T15:26:11.912Z [DEBUG] Error log sink initialized
+2026-03-06T15:26:11.913Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.913Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.918Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.918Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:11.918Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.918Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:11.918Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.918Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.json
+2026-03-06T15:26:11.918Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.918Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.local.json
+2026-03-06T15:26:11.918Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.918Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:11.919Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-06T15:26:11.926Z [DEBUG] [ToolSearch:optimistic] disabled: ANTHROPIC_BASE_URL=http://localhost:8082 is not a first-party Anthropic host
+2026-03-06T15:26:11.927Z [DEBUG] [STARTUP] Running setup()...
+2026-03-06T15:26:11.964Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:11.964Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:11.965Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/skills, project=[]
+2026-03-06T15:26:11.965Z [DEBUG] Error log sink initialized
+2026-03-06T15:26:11.969Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-03-06T15:26:11.975Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-03-06T15:26:11.977Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-03-06T15:26:11.977Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-06T15:26:11.977Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-03-06T15:26:11.977Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-03-06T15:26:11.977Z [DEBUG] Total plugin skills loaded: 0
+2026-03-06T15:26:11.977Z [DEBUG] Total plugin commands loaded: 0
+2026-03-06T15:26:11.977Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills, 0 builtin plugin skills
+2026-03-06T15:26:11.979Z [DEBUG] [STARTUP] setup() completed in 52ms
+2026-03-06T15:26:11.979Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-06T15:26:11.980Z [DEBUG] Total plugin agents loaded: 0
+2026-03-06T15:26:11.980Z [DEBUG] [STARTUP] Commands and agents loaded in 1ms
+2026-03-06T15:26:11.982Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-06T15:26:12.008Z [DEBUG] Cleared CA certificates cache
+2026-03-06T15:26:12.008Z [DEBUG] Cleared mTLS configuration cache
+2026-03-06T15:26:12.008Z [DEBUG] Cleared proxy agent cache
+2026-03-06T15:26:12.008Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:12.008Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:12.008Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T15:26:12.008Z [DEBUG] CA certs: useSystemCA=false, envPath=undefined, configPath=undefined, extraCertsPath=undefined
+2026-03-06T15:26:12.022Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-03-06T15:26:12.022Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-03-06T15:26:12.023Z [DEBUG] [STARTUP] showSetupScreens() completed in 41ms
+2026-03-06T15:26:12.023Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-03-06T15:26:12.023Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-03-06T15:26:12.023Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-03-06T15:26:12.023Z [DEBUG] Starting background startup prefetches
+2026-03-06T15:26:12.031Z [DEBUG] [STARTUP] MCP configs resolved in 58ms (awaited at +112ms)
+2026-03-06T15:26:12.031Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:12.031Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:12.034Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:12.034Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:12.035Z [DEBUG] Total LSP servers loaded: 0
+2026-03-06T15:26:12.036Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:12.036Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:12.036Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:12.036Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:12.036Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-03-06T15:26:12.036Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:12.036Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-03-06T15:26:12.036Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-03-06T15:26:12.036Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-03-06T15:26:12.036Z [DEBUG] LSP manager initialized with 0 servers
+2026-03-06T15:26:12.037Z [DEBUG] [Reconnection] computeInitialTeamContext: No teammate context set (not a teammate)
+2026-03-06T15:26:12.039Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810772039
+2026-03-06T15:26:12.039Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T15:26:12.039Z [DEBUG] Temp file written successfully, size: 6861 bytes
+2026-03-06T15:26:12.039Z [DEBUG] Applied original permissions to temp file
+2026-03-06T15:26:12.039Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810772039 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T15:26:12.039Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T15:26:12.041Z [DEBUG] LSP server manager initialized successfully
+2026-03-06T15:26:12.041Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-03-06T15:26:12.068Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-06T15:26:12.132Z [DEBUG] High write ratio: blit=0, write=1068 (100.0% writes), screen=20x213
+2026-03-06T15:26:12.140Z [DEBUG] [REPL:mount] REPL mounted, disabled=false
+2026-03-06T15:26:12.143Z [DEBUG] Official marketplace auto-install skipped: already_attempted
+2026-03-06T15:26:12.143Z [DEBUG] performStartupChecks called
+2026-03-06T15:26:12.143Z [DEBUG] Starting background plugin installations
+2026-03-06T15:26:12.145Z [DEBUG] Loaded 1 CLAUDE.md/rules files:
+  [Project] /Users/jaesolshin/.claude/CLAUDE.md (17751 chars)
+2026-03-06T15:26:12.150Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:26:12.151Z [DEBUG] performBackgroundPluginInstallations called
+2026-03-06T15:26:12.152Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-03-06T15:26:12.152Z [DEBUG] [claudeai-mcp] Gate returned: true
+2026-03-06T15:26:12.152Z [DEBUG] [claudeai-mcp] No access token
+2026-03-06T15:26:12.164Z [DEBUG] High write ratio: blit=20, write=1211 (98.4% writes), screen=20x213
+2026-03-06T15:26:12.167Z [DEBUG] Git remote URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T15:26:12.167Z [DEBUG] Parsed repository: github.com/ysys143/analyze-cc-prompts from URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T15:26:12.170Z [DEBUG] [keybindings] Watching for changes to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/keybindings.json
+2026-03-06T15:26:12.181Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/jaesolshin/.nvm/versions/node/v20.18.1/lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg)
+2026-03-06T15:26:12.181Z [DEBUG] rg error (signal=null, code=2, stderr: rg: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/cache: IO error for operation on /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/cache: No such file or directory (os error 2)
+), 0 results
+2026-03-06T15:26:12.181Z [DEBUG] Git remote URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T15:26:12.182Z [DEBUG] Parsed repository: github.com/ysys143/analyze-cc-prompts from URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T15:26:12.182Z [DEBUG] Path /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts already tracked for repo ysys143/analyze-cc-prompts
+2026-03-06T15:26:12.189Z [DEBUG] Security messages are fresh (<1h old), skipping fetch
+2026-03-06T15:26:12.217Z [DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+2026-03-06T15:26:12.717Z [DEBUG] Org fast mode: enabled
+2026-03-06T15:26:36.611Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:26:36.612Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:26:36.612Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:26:36.613Z [DEBUG] Sending 3 skills via attachment (initial, 3 total sent)
+2026-03-06T15:26:36.613Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:26:36.615Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-03-06T15:26:36.615Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:36.615Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:36.615Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:36.615Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:36.615Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:26:36.615Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:36.615Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:26:36.616Z [DEBUG] FileHistory: Added snapshot for 5e5646a5-c77a-420b-a7e9-9e90fee6d79d, tracking 0 files
+2026-03-06T15:26:36.621Z [DEBUG] Total plugin output styles loaded: 0
+2026-03-06T15:26:36.622Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-06T15:26:36.641Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:26:36.646Z [DEBUG] autocompact: tokens=199 threshold=167000 effectiveWindow=180000
+2026-03-06T15:26:36.647Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:26:36.654Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:26:36.654Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:26:36.654Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:26:36.659Z [DEBUG] [useDeferredValue] Messages deferred by 2 (0→2)
+2026-03-06T15:26:38.519Z [DEBUG] SSH config check: code=1 configured=true
+2026-03-06T15:26:38.530Z [DEBUG] git pull: cwd=/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/marketplaces/claude-plugins-official ref=default
+2026-03-06T15:26:38.746Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:26:39.601Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-06T15:26:39.609Z [DEBUG] [useDeferredValue] Messages deferred by 1 (2→3)
+2026-03-06T15:26:40.677Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-06T15:26:40.679Z [DEBUG] High write ratio: blit=0, write=1148 (100.0% writes), screen=24x213
+2026-03-06T15:26:40.680Z [DEBUG] executePreToolHooks called for tool: Write
+2026-03-06T15:26:40.680Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:40.680Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:40.680Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:40.680Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:40.680Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-03-06T15:26:40.680Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:40.680Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-06T15:26:40.682Z [DEBUG] Permission suggestions for Write: [
+  {
+    "type": "setMode",
+    "mode": "acceptEdits",
+    "destination": "session"
+  }
+]
+2026-03-06T15:26:40.682Z [DEBUG] executePermissionRequestHooks called for tool: Write
+2026-03-06T15:26:40.682Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:40.682Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:40.683Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:40.683Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:40.683Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Write
+2026-03-06T15:26:40.683Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:40.683Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-06T15:26:40.684Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-06T15:26:40.702Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:26:40.703Z [DEBUG] [useDeferredValue] Messages deferred by 1 (3→4)
+2026-03-06T15:26:40.867Z [DEBUG] Successfully refreshed marketplace: claude-plugins-official
+2026-03-06T15:26:40.867Z [DEBUG] Plugin autoupdate: checking installed plugins
+2026-03-06T15:26:46.706Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:46.706Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:46.706Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:46.706Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:46.707Z [DEBUG] Getting matching hook commands for Notification with query: permission_prompt
+2026-03-06T15:26:46.707Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:46.707Z [DEBUG] Matched 0 unique hooks for query "permission_prompt" (0 before deduplication)
+2026-03-06T15:26:51.820Z [DEBUG] Applying permission update: Setting mode to 'acceptEdits'
+2026-03-06T15:26:51.824Z [DEBUG] FileHistory: Tracked file modification for /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py
+2026-03-06T15:26:51.836Z [DEBUG] High write ratio: blit=0, write=1191 (100.0% writes), screen=26x213
+2026-03-06T15:26:51.840Z [DEBUG] [lspRecommendation] Looking for LSP plugins for .py
+2026-03-06T15:26:51.842Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:26:51.844Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:26:51.847Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py.tmp.14558.1772810811847
+2026-03-06T15:26:51.848Z [DEBUG] Temp file written successfully, size: 21 bytes
+2026-03-06T15:26:51.848Z [DEBUG] Renaming /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py.tmp.14558.1772810811847 to /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py
+2026-03-06T15:26:51.848Z [DEBUG] File /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py written atomically
+2026-03-06T15:26:51.850Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:51.850Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:51.850Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:51.850Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:51.850Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-03-06T15:26:51.850Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:26:51.850Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2026-03-06T15:26:51.852Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:26:51.852Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:26:51.852Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:26:51.852Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:26:51.852Z [DEBUG] autocompact: tokens=25706 threshold=167000 effectiveWindow=180000
+2026-03-06T15:26:51.852Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:26:51.853Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:26:51.853Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:26:51.853Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:26:51.856Z [DEBUG] [useDeferredValue] Messages deferred by 3 (4→7)
+2026-03-06T15:26:51.876Z [DEBUG] [binaryCheck] Binary 'pyright-langserver' found
+2026-03-06T15:26:51.876Z [DEBUG] [lspRecommendation] Binary 'pyright-langserver' found for pyright-lsp@claude-plugins-official
+2026-03-06T15:26:51.876Z [DEBUG] [useLspPluginRecommendation] Found match: pyright-lsp for hello.py
+2026-03-06T15:26:53.961Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:26:54.838Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:26:54.838Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:54.838Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:54.839Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:54.839Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:54.839Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:26:54.839Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:54.839Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:26:54.840Z [DEBUG] tree-sitter: WASM files not found
+2026-03-06T15:26:54.844Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "python3 /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/hello.py"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:26:54.845Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-06T15:26:54.845Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:54.845Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:54.845Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:54.845Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:54.845Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-06T15:26:54.845Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:54.845Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:26:54.845Z [DEBUG] [useDeferredValue] Messages deferred by 1 (7→8)
+2026-03-06T15:26:54.846Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:54.846Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:54.850Z [DEBUG] High write ratio: blit=0, write=1275 (100.0% writes), screen=37x213
+2026-03-06T15:26:54.852Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:26:55.707Z [DEBUG] High write ratio: blit=0, write=1418 (100.0% writes), screen=43x213
+2026-03-06T15:26:55.711Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:26:55.714Z [DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+2026-03-06T15:26:55.714Z [DEBUG] Looking for shell config file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.zshrc
+2026-03-06T15:26:55.715Z [DEBUG] Shell config file not found: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.zshrc, creating snapshot with Claude Code defaults only
+2026-03-06T15:26:55.715Z [DEBUG] Snapshots directory: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/shell-snapshots
+2026-03-06T15:26:55.715Z [DEBUG] Creating snapshot at: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/shell-snapshots/snapshot-zsh-1772810815715-h97miw.sh
+2026-03-06T15:26:55.715Z [DEBUG] Execution timeout: 10000ms
+2026-03-06T15:26:55.725Z [DEBUG] Shell snapshot created successfully (1369 bytes)
+2026-03-06T15:26:55.727Z [DEBUG] No session environment scripts found
+2026-03-06T15:26:55.727Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:26:55.949Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:55.950Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:55.950Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:55.950Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:55.950Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:26:55.950Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:26:55.950Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:26:55.950Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:26:55.950Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:26:55.950Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:26:55.950Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:26:55.951Z [DEBUG] autocompact: tokens=25825 threshold=167000 effectiveWindow=180000
+2026-03-06T15:26:55.951Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:26:55.952Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:26:55.952Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:26:55.952Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:26:55.955Z [DEBUG] [useDeferredValue] Messages deferred by 1 (8→9)
+2026-03-06T15:26:56.539Z [DEBUG] [useLspPluginRecommendation] User response: yes for pyright-lsp
+2026-03-06T15:26:56.539Z [DEBUG] [useLspPluginRecommendation] Installing plugin: pyright-lsp@claude-plugins-official
+2026-03-06T15:26:56.549Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:26:56.554Z [DEBUG] Caching plugin from source: "/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/marketplaces/claude-plugins-official/plugins/pyright-lsp" to temporary path /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/cache/temp_local_1772810816554_1rv3vo
+2026-03-06T15:26:56.557Z [DEBUG] Successfully cached plugin pyright-lsp to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/cache/pyright-lsp
+2026-03-06T15:26:56.558Z [DEBUG] Using manifest version for pyright-lsp@claude-plugins-official: 1.0.0
+2026-03-06T15:26:56.564Z [DEBUG] Saved 1 installed plugins to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/plugins/installed_plugins.json
+2026-03-06T15:26:56.564Z [DEBUG] Added installed plugin: pyright-lsp@claude-plugins-official (scope: user)
+2026-03-06T15:26:56.564Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.564Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:56.564Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.564Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:56.564Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.564Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json.tmp.14558.1772810816564
+2026-03-06T15:26:56.565Z [DEBUG] Temp file written successfully, size: 78 bytes
+2026-03-06T15:26:56.565Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json.tmp.14558.1772810816564 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T15:26:56.565Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json written atomically
+2026-03-06T15:26:56.565Z [DEBUG] [useLspPluginRecommendation] Plugin installed: pyright-lsp@claude-plugins-official
+2026-03-06T15:26:56.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.json
+2026-03-06T15:26:56.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.local.json
+2026-03-06T15:26:56.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:56.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:57.832Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:26:58.421Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-03-06T15:26:58.440Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:58.440Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:58.440Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:26:58.440Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:26:58.440Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:26:58.440Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:26:58.440Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:26:58.441Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-03-06T15:26:58.447Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:26:58.449Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810818449
+2026-03-06T15:26:58.449Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T15:26:58.449Z [DEBUG] Temp file written successfully, size: 6883 bytes
+2026-03-06T15:26:58.449Z [DEBUG] Applied original permissions to temp file
+2026-03-06T15:26:58.449Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810818449 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T15:26:58.449Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T15:26:58.450Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810818450
+2026-03-06T15:26:58.450Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T15:26:58.451Z [DEBUG] Temp file written successfully, size: 6901 bytes
+2026-03-06T15:26:58.451Z [DEBUG] Applied original permissions to temp file
+2026-03-06T15:26:58.451Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810818450 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T15:26:58.451Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T15:26:58.451Z [DEBUG] [useDeferredValue] Messages deferred by 1 (9→10)
+2026-03-06T15:27:10.424Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:10.424Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:10.424Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:10.425Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:10.426Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:10.426Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:10.426Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:10.426Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:10.426Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:27:10.426Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:10.426Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:27:10.426Z [DEBUG] FileHistory: Making snapshot for message c057c3d2-0545-4237-8b76-5ba251affc3e
+2026-03-06T15:27:10.437Z [DEBUG] FileHistory: Added snapshot for c057c3d2-0545-4237-8b76-5ba251affc3e, tracking 1 files
+2026-03-06T15:27:10.440Z [DEBUG] autocompact: tokens=25875 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:10.440Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:10.443Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:10.443Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:10.443Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:10.448Z [DEBUG] [useDeferredValue] Messages deferred by 1 (10→11)
+2026-03-06T15:27:10.461Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:12.607Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:13.434Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-06T15:27:13.445Z [DEBUG] [useDeferredValue] Messages deferred by 1 (11→12)
+2026-03-06T15:27:13.649Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:27:13.650Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:13.650Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:13.650Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:13.651Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:13.651Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:27:13.651Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:13.651Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:13.664Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-03-06T15:27:13.670Z [DEBUG] High write ratio: blit=0, write=1471 (100.0% writes), screen=37x213
+2026-03-06T15:27:13.673Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:27:13.673Z [DEBUG] [useDeferredValue] Messages deferred by 1 (12→13)
+2026-03-06T15:27:13.692Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:13.692Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:13.693Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:13.693Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:13.693Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:27:13.693Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:27:13.693Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:13.693Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:13.693Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:13.693Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:13.693Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:13.694Z [DEBUG] autocompact: tokens=26031 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:13.694Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:13.695Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:13.695Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:13.695Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:13.699Z [DEBUG] [useDeferredValue] Messages deferred by 1 (13→14)
+2026-03-06T15:27:15.667Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:18.051Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-03-06T15:27:18.056Z [DEBUG] executePreToolHooks called for tool: Write
+2026-03-06T15:27:18.057Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:18.057Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:18.057Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:18.057Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:18.057Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-03-06T15:27:18.057Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:18.057Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-06T15:27:18.062Z [DEBUG] FileHistory: Tracked file modification for /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/main.py
+2026-03-06T15:27:18.062Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/main.py.tmp.14558.1772810838062
+2026-03-06T15:27:18.063Z [DEBUG] Temp file written successfully, size: 233 bytes
+2026-03-06T15:27:18.063Z [DEBUG] Renaming /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/main.py.tmp.14558.1772810838062 to /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/main.py
+2026-03-06T15:27:18.063Z [DEBUG] File /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/main.py written atomically
+2026-03-06T15:27:18.065Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:18.065Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:18.065Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:18.065Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:18.065Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-03-06T15:27:18.065Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:27:18.065Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2026-03-06T15:27:18.067Z [DEBUG] [useDeferredValue] Messages deferred by 1 (14→15)
+2026-03-06T15:27:18.069Z [DEBUG] High write ratio: blit=0, write=1558 (100.0% writes), screen=40x213
+2026-03-06T15:27:18.071Z [DEBUG] [useDeferredValue] Messages deferred by 4 (14→18)
+2026-03-06T15:27:18.074Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:18.074Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:18.074Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:18.074Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:18.074Z [DEBUG] autocompact: tokens=26259 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:18.075Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:18.076Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:18.076Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:18.076Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:18.082Z [DEBUG] [useDeferredValue] Messages deferred by 4 (14→18)
+2026-03-06T15:27:20.143Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:21.522Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-03-06T15:27:21.538Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:21.538Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:21.539Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:21.539Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:21.539Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:27:21.539Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:21.539Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:27:21.540Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-03-06T15:27:21.546Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:27:21.548Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810841548
+2026-03-06T15:27:21.548Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T15:27:21.548Z [DEBUG] Temp file written successfully, size: 6922 bytes
+2026-03-06T15:27:21.548Z [DEBUG] Applied original permissions to temp file
+2026-03-06T15:27:21.548Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810841548 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T15:27:21.548Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T15:27:21.549Z [DEBUG] [useDeferredValue] Messages deferred by 1 (18→19)
+2026-03-06T15:27:26.529Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:26.529Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:26.529Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:26.530Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:26.531Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:26.531Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:26.531Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:26.531Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:26.531Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:27:26.531Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:26.531Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:27:26.531Z [DEBUG] FileHistory: Making snapshot for message 5c487fa2-a5b2-4a6c-b3ce-c67d243a5253
+2026-03-06T15:27:26.532Z [DEBUG] FileHistory: Missing tracked file: hello.py
+2026-03-06T15:27:26.543Z [DEBUG] FileHistory: Added snapshot for 5c487fa2-a5b2-4a6c-b3ce-c67d243a5253, tracking 2 files
+2026-03-06T15:27:26.545Z [DEBUG] autocompact: tokens=26381 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:26.545Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:26.548Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:26.548Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:26.548Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:26.551Z [DEBUG] [useDeferredValue] Messages deferred by 1 (19→20)
+2026-03-06T15:27:26.560Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:31.519Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:32.288Z [DEBUG] [useDeferredValue] Messages deferred by 1 (20→21)
+2026-03-06T15:27:32.294Z [DEBUG] [useDeferredValue] Messages deferred by 1 (20→21)
+2026-03-06T15:27:32.567Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:27:32.567Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:32.567Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:32.567Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:32.567Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:32.568Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:27:32.568Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:32.568Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:32.570Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pip install fastapi uvicorn -q"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:27:32.571Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-06T15:27:32.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:32.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:32.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:32.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:32.571Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-06T15:27:32.571Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:32.571Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:32.571Z [DEBUG] [useDeferredValue] Messages deferred by 1 (21→22)
+2026-03-06T15:27:32.574Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:27:32.583Z [DEBUG] High write ratio: blit=0, write=1905 (100.0% writes), screen=69x213
+2026-03-06T15:27:34.049Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:34.049Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:35.434Z [DEBUG] High write ratio: blit=0, write=1896 (100.0% writes), screen=69x213
+2026-03-06T15:27:35.441Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:35.443Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:27:35.444Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:27:36.221Z [DEBUG] Bash tool error (796ms): Shell command failed
+2026-03-06T15:27:36.222Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:36.222Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:36.222Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:36.222Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:36.222Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2026-03-06T15:27:36.222Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:36.222Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:36.222Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:36.222Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:36.222Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:36.222Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:36.223Z [DEBUG] autocompact: tokens=26621 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:36.223Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:36.224Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:36.224Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:36.224Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:36.226Z [DEBUG] [useDeferredValue] Messages deferred by 1 (22→23)
+2026-03-06T15:27:39.297Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:39.872Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:27:39.873Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:39.873Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:39.873Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:39.873Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:39.873Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:27:39.873Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:39.873Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:39.877Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "pip3 install fastapi uvicorn -q"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:27:39.877Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-06T15:27:39.877Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:39.877Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:39.877Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:39.877Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:39.877Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-06T15:27:39.877Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:39.877Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:39.878Z [DEBUG] [useDeferredValue] Messages deferred by 1 (23→24)
+2026-03-06T15:27:39.880Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:39.880Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:39.885Z [DEBUG] High write ratio: blit=0, write=2089 (100.0% writes), screen=87x213
+2026-03-06T15:27:39.887Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:27:39.888Z [DEBUG] [useDeferredValue] Messages deferred by 1 (23→24)
+2026-03-06T15:27:47.454Z [DEBUG] High write ratio: blit=0, write=2156 (100.0% writes), screen=82x213
+2026-03-06T15:27:47.463Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:47.464Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:27:47.465Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:27:50.249Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:50.249Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:50.249Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:50.249Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:50.249Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:27:50.249Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:27:50.249Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:50.250Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:50.250Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:50.250Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:50.250Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:50.250Z [DEBUG] autocompact: tokens=26805 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:50.250Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:50.251Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:50.251Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:50.252Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:50.255Z [DEBUG] [useDeferredValue] Messages deferred by 1 (24→25)
+2026-03-06T15:27:52.231Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:53.008Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:27:53.009Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.009Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.009Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.009Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.009Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:27:53.009Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:53.009Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:53.011Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "uvicorn main:app --reload"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:27:53.011Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-06T15:27:53.011Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.011Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.011Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.011Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.011Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-06T15:27:53.011Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:53.011Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:53.011Z [DEBUG] [useDeferredValue] Messages deferred by 1 (25→26)
+2026-03-06T15:27:53.012Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.012Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.016Z [DEBUG] High write ratio: blit=0, write=2212 (100.0% writes), screen=91x213
+2026-03-06T15:27:53.019Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:27:53.020Z [DEBUG] [useDeferredValue] Messages deferred by 1 (25→26)
+2026-03-06T15:27:53.797Z [DEBUG] High write ratio: blit=0, write=2305 (100.0% writes), screen=86x213
+2026-03-06T15:27:53.804Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:53.805Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:27:53.806Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:27:53.810Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.810Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.810Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:53.810Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:53.810Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:27:53.810Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:27:53.810Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:53.811Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:27:53.811Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:27:53.811Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:27:53.811Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:27:53.811Z [DEBUG] [useDeferredValue] Messages deferred by 1 (26→27)
+2026-03-06T15:27:53.819Z [DEBUG] autocompact: tokens=26996 threshold=167000 effectiveWindow=180000
+2026-03-06T15:27:53.819Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:27:53.820Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:27:53.820Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:27:53.820Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:27:56.905Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:27:57.509Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:27:57.509Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:57.509Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:57.509Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:57.509Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:57.509Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:27:57.509Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:57.509Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:57.512Z [DEBUG] Permission suggestions for Bash: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "Bash",
+        "ruleContent": "curl -s http://localhost:8000/"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:27:57.512Z [DEBUG] executePermissionRequestHooks called for tool: Bash
+2026-03-06T15:27:57.512Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:57.512Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:57.512Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:57.512Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:57.512Z [DEBUG] Getting matching hook commands for PermissionRequest with query: Bash
+2026-03-06T15:27:57.512Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:27:57.512Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:27:57.512Z [DEBUG] [useDeferredValue] Messages deferred by 1 (27→28)
+2026-03-06T15:27:57.513Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:27:57.513Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:27:57.515Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:27:57.517Z [DEBUG] High write ratio: blit=0, write=2292 (100.0% writes), screen=92x213
+2026-03-06T15:27:57.519Z [DEBUG] [useDeferredValue] Messages deferred by 1 (27→28)
+2026-03-06T15:27:57.519Z [DEBUG] [useDeferredValue] Messages deferred by 1 (27→28)
+2026-03-06T15:27:58.386Z [DEBUG] High write ratio: blit=0, write=2411 (100.0% writes), screen=89x213
+2026-03-06T15:27:58.393Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:27:58.394Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:27:58.394Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:28:00.447Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:00.447Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:00.447Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:00.447Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:00.448Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:28:00.448Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:28:00.448Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:28:00.448Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:28:00.448Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:28:00.448Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:28:00.448Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:28:00.449Z [DEBUG] [useDeferredValue] Messages deferred by 1 (28→29)
+2026-03-06T15:28:00.456Z [DEBUG] autocompact: tokens=27219 threshold=167000 effectiveWindow=180000
+2026-03-06T15:28:00.456Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:00.457Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:00.457Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:00.457Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:00.459Z [DEBUG] [useDeferredValue] Messages deferred by 1 (29→30)
+2026-03-06T15:28:05.157Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:28:06.418Z [DEBUG] [useDeferredValue] Messages deferred by 1 (30→31)
+2026-03-06T15:28:06.430Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:06.430Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:06.431Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:06.431Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:06.431Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:28:06.431Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:06.431Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:28:06.435Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:28:08.239Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:28:08.239Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:28:08.239Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:28:08.239Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:28:08.252Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:28:08.255Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:08.255Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:08.255Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:08.255Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:08.255Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:28:08.255Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:08.255Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:28:08.255Z [DEBUG] FileHistory: Making snapshot for message 6a75d417-dd20-4925-a159-3c8c71bdeb95
+2026-03-06T15:28:08.255Z [DEBUG] FileHistory: Missing tracked file: hello.py
+2026-03-06T15:28:08.255Z [DEBUG] FileHistory: Added snapshot for 6a75d417-dd20-4925-a159-3c8c71bdeb95, tracking 2 files
+2026-03-06T15:28:08.256Z [DEBUG] autocompact: tokens=27310 threshold=167000 effectiveWindow=180000
+2026-03-06T15:28:08.257Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:08.258Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:08.258Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:08.258Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:08.260Z [DEBUG] [useDeferredValue] Messages deferred by 1 (31→32)
+2026-03-06T15:28:08.279Z [DEBUG] High write ratio: blit=0, write=2615 (100.0% writes), screen=101x213
+2026-03-06T15:28:12.704Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:28:13.036Z [DEBUG] executePreToolHooks called for tool: TaskStop
+2026-03-06T15:28:13.037Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:13.037Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:13.037Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:13.037Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:13.037Z [DEBUG] Getting matching hook commands for PreToolUse with query: TaskStop
+2026-03-06T15:28:13.037Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:13.037Z [DEBUG] Matched 0 unique hooks for query "TaskStop" (0 before deduplication)
+2026-03-06T15:28:13.039Z [DEBUG] LocalBashTask bajbl6o44 kill requested
+2026-03-06T15:28:13.049Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:13.049Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:13.049Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:13.049Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:13.049Z [DEBUG] Getting matching hook commands for PostToolUse with query: TaskStop
+2026-03-06T15:28:13.049Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:28:13.050Z [DEBUG] Matched 0 unique hooks for query "TaskStop" (0 before deduplication)
+2026-03-06T15:28:13.050Z [DEBUG] [useDeferredValue] Messages deferred by 1 (32→33)
+2026-03-06T15:28:13.055Z [DEBUG] High write ratio: blit=0, write=2584 (100.0% writes), screen=101x213
+2026-03-06T15:28:13.058Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:28:13.058Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:28:13.058Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:28:13.058Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:28:13.058Z [DEBUG] autocompact: tokens=27419 threshold=167000 effectiveWindow=180000
+2026-03-06T15:28:13.059Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:13.060Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:13.060Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:13.060Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:13.064Z [DEBUG] [useDeferredValue] Messages deferred by 2 (32→34)
+2026-03-06T15:28:15.161Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:28:15.289Z [DEBUG] [useDeferredValue] Messages deferred by 1 (34→35)
+2026-03-06T15:28:15.308Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:15.308Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:15.308Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:15.309Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:15.309Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:28:15.309Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:15.309Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:28:15.317Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:28:23.296Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:28:23.296Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:28:23.296Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:28:23.296Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:28:23.297Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:23.297Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:23.297Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:23.297Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:23.297Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:28:23.297Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:23.297Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:28:23.297Z [DEBUG] FileHistory: Making snapshot for message 36afb657-345c-4d6b-8a0f-bf57f7fed398
+2026-03-06T15:28:23.297Z [DEBUG] FileHistory: Missing tracked file: hello.py
+2026-03-06T15:28:23.298Z [DEBUG] FileHistory: Added snapshot for 36afb657-345c-4d6b-8a0f-bf57f7fed398, tracking 2 files
+2026-03-06T15:28:23.300Z [DEBUG] autocompact: tokens=27465 threshold=167000 effectiveWindow=180000
+2026-03-06T15:28:23.301Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:23.304Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:23.304Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:23.304Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:23.309Z [DEBUG] [useDeferredValue] Messages deferred by 1 (35→36)
+2026-03-06T15:28:23.319Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:28:25.826Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:28:26.698Z [DEBUG] executePreToolHooks called for tool: WebSearch
+2026-03-06T15:28:26.698Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:26.698Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:26.699Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:26.699Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:26.699Z [DEBUG] Getting matching hook commands for PreToolUse with query: WebSearch
+2026-03-06T15:28:26.699Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:26.699Z [DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+2026-03-06T15:28:26.699Z [DEBUG] Permission suggestions for WebSearch: [
+  {
+    "type": "addRules",
+    "rules": [
+      {
+        "toolName": "WebSearch"
+      }
+    ],
+    "behavior": "allow",
+    "destination": "localSettings"
+  }
+]
+2026-03-06T15:28:26.700Z [DEBUG] executePermissionRequestHooks called for tool: WebSearch
+2026-03-06T15:28:26.700Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:26.700Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:26.700Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:26.700Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:26.700Z [DEBUG] Getting matching hook commands for PermissionRequest with query: WebSearch
+2026-03-06T15:28:26.700Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:28:26.700Z [DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+2026-03-06T15:28:26.701Z [DEBUG] [useDeferredValue] Messages deferred by 1 (36→37)
+2026-03-06T15:28:26.705Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:26.705Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:26.714Z [DEBUG] High write ratio: blit=0, write=2716 (100.0% writes), screen=114x213
+2026-03-06T15:28:26.716Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:28:26.719Z [DEBUG] [useDeferredValue] Messages deferred by 1 (36→37)
+2026-03-06T15:28:34.151Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:34.151Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:34.151Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:34.152Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:34.163Z [DEBUG] High write ratio: blit=0, write=2747 (100.0% writes), screen=110x213
+2026-03-06T15:28:34.170Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:28:34.171Z [DEBUG] AutoUpdaterWrapper: Installation type: npm-global
+2026-03-06T15:28:35.688Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:28:36.608Z [DEBUG] [useDeferredValue] Messages deferred by 1 (37→38)
+2026-03-06T15:28:38.563Z [DEBUG] [useDeferredValue] Messages deferred by 1 (38→39)
+2026-03-06T15:28:54.816Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810934816
+2026-03-06T15:28:54.816Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T15:28:54.817Z [DEBUG] Temp file written successfully, size: 6922 bytes
+2026-03-06T15:28:54.817Z [DEBUG] Applied original permissions to temp file
+2026-03-06T15:28:54.817Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.14558.1772810934816 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T15:28:54.817Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T15:28:59.303Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:59.303Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:59.303Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:28:59.303Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:28:59.304Z [DEBUG] Getting matching hook commands for PostToolUse with query: WebSearch
+2026-03-06T15:28:59.304Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:28:59.304Z [DEBUG] Matched 0 unique hooks for query "WebSearch" (0 before deduplication)
+2026-03-06T15:28:59.305Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:28:59.305Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:28:59.305Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:28:59.306Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:28:59.307Z [DEBUG] autocompact: tokens=28692 threshold=167000 effectiveWindow=180000
+2026-03-06T15:28:59.307Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:28:59.308Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:28:59.308Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:28:59.308Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:28:59.311Z [DEBUG] [useDeferredValue] Messages deferred by 2 (39→41)
+2026-03-06T15:29:02.557Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:29:03.381Z [DEBUG] [useDeferredValue] Messages deferred by 1 (41→42)
+2026-03-06T15:29:04.824Z [DEBUG] [useDeferredValue] Messages deferred by 1 (42→43)
+2026-03-06T15:29:04.835Z [DEBUG] [useDeferredValue] Messages deferred by 1 (42→43)
+2026-03-06T15:29:18.658Z [DEBUG] [useDeferredValue] Messages deferred by 1 (43→44)
+2026-03-06T15:29:18.664Z [DEBUG] High write ratio: blit=0, write=2886 (100.0% writes), screen=117x213
+2026-03-06T15:29:18.664Z [DEBUG] executePreToolHooks called for tool: Write
+2026-03-06T15:29:18.664Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:18.664Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:18.664Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:18.664Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:18.664Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-03-06T15:29:18.664Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:29:18.664Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-03-06T15:29:18.666Z [DEBUG] FileHistory: Tracked file modification for /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/fastapi-latest.md
+2026-03-06T15:29:18.666Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/fastapi-latest.md.tmp.14558.1772810958666
+2026-03-06T15:29:18.667Z [DEBUG] Temp file written successfully, size: 1507 bytes
+2026-03-06T15:29:18.667Z [DEBUG] Renaming /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/fastapi-latest.md.tmp.14558.1772810958666 to /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/fastapi-latest.md
+2026-03-06T15:29:18.667Z [DEBUG] File /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/fastapi-latest.md written atomically
+2026-03-06T15:29:18.668Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:18.668Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:18.668Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:18.668Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:18.668Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-03-06T15:29:18.668Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:29:18.668Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2026-03-06T15:29:18.669Z [DEBUG] [useDeferredValue] Messages deferred by 1 (43→44)
+2026-03-06T15:29:18.671Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:29:18.671Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:29:18.671Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:29:18.671Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:29:18.671Z [DEBUG] autocompact: tokens=30215 threshold=167000 effectiveWindow=180000
+2026-03-06T15:29:18.671Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:29:18.672Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:29:18.672Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:29:18.672Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:29:18.674Z [DEBUG] [useDeferredValue] Messages deferred by 4 (43→47)
+2026-03-06T15:29:20.775Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:29:23.773Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:23.773Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:23.774Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:23.774Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:23.774Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:29:23.774Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:29:23.774Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:29:23.776Z [DEBUG] [useDeferredValue] Messages deferred by 2 (47→49)
+2026-03-06T15:29:23.792Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:29:29.227Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:29:29.227Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:29:29.227Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:29:29.228Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:29:29.229Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:29.229Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:29.229Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:29.229Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:29.229Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-03-06T15:29:29.229Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:29:29.229Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:29:29.230Z [DEBUG] FileHistory: Making snapshot for message 9fe489d4-dee8-4a17-912f-f6db260fa864
+2026-03-06T15:29:29.230Z [DEBUG] FileHistory: Missing tracked file: hello.py
+2026-03-06T15:29:29.237Z [DEBUG] FileHistory: Added snapshot for 9fe489d4-dee8-4a17-912f-f6db260fa864, tracking 3 files
+2026-03-06T15:29:29.239Z [DEBUG] autocompact: tokens=30491 threshold=167000 effectiveWindow=180000
+2026-03-06T15:29:29.239Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:29:29.241Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:29:29.241Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:29:29.241Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:29:29.245Z [DEBUG] [useDeferredValue] Messages deferred by 1 (49→50)
+2026-03-06T15:29:29.256Z [DEBUG] Started caffeinate to prevent sleep
+2026-03-06T15:29:31.655Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:29:32.476Z [DEBUG] [useDeferredValue] Messages deferred by 1 (50→51)
+2026-03-06T15:29:33.336Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-03-06T15:29:33.336Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:33.336Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:33.336Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:33.336Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:33.336Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-03-06T15:29:33.336Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:29:33.336Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:29:33.341Z [DEBUG] [useDeferredValue] Messages deferred by 1 (51→52)
+2026-03-06T15:29:33.344Z [DEBUG] High write ratio: blit=0, write=4349 (100.0% writes), screen=156x213
+2026-03-06T15:29:33.345Z [DEBUG] Spawning shell without login (-l flag skipped)
+2026-03-06T15:29:33.369Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:33.369Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:33.370Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:33.370Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:33.370Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-03-06T15:29:33.370Z [DEBUG] Found 5 hook matchers in settings
+2026-03-06T15:29:33.370Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-03-06T15:29:33.370Z [DEBUG] [useDeferredValue] Messages deferred by 1 (52→53)
+2026-03-06T15:29:33.374Z [DEBUG] [useDeferredValue] Messages deferred by 1 (52→53)
+2026-03-06T15:29:33.380Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-03-06T15:29:33.380Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-03-06T15:29:33.380Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-03-06T15:29:33.380Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-03-06T15:29:33.380Z [DEBUG] autocompact: tokens=30678 threshold=167000 effectiveWindow=180000
+2026-03-06T15:29:33.381Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-03-06T15:29:33.381Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-03-06T15:29:33.381Z [DEBUG] [API:auth] OAuth token check starting
+2026-03-06T15:29:33.382Z [DEBUG] [API:auth] OAuth token check complete
+2026-03-06T15:29:35.409Z [DEBUG] Stream started - received first chunk
+2026-03-06T15:29:35.787Z [DEBUG] [useDeferredValue] Messages deferred by 1 (53→54)
+2026-03-06T15:29:35.796Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:35.797Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:35.797Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:29:35.797Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:29:35.797Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-03-06T15:29:35.797Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:29:35.797Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-03-06T15:29:35.800Z [DEBUG] Stopped caffeinate, allowing sleep
+2026-03-06T15:31:01.140Z [DEBUG] [onCancel] focusedInputDialog=undefined streamMode=tool-use
+2026-03-06T15:31:01.984Z [DEBUG] LSP server manager shut down successfully
+2026-03-06T15:31:01.993Z [DEBUG] Cleaned up session snapshot: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/shell-snapshots/snapshot-zsh-1772810815715-h97miw.sh
+2026-03-06T15:31:02.570Z [DEBUG] BigQuery metrics exported successfully
+2026-03-06T15:31:02.570Z [DEBUG] BigQuery API Response: {
+  "accepted_count": 13,
+  "rejected_count": 0
+}
+2026-03-06T15:31:02.570Z [DEBUG] BigQuery metrics exporter flush complete
+2026-03-06T15:31:02.571Z [DEBUG] BigQuery metrics exporter flush complete
+2026-03-06T15:31:02.571Z [DEBUG] BigQuery metrics exporter shutdown complete
+2026-03-06T15:31:02.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:31:02.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:31:02.571Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T15:31:02.571Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T15:31:02.571Z [DEBUG] Getting matching hook commands for SessionEnd with query: prompt_input_exit
+2026-03-06T15:31:02.571Z [DEBUG] Found 0 hook matchers in settings
+2026-03-06T15:31:02.571Z [DEBUG] Matched 0 unique hooks for query "prompt_input_exit" (0 before deduplication)

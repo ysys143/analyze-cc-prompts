@@ -1,0 +1,20 @@
+0 verbose cli /Users/jaesolshin/.nvm/versions/node/v20.18.1/bin/node /Users/jaesolshin/.nvm/versions/node/v20.18.1/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.18.1
+3 silly config load:file:/Users/jaesolshin/.nvm/versions/node/v20.18.1/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/jaesolshin/.npmrc
+5 silly config load:file:/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.npmrc
+6 silly config load:file:/Users/jaesolshin/.nvm/versions/node/v20.18.1/etc/npmrc
+7 verbose title npm view @anthropic-ai/claude-code@latest version
+8 verbose argv "view" "@anthropic-ai/claude-code@latest" "version" "--prefer-online"
+9 verbose logfile logs-max:10 dir:/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.npm/_logs/2026-03-06T15_27_35_532Z-
+10 verbose logfile /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.npm/_logs/2026-03-06T15_27_35_532Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 http fetch GET 200 https://registry.npmjs.org/@anthropic-ai%2fclaude-code 107ms (cache revalidated)
+14 verbose cwd /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude-home
+15 verbose os Darwin 25.3.0
+16 verbose node v20.18.1
+17 verbose npm  v10.8.2
+18 verbose exit 0
+19 info ok

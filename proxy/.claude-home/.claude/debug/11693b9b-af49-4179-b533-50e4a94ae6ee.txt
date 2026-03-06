@@ -1,0 +1,114 @@
+2026-03-06T14:43:25.327Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.327Z [DEBUG] MDM settings load completed in 4ms
+2026-03-06T14:43:25.329Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.329Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.329Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.329Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T14:43:25.330Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.330Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.json
+2026-03-06T14:43:25.330Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.local.json
+2026-03-06T14:43:25.330Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T14:43:25.330Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.330Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.330Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T14:43:25.356Z [ERROR] Failed to save config with lock: Error: ENOENT: no such file or directory, lstat '/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json'
+2026-03-06T14:43:25.356Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205356
+2026-03-06T14:43:25.357Z [DEBUG] Setting permissions for new file: 600
+2026-03-06T14:43:25.357Z [DEBUG] Temp file written successfully, size: 50 bytes
+2026-03-06T14:43:25.357Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205356 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.357Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:25.357Z [DEBUG] [init] configureGlobalMTLS starting
+2026-03-06T14:43:25.357Z [DEBUG] [init] configureGlobalMTLS complete
+2026-03-06T14:43:25.357Z [DEBUG] [init] configureGlobalAgents starting
+2026-03-06T14:43:25.357Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.358Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.358Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-03-06T14:43:25.358Z [DEBUG] CA certs: useSystemCA=false, envPath=undefined, configPath=undefined, extraCertsPath=undefined
+2026-03-06T14:43:25.358Z [DEBUG] [init] configureGlobalAgents complete
+2026-03-06T14:43:25.359Z [DEBUG] Error log sink initialized
+2026-03-06T14:43:25.381Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205381
+2026-03-06T14:43:25.381Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:25.381Z [DEBUG] Temp file written successfully, size: 86 bytes
+2026-03-06T14:43:25.381Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:25.381Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205381 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.381Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:25.385Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.385Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.385Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205385
+2026-03-06T14:43:25.385Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:25.386Z [DEBUG] Temp file written successfully, size: 125 bytes
+2026-03-06T14:43:25.386Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:25.386Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205385 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.386Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:25.386Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.386Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.390Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.391Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T14:43:25.391Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.391Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/settings.json
+2026-03-06T14:43:25.391Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.391Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.json
+2026-03-06T14:43:25.391Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.391Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/.claude/settings.local.json
+2026-03-06T14:43:25.391Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.391Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T14:43:25.392Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205392
+2026-03-06T14:43:25.392Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:25.392Z [DEBUG] Temp file written successfully, size: 205 bytes
+2026-03-06T14:43:25.392Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:25.392Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205392 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.393Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:25.393Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-03-06T14:43:25.397Z [DEBUG] [ToolSearch:optimistic] disabled: ANTHROPIC_BASE_URL=http://localhost:8082 is not a first-party Anthropic host
+2026-03-06T14:43:25.398Z [DEBUG] [STARTUP] Running setup()...
+2026-03-06T14:43:25.405Z [DEBUG] detectFileEncoding failed for expected reason: ENOENT
+2026-03-06T14:43:25.405Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-03-06T14:43:25.407Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude/skills, project=[]
+2026-03-06T14:43:25.407Z [DEBUG] Error log sink initialized
+2026-03-06T14:43:25.416Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-03-06T14:43:25.416Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-03-06T14:43:25.416Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-03-06T14:43:25.416Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-03-06T14:43:25.416Z [DEBUG] Total plugin skills loaded: 0
+2026-03-06T14:43:25.416Z [DEBUG] Total plugin commands loaded: 0
+2026-03-06T14:43:25.416Z [DEBUG] Loaded 0 unique skills (0 unconditional, 0 conditional, managed: 0, user: 0, project: 0, additional: 0, legacy commands: 0)
+2026-03-06T14:43:25.416Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 5 bundled skills, 0 builtin plugin skills
+2026-03-06T14:43:25.443Z [DEBUG] [STARTUP] setup() completed in 45ms
+2026-03-06T14:43:25.443Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-03-06T14:43:25.443Z [DEBUG] Total plugin agents loaded: 0
+2026-03-06T14:43:25.443Z [DEBUG] [STARTUP] Commands and agents loaded in 0ms
+2026-03-06T14:43:25.452Z [DEBUG] [STARTUP] Running showSetupScreens()...
+2026-03-06T14:43:25.456Z [DEBUG] [keybindings] KeybindingSetup initialized with 104 bindings, 0 warnings
+2026-03-06T14:43:25.500Z [DEBUG] [keybindings] Skipping file watcher - user customization disabled
+2026-03-06T14:43:25.505Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-03-06T14:43:25.505Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205505
+2026-03-06T14:43:25.505Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:25.506Z [DEBUG] Temp file written successfully, size: 248 bytes
+2026-03-06T14:43:25.506Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:25.506Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205505 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.506Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:25.506Z [DEBUG] Git remote URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T14:43:25.506Z [DEBUG] Parsed repository: github.com/ysys143/analyze-cc-prompts from URL: git@github.com:ysys143/analyze-cc-prompts.git
+2026-03-06T14:43:25.533Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205533
+2026-03-06T14:43:25.533Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:25.534Z [DEBUG] Temp file written successfully, size: 289 bytes
+2026-03-06T14:43:25.534Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:25.534Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808205533 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:25.534Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:26.248Z [DEBUG] High write ratio: blit=928, write=1595 (63.2% writes), screen=44x213
+2026-03-06T14:43:28.122Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808208122
+2026-03-06T14:43:28.122Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:28.123Z [DEBUG] Temp file written successfully, size: 289 bytes
+2026-03-06T14:43:28.123Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:28.123Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808208122 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:28.124Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
+2026-03-06T14:43:28.127Z [DEBUG] Writing to temp file: /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808208127
+2026-03-06T14:43:28.127Z [DEBUG] Preserving file permissions: 100600
+2026-03-06T14:43:28.128Z [DEBUG] Temp file written successfully, size: 289 bytes
+2026-03-06T14:43:28.128Z [DEBUG] Applied original permissions to temp file
+2026-03-06T14:43:28.128Z [DEBUG] Renaming /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json.tmp.66091.1772808208127 to /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json
+2026-03-06T14:43:28.128Z [DEBUG] File /Users/jaesolshin/Documents/Github/analyze-cc-prompts/proxy/.claude-home/.claude.json written atomically
