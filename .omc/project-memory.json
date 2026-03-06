@@ -1,0 +1,224 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772760918045,
+  "projectRoot": "/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "native": {
+      "path": "native",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1772760918038,
+      "keyFiles": [
+        "native_v2.1.29_extracted.js",
+        "native_v2.1.29_strings.txt"
+      ]
+    },
+    "npm_2.1.29": {
+      "path": "npm_2.1.29",
+      "purpose": null,
+      "fileCount": 9,
+      "lastAccessed": 1772760918039,
+      "keyFiles": [
+        "LICENSE.md",
+        "README.md",
+        "bun.lock",
+        "cli.js",
+        "package.json"
+      ]
+    },
+    "npm_2.1.38": {
+      "path": "npm_2.1.38",
+      "purpose": null,
+      "fileCount": 10,
+      "lastAccessed": 1772760918040,
+      "keyFiles": [
+        "LICENSE.md",
+        "README.md",
+        "bun.lock",
+        "cli.js",
+        "package-lock.json"
+      ]
+    },
+    "npm_2.1.29/node_modules": {
+      "path": "npm_2.1.29/node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 0,
+      "lastAccessed": 1772760918042,
+      "keyFiles": []
+    },
+    "npm_2.1.38/node_modules": {
+      "path": "npm_2.1.38/node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 1,
+      "lastAccessed": 1772760918043,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "npm_2.1.70/cli.js",
+      "accessCount": 82,
+      "lastAccessed": 1772814460207,
+      "type": "directory"
+    },
+    {
+      "path": "20-live-api-capture-via-proxy.md",
+      "accessCount": 8,
+      "lastAccessed": 1772814580339,
+      "type": "file"
+    },
+    {
+      "path": "21-billing-and-auth-management.md",
+      "accessCount": 8,
+      "lastAccessed": 1772815192646,
+      "type": "file"
+    },
+    {
+      "path": "16-native-binary-feature-gating.md",
+      "accessCount": 5,
+      "lastAccessed": 1772782520512,
+      "type": "file"
+    },
+    {
+      "path": "npm_2.1.38/cli.js",
+      "accessCount": 3,
+      "lastAccessed": 1772761059895,
+      "type": "directory"
+    },
+    {
+      "path": "",
+      "accessCount": 3,
+      "lastAccessed": 1772815199044,
+      "type": "directory"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 2,
+      "lastAccessed": 1772762158708,
+      "type": "file"
+    },
+    {
+      "path": "README_EN.md",
+      "accessCount": 2,
+      "lastAccessed": 1772762159784,
+      "type": "file"
+    },
+    {
+      "path": "15-voice-mode-and-feature-flags.md",
+      "accessCount": 2,
+      "lastAccessed": 1772781374598,
+      "type": "file"
+    },
+    {
+      "path": "proxy/proxy.py",
+      "accessCount": 2,
+      "lastAccessed": 1772813833735,
+      "type": "file"
+    },
+    {
+      "path": "proxy/dumps/2026-03-06T152655.955-req.json",
+      "accessCount": 2,
+      "lastAccessed": 1772813887734,
+      "type": "file"
+    },
+    {
+      "path": "proxy/dumps",
+      "accessCount": 2,
+      "lastAccessed": 1772813889225,
+      "type": "directory"
+    },
+    {
+      "path": "proxy/.claude-home/.claude",
+      "accessCount": 2,
+      "lastAccessed": 1772814929452,
+      "type": "directory"
+    },
+    {
+      "path": "23-hidden-api-external-repro.md",
+      "accessCount": 2,
+      "lastAccessed": 1772815468939,
+      "type": "file"
+    },
+    {
+      "path": "09-api-call-structure.md",
+      "accessCount": 1,
+      "lastAccessed": 1772813389670,
+      "type": "file"
+    },
+    {
+      "path": "20-proxy-capture-experiment.md",
+      "accessCount": 1,
+      "lastAccessed": 1772813527723,
+      "type": "file"
+    },
+    {
+      "path": "proxy/.claude-home/.claude.json",
+      "accessCount": 1,
+      "lastAccessed": 1772813628958,
+      "type": "file"
+    },
+    {
+      "path": "22-oauth-token-lifecycle.md",
+      "accessCount": 1,
+      "lastAccessed": 1772813827458,
+      "type": "file"
+    },
+    {
+      "path": "npm_2.1.29/cli.js",
+      "accessCount": 1,
+      "lastAccessed": 1772814152298,
+      "type": "directory"
+    },
+    {
+      "path": "tengu_attirubution_header.txt",
+      "accessCount": 1,
+      "lastAccessed": 1772814385438,
+      "type": "file"
+    },
+    {
+      "path": "proxy/.cwf/sessions/260306-2331-0765aad7.claude.md",
+      "accessCount": 1,
+      "lastAccessed": 1772814841326,
+      "type": "file"
+    },
+    {
+      "path": "19-caching-and-context-management.md",
+      "accessCount": 1,
+      "lastAccessed": 1772815211954,
+      "type": "file"
+    },
+    {
+      "path": "24-session-log-clear-rewind.md",
+      "accessCount": 1,
+      "lastAccessed": 1772815855583,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
