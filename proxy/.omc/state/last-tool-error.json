@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/jaesolshin/Documents/GitHub/test_local_cc/index.html\",\"offset\":919,\"limit\":95}",
-  "error": "File content (986317 tokens) exceeds maximum allowed tokens (60000). Please use offset and limit parameters to read specific portions of the file, or use the GrepTool to search for specific content.",
-  "timestamp": "2026-03-06T14:55:39.039Z",
-  "retry_count": 3
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"python3 -c \\\"\\nimport json\\n\\n# test_local_cc - system blocks\\nd1 = json.load(open('/Users/jaesolshin/Documents/GitHub/test_local_cc/dumps/2026-02-27T142009.763-req.json'))\\nprint('=== tes...",
+  "error": "Exit code 1\nTraceback (most recent call last):\n  File \"<string>\", line 14, in <module>\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jaesolshin/Documents/GitHub/analyze-cc-prompts/proxy/dumps/2026-03-06T144929.463-req.json'\n=== test_local_cc system blocks ===\nBlock 0: type=text, cache=False, preview='x-anthropic-billing-header: cc_version=2.1.62.3d5; cc_entrypoint=sdk-cli; cch=00000;'\nBlock 1: type=text, cache=True, preview=\"You are a Claude agent, built on Anthropic's Claude A...",
+  "timestamp": "2026-03-06T16:06:52.104Z",
+  "retry_count": 1
 }

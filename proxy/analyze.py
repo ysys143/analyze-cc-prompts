@@ -1,8 +1,8 @@
 """
-Reads proxy dump files and generates a self-contained index.html viewer.
+Reads proxy dump files and generates a self-contained message.html viewer.
 
 Usage:
-    uv run python analyze.py              # reads from ./dumps, writes ./index.html
+    uv run python analyze.py              # reads from ./dumps, writes ./message.html
     uv run python analyze.py path/to/dumps # custom dumps directory
 """
 
@@ -1533,8 +1533,10 @@ document.getElementById('home-btn').addEventListener('click', function() {
 
 
 def main():
-    dumps_dir = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "dumps"
+    dumps_dir = (
+        sys.argv[1]
+        if len(sys.argv) > 1
+        else os.path.join(os.path.dirname(os.path.abspath(__file__)), "dumps")
     )
 
     if not os.path.isdir(dumps_dir):
