@@ -298,6 +298,11 @@ zR({ name: "review", getPromptForCommand: () => "You are an expert code reviewer
 | 08 | [08-retry-and-error-handling.md](08-retry-and-error-handling.md) | 권한 시스템, 샌드박스, 에러 처리, 재시도 로직 |
 | 09 | [09-api-callstructure.md](09-api-callstructure.md) | 실제 API 호출 메시지 구조: 요청 조립, 스트리밍, 캐시, 전체 예시 |
 | 10 | [10-webfetch-tool-implementation.md](10-webfetch-tool-implementation.md) | WebFetch 도구 내부 구현: 권한 시스템, 캐싱, 리다이렉션 처리 |
+| 11 | [11-native-binary-installer.md](11-native-binary-installer.md) | Native 바이너리 설치 시스템: 자동 업데이트, 버전 관리, Bun 런타임 |
+| 12 | [12-insights-command-analysis.md](12-insights-command-analysis.md) | /insights 커맨드 분석: 세션 분석, 코드 패턴 감지, 보고서 생성 |
+| 13 | [13-agent-teams-internal-architecture.md](13-agent-teams-internal-architecture.md) | 에이전트 팀 내부 아키텍처: 멀티 에이전트 스폰, 메시지 라우팅 |
+| 14 | [14-subagent-tool-access-and-nesting.md](14-subagent-tool-access-and-nesting.md) | 서브에이전트 도구 접근 제어 및 중첩 스폰 분석 |
+| 15 | [15-voice-mode-and-feature-flags.md](15-voice-mode-and-feature-flags.md) | Voice Mode와 Feature Flag 기반 롤링 배포 메커니즘 (v2.1.70) |
 
 ---
 

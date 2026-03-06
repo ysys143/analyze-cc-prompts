@@ -93,6 +93,13 @@ For detailed extraction methodology, see [BINARY_EXTRACTION.md](BINARY_EXTRACTIO
 | 06 | [06-code-review-and-security.md](06-code-review-and-security.md) | Code review and security review skill prompts |
 | 07 | [07-team-and-collaboration.md](07-team-and-collaboration.md) | Team messaging, plan approval, multi-agent collaboration protocols |
 | 08 | [08-retry-and-error-handling.md](08-retry-and-error-handling.md) | Permission system, sandbox, error handling, retry logic |
+| 09 | [09-api-call-structure.md](09-api-call-structure.md) | API call message structure: request assembly, streaming, caching |
+| 10 | [10-webfetch-tool-implementation.md](10-webfetch-tool-implementation.md) | WebFetch tool internals: permission system, caching, redirect handling |
+| 11 | [11-native-binary-installer.md](11-native-binary-installer.md) | Native binary installer: auto-update, version management, Bun runtime |
+| 12 | [12-insights-command-analysis.md](12-insights-command-analysis.md) | /insights command: session analysis, code pattern detection, report generation |
+| 13 | [13-agent-teams-internal-architecture.md](13-agent-teams-internal-architecture.md) | Agent teams internal architecture: multi-agent spawn, message routing |
+| 14 | [14-subagent-tool-access-and-nesting.md](14-subagent-tool-access-and-nesting.md) | Subagent tool access control and nested spawn analysis |
+| 15 | [15-voice-mode-and-feature-flags.md](15-voice-mode-and-feature-flags.md) | Voice Mode and feature flag-based rolling deployment (v2.1.70) |
 
 ---
 
