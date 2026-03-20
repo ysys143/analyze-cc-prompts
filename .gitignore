@@ -16,3 +16,12 @@ npm_*/*.wasm
 .env
 .venv/
 node_modules/
+
+# Plugin/tool state files
+.cwf/sessions/
+.omc/sessions/
+.omc/state/
+proxy/.cwf/sessions/
+proxy/.omc/state/
+proxy/dumps/
+npm_*/.Rhistory
