@@ -4,6 +4,11 @@
 **분석 일자:** 2026-03-20
 **내부 코드명:** `tengu_harbor`
 
+**공식 문서:**
+1. 사용 가이드: https://code.claude.com/docs/en/channels
+2. 채널 개발 레퍼런스: https://code.claude.com/docs/en/channels-reference
+3. 플러그인 소스: https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins
+
 ---
 
 ## 1. 개요
