@@ -1,6 +1,13 @@
-# Deferred Tool & ToolSearch Lazy Loading 분석
+# Deferred Tool & ToolSearch — Progressive Disclosure 분석
 
-> Claude Code는 도구 수 증가에 따른 초기 컨텍스트 비용을 줄이기 위해 **ToolSearch 기반 lazy loading** 패턴을 도입했다. v2.1.38에서는 MCP 도구만 deferred였으나, v2.1.70에서는 피처 플래그 `tengu_defer_all_bn4`를 통해 **모든 내장 도구까지 deferred로 전환**하는 대규모 변경이 이루어졌다.
+> Claude Code는 **progressive disclosure** 패턴으로 도구 schema를 관리한다. 모델에게 도구 이름만 먼저 노출하고, ToolSearch로 명시적으로 요청한 도구의 full schema만 API 요청에 포함시키는 방식이다. 구현 메커니즘으로는 **lazy loading**에 해당한다. v2.1.38에서는 MCP 도구만 deferred였으나, v2.1.70에서는 피처 플래그 `tengu_defer_all_bn4`를 통해 **모든 내장 도구까지 deferred로 전환**하는 대규모 변경이 이루어졌다.
+
+## 용어 정리
+
+| 용어 | 관점 | 설명 |
+|:--|:--|:--|
+| **Progressive disclosure** | 설계 의도 | 모델(agent)에게 정보를 단계적으로 공개 — 이름 먼저, schema는 필요할 때. Claude Code 엔지니어가 실제로 사용하는 용어 |
+| **Lazy loading** | 구현 메커니즘 | 자원을 필요한 시점에 로드하는 기술 패턴. 토큰 절감이 주목적 |
 
 ---
 
