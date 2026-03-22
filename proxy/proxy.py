@@ -67,6 +67,15 @@ async def handle_messages(request: web.Request) -> web.StreamResponse:
             data=body,
         ) as upstream_resp:
 
+            # Log rate-limit / usage headers for quick visibility
+            limit_headers = {
+                k: v for k, v in upstream_resp.headers.items()
+                if any(kw in k.lower() for kw in ("ratelimit", "rate-limit", "limit", "usage", "retry"))
+            }
+            if limit_headers:
+                pairs = ", ".join(f"{k}={v}" for k, v in limit_headers.items())
+                print(f"[{ts}] LIMITS: {pairs}")
+
             if is_stream:
                 # SSE streaming: forward chunks in real-time, accumulate for dump
                 resp = web.StreamResponse(
@@ -116,6 +125,7 @@ async def handle_messages(request: web.Request) -> web.StreamResponse:
 
                 res_path = dump_json(f"{ts}-res.json", {
                     "status": upstream_resp.status,
+                    "headers": dict(upstream_resp.headers),
                     "events": events,
                 })
                 print(f"[{ts}] RES  ← {res_path} (streamed, {len(events)} events)")
@@ -131,6 +141,7 @@ async def handle_messages(request: web.Request) -> web.StreamResponse:
 
                 res_path = dump_json(f"{ts}-res.json", {
                     "status": upstream_resp.status,
+                    "headers": dict(upstream_resp.headers),
                     "body": res_json,
                 })
                 print(f"[{ts}] RES  ← {res_path}")

@@ -21,7 +21,16 @@ def build_dumps(dumps_dir: str) -> dict:
         with open(path) as f:
             data = json.load(f)
         size = os.path.getsize(path)
-        dumps[fname] = {"data": data, "size": size}
+
+        # Load matching response file
+        res_fname = fname.replace("-req.json", "-res.json")
+        res_path = os.path.join(dumps_dir, res_fname)
+        res_data = None
+        if os.path.exists(res_path):
+            with open(res_path) as f:
+                res_data = json.load(f)
+
+        dumps[fname] = {"data": data, "size": size, "response": res_data}
     return dumps
 
 
@@ -150,6 +159,16 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   }
 
   /* SESSION GROUPS */
+  .date-divider {
+    padding: 8px 12px 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+  }
   .session-group { margin-bottom: 2px; }
   .session-header {
     padding: 8px 14px;
@@ -390,6 +409,32 @@ HTML_TEMPLATE = r"""<!DOCTYPE html>
   }
   .sess-size-cell .val { font-size: 18px; font-weight: 700; }
   .sess-size-cell .lbl { font-size: 10px; color: var(--text-muted); margin-top: 4px; }
+
+  /* TABS */
+  .tab-bar {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--border);
+  }
+  .tab-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-muted);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color .15s;
+  }
+  .tab-btn.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
 
   /* CARDS */
   .card {
@@ -800,19 +845,34 @@ function fmtTimestamp(fname) {
   return m[1] + ' ' + m[2]+':'+m[3]+':'+m[4];
 }
 
+function isRealUserText(text) {
+  var t = (text || '').trim();
+  return t.length > 0 && !t.startsWith('<system-reminder>') && !t.startsWith('<system-reminder');
+}
+
+function isSubagentMessage(content) {
+  // If any block contains SubagentStart, this is an orchestrator→subagent delegation, not human input
+  if (!Array.isArray(content)) return false;
+  return content.some(function(b) {
+    return b.type === 'text' && (b.text || '').indexOf('SubagentStart') !== -1;
+  });
+}
+
 function hasNewUserMessage(entry, prevMsgCount) {
   var msgs = entry.data.messages || [];
   if (msgs.length === 0) return false;
-  if (prevMsgCount === 0) return true;
-  // Check all new messages for a user text (not tool_result)
+  // Check all new messages for a real user text (not tool_result, not system-reminder, not subagent)
   for (var i = prevMsgCount; i < msgs.length; i++) {
     var msg = msgs[i];
     if (msg.role !== 'user') continue;
     var content = msg.content;
-    if (typeof content === 'string') return true;
+    if (isSubagentMessage(content)) continue;
+    if (typeof content === 'string' && isRealUserText(content)) return true;
     if (Array.isArray(content)) {
-      var isToolResult = content.every(function(b) { return b.type === 'tool_result'; });
-      if (!isToolResult) return true;
+      var hasReal = content.some(function(b) {
+        return b.type === 'text' && isRealUserText(b.text);
+      });
+      if (hasReal) return true;
     }
   }
   return false;
@@ -821,14 +881,15 @@ function hasNewUserMessage(entry, prevMsgCount) {
 function isInternalEntry(entry) {
   var d = entry.data;
   var model = d.model || '';
-  if (model.includes('haiku')) return true;
-  if (d.tools && d.tools.length === 1 && d.tools[0].name === 'web_search') return true;
+  var toolCount = (d.tools || []).length;
+  // Truly internal: haiku with 0-1 tools (quota check, WebFetch) or sole web_search tool
+  if (model.includes('haiku') && toolCount <= 1) return true;
+  if (toolCount === 1 && d.tools[0].name === 'web_search') return true;
   return false;
 }
 
 function sizeTag(bytes, model, entry) {
   if (entry && isInternalEntry(entry)) return '<span class="tag tag-internal">internal</span>';
-  if (model && model.includes('haiku')) return '<span class="tag tag-internal">internal</span>';
   return '<span class="tag tag-model">' + escHtml(model || '?') + '</span>';
 }
 
@@ -911,15 +972,23 @@ function getSessionPrompt(files) {
 var sessions = [];
 var curSession = null;
 
+function getFileDate(fname) {
+  var m = fname.match(/^(\d{4}-\d{2}-\d{2})/);
+  return m ? m[1] : null;
+}
+
 sortedFiles.forEach(function(fname) {
   var entry = DUMPS[fname];
   var d = entry.data;
   var model = d.model || '?';
-  var isHaiku = model.includes('haiku');
-  var isInternal = isHaiku || (d.tools && d.tools.length === 1 && d.tools[0].name === 'web_search');
+  var isInternal = isInternalEntry(entry);
   var msgCount = (d.messages || []).length;
 
-  if (msgCount === 1 && !isInternal) {
+  var fileDate = getFileDate(fname);
+  var sessionDate = curSession ? getFileDate(curSession.startTime) : null;
+  var dateChanged = fileDate && sessionDate && fileDate !== sessionDate;
+
+  if ((msgCount === 1 && !isInternal) || dateChanged) {
     curSession = { prompt: '', files: [fname], startTime: fname };
     sessions.push(curSession);
   } else if (curSession) {
@@ -964,8 +1033,20 @@ sidebarCount.textContent = sortedFiles.length + ' requests in ' + sessions.lengt
 });
 
 var currentFile = null;
+var currentDateLabel = null;
 
 sessions.forEach(function(sess, si) {
+  // Extract date from session start time (fname like "2026-03-12T045626.434-req.json")
+  var dateMatch = sess.startTime.match(/^(\d{4}-\d{2}-\d{2})/);
+  var dateLabel = dateMatch ? dateMatch[1] : null;
+  if (dateLabel && dateLabel !== currentDateLabel) {
+    currentDateLabel = dateLabel;
+    var dateDivider = document.createElement('div');
+    dateDivider.style.cssText = 'padding:8px 12px 4px;font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;border-top:1px solid var(--border);margin-top:4px;';
+    dateDivider.textContent = dateLabel;
+    sidebarList.appendChild(dateDivider);
+  }
+
   var group = document.createElement('div');
   group.className = 'session-group';
 
@@ -978,9 +1059,10 @@ sessions.forEach(function(sess, si) {
   var turns = Math.ceil(maxMsgs / 2);
   var totalSize = sess.files.reduce(function(s,f){ return s + DUMPS[f].size; }, 0);
 
-  var firstModel = DUMPS[sess.files[0]].data.model || '';
-  var firstSize = DUMPS[sess.files[0]].size;
-  var sessTag = sizeTag(firstSize, firstModel);
+  var repFile = mainFiles.length > 0 ? mainFiles[0] : sess.files[0];
+  var firstModel = DUMPS[repFile].data.model || '';
+  var firstSize = DUMPS[repFile].size;
+  var sessTag = sizeTag(firstSize, firstModel, DUMPS[repFile]);
 
   var promptShort = sess.prompt.length > 60 ? sess.prompt.slice(0,60) + '...' : sess.prompt;
 
@@ -1006,9 +1088,8 @@ sessions.forEach(function(sess, si) {
     var entry = DUMPS[fname];
     var size = entry.size;
     var model = entry.data.model || '?';
-    var isHaiku = model.includes('haiku');
+    var isInternal = isInternalEntry(entry);
     var isWebSearch = entry.data.tools && entry.data.tools.length === 1 && entry.data.tools[0].name === 'web_search';
-    var isInternal = isHaiku || isWebSearch;
     var msgCount = (entry.data.messages||[]).length;
     var isUserTurn = !isInternal && hasNewUserMessage(entry, prevMsgCount);
 
@@ -1208,9 +1289,19 @@ function renderDump(fname, entry) {
     + '<div class="legend-item"><div class="legend-dot" style="background:#c49a3c;"></div><span>Tools</span><span class="legend-pct">'+toolPct+'% &bull; '+fmtBytes(sz.toolSize)+'</span></div>'
     + '<div class="legend-item"><div class="legend-dot" style="background:#5a9a72;"></div><span>Messages</span><span class="legend-pct">'+msgPct+'% &bull; '+fmtBytes(sz.msgSize)+'</span></div>'
     + '</div></div></div></div>'
+    + '<div class="tab-bar">'
+    + '<button class="tab-btn active" data-tab="request">Request</button>'
+    + '<button class="tab-btn" data-tab="response">Response</button>'
+    + '</div>'
+    + '<div class="tab-panel active" id="tab-request">'
     + renderSystem(d.system || [])
     + renderTools(d.tools || [])
-    + renderMessages(d.messages || [], d.model, entry);
+    + renderMessages(d.messages || [], d.model, entry)
+    + '</div>'
+    + '<div class="tab-panel" id="tab-response">'
+    + renderRateLimits(entry.response)
+    + renderResponse(entry.response)
+    + '</div>';
 
   // Wire collapsibles
   view.querySelectorAll('.collapse-header').forEach(function(hdr) {
@@ -1219,6 +1310,17 @@ function renderDump(fname, entry) {
       var arrow = hdr.querySelector('.collapse-arrow');
       var isOpen = body.classList.toggle('open');
       arrow.classList.toggle('open', isOpen);
+    });
+  });
+
+  // Wire tabs
+  view.querySelectorAll('.tab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      view.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+      view.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      var panel = view.querySelector('#tab-' + btn.dataset.tab);
+      if (panel) panel.classList.add('active');
     });
   });
 
@@ -1237,6 +1339,211 @@ function renderDump(fname, entry) {
       }
     });
   });
+}
+
+// RESPONSE
+function renderResponse(response) {
+  if (!response) return '';
+  var events = response.events || [];
+  if (!events.length) return '';
+
+  // Extract data from events
+  var usage = null;
+  var stopReason = null;
+  var contextMgmt = null;
+  var textParts = [];
+  var toolCalls = [];
+  var currentToolName = null;
+  var currentToolInput = [];
+
+  events.forEach(function(ev) {
+    if (!ev || typeof ev !== 'object') return;
+    if (ev.type === 'message_start' && ev.message && ev.message.usage) {
+      usage = ev.message.usage;
+    }
+    if (ev.type === 'message_delta') {
+      if (ev.delta && ev.delta.stop_reason) stopReason = ev.delta.stop_reason;
+      if (ev.context_management) contextMgmt = ev.context_management;
+      if (ev.usage) usage = Object.assign({}, usage, ev.usage);
+    }
+    if (ev.type === 'content_block_start' && ev.content_block) {
+      if (ev.content_block.type === 'tool_use') {
+        currentToolName = ev.content_block.name;
+        currentToolInput = [];
+      }
+    }
+    if (ev.type === 'content_block_delta' && ev.delta) {
+      if (ev.delta.type === 'text_delta') textParts.push(ev.delta.text || '');
+      if (ev.delta.type === 'input_json_delta') currentToolInput.push(ev.delta.partial_json || '');
+    }
+    if (ev.type === 'content_block_stop') {
+      if (currentToolName !== null) {
+        var inputStr = currentToolInput.join('');
+        toolCalls.push({ name: currentToolName, input: inputStr });
+        currentToolName = null;
+        currentToolInput = [];
+      }
+    }
+  });
+
+  var html = '<div class="card"><div class="card-title">Response</div>';
+
+  // Token usage row
+  if (usage) {
+    var inp = (usage.input_tokens || 0);
+    var cacheRead = (usage.cache_read_input_tokens || 0);
+    var cacheCreate = (usage.cache_creation_input_tokens || 0);
+    var out = (usage.output_tokens || 0);
+    var totalIn = inp + cacheRead + cacheCreate;
+    html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:12px;">'
+      + '<div class="stat"><div class="stat-label">Input</div><div class="stat-value blue">' + totalIn.toLocaleString() + '</div></div>'
+      + '<div class="stat"><div class="stat-label">Cache Read</div><div class="stat-value green">' + cacheRead.toLocaleString() + '</div></div>'
+      + '<div class="stat"><div class="stat-label">Cache Write</div><div class="stat-value yellow">' + cacheCreate.toLocaleString() + '</div></div>'
+      + '<div class="stat"><div class="stat-label">Output</div><div class="stat-value">' + out.toLocaleString() + '</div></div>'
+      + (stopReason ? '<div class="stat"><div class="stat-label">Stop</div><div class="stat-value" style="font-size:11px;">' + escHtml(stopReason) + '</div></div>' : '')
+      + (usage.service_tier ? '<div class="stat"><div class="stat-label">Tier</div><div class="stat-value" style="font-size:11px;">' + escHtml(usage.service_tier) + '</div></div>' : '')
+      + '</div>';
+  }
+
+  // Tool calls
+  if (toolCalls.length > 0) {
+    html += '<div style="margin-bottom:12px;">';
+    html += '<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:6px;">TOOL CALLS (' + toolCalls.length + ')</div>';
+    toolCalls.forEach(function(tc) {
+      var tcId = 'tc-' + Math.random().toString(36).slice(2);
+      var parsed = null;
+      try { parsed = JSON.parse(tc.input); } catch(e) {}
+      var rawDisplay = parsed ? JSON.stringify(parsed, null, 2) : tc.input;
+      var displayText = rawDisplay.replace(/\\n/g, '\n').replace(/\\t/g, '\t').replace(/\\r/g, '');
+      if (!window._tcTexts) window._tcTexts = {};
+      window._tcTexts[tcId] = displayText;
+      var tcArrowId = tcId + '-arrow';
+      html += '<div style="background:var(--surface2);border-radius:6px;padding:8px;margin-bottom:4px;">'
+        + '<div onclick="event.stopPropagation();(function(){ var p=document.getElementById(\'' + tcId + '\'); var a=document.getElementById(\'' + tcArrowId + '\'); if(p.style.display===\'none\'){ p.style.display=\'block\'; a.textContent=\'▼\'; } else { p.style.display=\'none\'; a.textContent=\'►\'; } })()" style="font-weight:600;font-size:12px;color:var(--accent);margin-bottom:4px;cursor:pointer;user-select:none;">'
+        + escHtml(tc.name) + ' <span id="' + tcArrowId + '" style="font-size:10px;color:var(--text-muted);">►</span></div>'
+        + '<pre id="' + tcId + '" style="font-size:11px;white-space:pre-wrap;word-break:break-all;color:var(--text-muted);margin:0;display:none;">'
+        + escHtml(displayText) + '</pre>'
+        + '</div>';
+    });
+    html += '</div>';
+  }
+
+  // Response text
+  var fullText = textParts.join('');
+  if (fullText) {
+    var preview = fullText.slice(0, 300);
+    var hasMore = fullText.length > 300;
+    var tid = 'rt-' + Math.random().toString(36).slice(2);
+    if (!window._rtTexts) window._rtTexts = {};
+    window._rtTexts[tid] = { preview: preview, full: fullText };
+    html += '<div>'
+      + '<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:6px;">TEXT (' + fullText.length.toLocaleString() + ' chars)</div>'
+      + '<div style="background:var(--surface2);border-radius:6px;padding:10px;">'
+      + '<pre id="' + tid + '" style="font-size:12px;white-space:pre-wrap;word-break:break-word;line-height:1.5;">'
+      + escHtml(preview) + '</pre>'
+      + (hasMore ? '<button onclick="(function(){ var d=window._rtTexts[\'' + tid + '\']; var el=document.getElementById(\'' + tid + '\'); var btn=el.nextElementSibling; if(btn.dataset.exp===\'1\'){ el.textContent=d.preview; btn.textContent=\'Show more\'; btn.dataset.exp=\'0\'; } else { el.textContent=d.full; btn.textContent=\'Show less\'; btn.dataset.exp=\'1\'; } })()" data-exp="0" style="margin-top:6px;font-size:11px;color:var(--accent);background:none;border:none;cursor:pointer;padding:0;">Show more</button>' : '')
+      + '</div></div>';
+  }
+
+  // context_management
+  if (contextMgmt) {
+    var edits = contextMgmt.applied_edits || [];
+    if (edits.length > 0) {
+      html += '<div style="margin-top:10px;font-size:11px;color:var(--text-muted);">'
+        + '<b>context_management.applied_edits:</b> ' + escHtml(JSON.stringify(edits)) + '</div>';
+    }
+  }
+
+  html += '</div>';
+  return html;
+}
+
+// RAW RESPONSE
+function renderRawResponse(response) {
+  if (!response) return '';
+  var rawId = 'raw-res-' + Math.random().toString(36).slice(2);
+  var arrowId = rawId + '-arrow';
+  var rawJson = JSON.stringify(response, null, 2);
+  return '<div class="card">'
+    + '<div onclick="event.stopPropagation();(function(){ var p=document.getElementById(\'' + rawId + '\'); var a=document.getElementById(\'' + arrowId + '\'); if(p.style.display===\'none\'){ p.style.display=\'block\'; a.textContent=\'▼\'; } else { p.style.display=\'none\'; a.textContent=\'►\'; } })()" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center;margin-bottom:0;">'
+    + '<span class="card-title" style="margin:0;">Raw res.json</span>'
+    + '<span id="' + arrowId + '" style="font-size:10px;color:var(--text-muted);">►</span>'
+    + '</div>'
+    + '<pre id="' + rawId + '" style="display:none;font-size:11px;white-space:pre-wrap;word-break:break-all;max-height:400px;overflow:auto;margin:0;padding-top:12px;">'
+    + escHtml(rawJson) + '</pre>'
+    + '</div>';
+}
+
+// RATE LIMITS
+function renderRateLimits(response) {
+  if (!response || !response.headers) return '';
+  var headers = response.headers;
+  var rlHeaders = {};
+  Object.keys(headers).forEach(function(k) {
+    if (k.toLowerCase().indexOf('ratelimit') !== -1) {
+      rlHeaders[k] = headers[k];
+    }
+  });
+  if (Object.keys(rlHeaders).length === 0) return '';
+
+  // Extract utilization values for visual bars
+  var buckets = [];
+  var bucketMap = {};
+  Object.keys(rlHeaders).forEach(function(k) {
+    var m = k.match(/anthropic-ratelimit-unified-(.+?)-(utilization|status|reset)$/);
+    if (m) {
+      var name = m[1];
+      var field = m[2];
+      if (!bucketMap[name]) { bucketMap[name] = {}; buckets.push(name); }
+      bucketMap[name][field] = rlHeaders[k];
+    }
+  });
+
+  var barsHtml = '';
+  if (buckets.length > 0) {
+    barsHtml = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px;">';
+    buckets.forEach(function(name) {
+      var b = bucketMap[name];
+      var util = parseFloat(b.utilization || 0);
+      var pct = Math.round(util * 100);
+      var status = b.status || 'unknown';
+      var resetTs = b.reset ? new Date(parseInt(b.reset) * 1000).toLocaleString() : '';
+      var barColor = pct >= 90 ? 'var(--red)' : pct >= 70 ? 'var(--yellow)' : 'var(--green)';
+      var statusColor = status === 'allowed' ? 'var(--green)' : 'var(--red)';
+      barsHtml += '<div style="background:var(--surface2);border-radius:8px;padding:12px;">'
+        + '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">'
+        + '<span style="font-weight:600;font-size:12px;">' + escHtml(name) + '</span>'
+        + '<span style="font-size:11px;color:' + statusColor + ';">' + escHtml(status) + '</span>'
+        + '</div>'
+        + '<div style="background:var(--border);border-radius:4px;height:8px;overflow:hidden;">'
+        + '<div style="background:' + barColor + ';height:100%;width:' + pct + '%;border-radius:4px;transition:width .3s;"></div>'
+        + '</div>'
+        + '<div style="display:flex;justify-content:space-between;margin-top:4px;">'
+        + '<span style="font-size:11px;font-weight:600;color:' + barColor + ';">' + pct + '%</span>'
+        + (resetTs ? '<span style="font-size:10px;color:var(--text-muted);">reset: ' + escHtml(resetTs) + '</span>' : '')
+        + '</div>'
+        + '</div>';
+    });
+    barsHtml += '</div>';
+  }
+
+  // Extra fields (fallback-percentage, overage-status, representative-claim, etc.)
+  var extras = {};
+  Object.keys(rlHeaders).forEach(function(k) {
+    if (k.match(/-(utilization|status|reset)$/) && k.match(/anthropic-ratelimit-unified-.+?-(utilization|status|reset)$/)) return;
+    extras[k] = rlHeaders[k];
+  });
+  var extrasHtml = '';
+  if (Object.keys(extras).length > 0) {
+    extrasHtml = '<div style="font-size:11px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:8px;margin-top:4px;">';
+    Object.keys(extras).sort().forEach(function(k) {
+      var label = k.replace('anthropic-ratelimit-unified-', '');
+      extrasHtml += '<span style="margin-right:16px;"><b>' + escHtml(label) + ':</b> ' + escHtml(extras[k]) + '</span>';
+    });
+    extrasHtml += '</div>';
+  }
+
+  return '<div class="card"><div class="card-title">Rate Limits</div>' + barsHtml + extrasHtml + '</div>';
 }
 
 // SYSTEM
@@ -1495,7 +1802,10 @@ document.getElementById('content').addEventListener('click', function(e) {
       rawView.id = 'raw-json-view';
       view.parentElement.appendChild(rawView);
     }
-    rawView.innerHTML = '<div class="code-block" style="max-height:none;font-size:11px;">' + escHtml(JSON.stringify(DUMPS[currentFile].data, null, 2)) + '</div>';
+    var activeTab = document.querySelector('.tab-btn.active');
+    var isResponseTab = activeTab && activeTab.dataset.tab === 'response';
+    var rawData = isResponseTab ? DUMPS[currentFile].response : DUMPS[currentFile].data;
+    rawView.innerHTML = '<div class="code-block" style="max-height:none;font-size:11px;">' + escHtml(JSON.stringify(rawData, null, 2)) + '</div>';
     rawView.style.display = 'block';
     view.style.display = 'none';
     rawJsonVisible = true;
