@@ -275,14 +275,61 @@ Claude Code가 OAuth 토큰을 어떻게 API 인증에 활용하는지는 확인
 
 프록시 캡처에서 req.json은 바디만 저장했고 요청 헤더는 캡처하지 않아 실제 auth 헤더 확인 불가. proxy.py에서 요청 헤더도 저장하도록 수정하면 확인 가능.
 
-### 9.4 결론
+### 9.4 결론 (수정: 2026-03-25)
 
 | 정보 | 프록시 없이 가능 | 방법 |
 |------|-----------------|------|
 | 구독 타입, 티어 | [O] | macOS Keychain 직접 읽기 |
-| 실시간 5h/7d utilization | [X] | API 응답 헤더에만 존재, OAuth로 직접 호출 불가 |
+| 실시간 5h/7d utilization | [O] | `/api/oauth/usage` 직접 호출 (아래 9.5 참조) |
 
-**실시간 utilization은 프록시를 통해서만 캡처 가능하다.**
+~~실시간 utilization은 프록시를 통해서만 캡처 가능하다.~~ → **번복. 전용 엔드포인트로 프록시 없이 가능.**
+
+### 9.5 `/api/oauth/usage` 엔드포인트 (2026-03-25 발견)
+
+9.2에서 시도한 `/v1/messages`가 아닌, 별도 엔드포인트가 존재한다.
+
+```bash
+TOKEN=$(security find-generic-password -s "Claude Code-credentials" -w | \
+  python3 -c "import json,sys; d=json.loads(sys.stdin.read()); print(d['claudeAiOauth']['accessToken'])")
+
+curl "https://api.anthropic.com/api/oauth/usage" \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "anthropic-beta: oauth-2025-04-20"
+```
+
+**실제 응답 (2026-03-25 실측):**
+
+```json
+{
+  "five_hour":            { "utilization": 15.0, "resets_at": "2026-03-25T05:00:00.043502+00:00" },
+  "seven_day":            { "utilization": 52.0, "resets_at": "2026-03-27T03:00:00.043524+00:00" },
+  "seven_day_sonnet":     { "utilization": 32.0, "resets_at": "2026-03-27T16:00:01.043532+00:00" },
+  "seven_day_opus":       null,
+  "seven_day_oauth_apps": null,
+  "seven_day_cowork":     null,
+  "iguana_necktie":       null,
+  "extra_usage":          { "is_enabled": false, "monthly_limit": null, "used_credits": null, "utilization": null }
+}
+```
+
+**프록시 헤더와의 비교:**
+
+| 프록시 헤더 | OAuth API 필드 |
+|------------|---------------|
+| `5h-utilization` | `five_hour.utilization` (0.0~1.0 → 0~100으로 스케일 다름) |
+| `7d-utilization` | `seven_day.utilization` |
+| `7d_sonnet-utilization` | `seven_day_sonnet.utilization` |
+| `5h-reset` (Unix timestamp) | `five_hour.resets_at` (ISO8601) |
+| (없음) | `seven_day_opus` — Opus 전용 버킷 (현재 null) |
+| (없음) | `seven_day_oauth_apps`, `seven_day_cowork` — 미확인 버킷 |
+| (없음) | `iguana_necktie` — 내부 실험 필드, 의미 미확인 |
+
+**주의사항:**
+
+- `utilization` 스케일: 프록시 헤더는 `0.0~1.0` (소수), OAuth API는 `0.0~100.0` (퍼센트)
+- `anthropic-beta: oauth-2025-04-20` 헤더 필수 — 없으면 404 또는 거부
+- Rate limit: 짧은 시간 내 연속 호출 시 429 반환, `retry-after: 0`. **5분 캐싱 권장**
+- 토큰 위치: macOS는 Keychain (`Claude Code-credentials`), Linux/Windows는 `~/.claude/.credentials.json`
 
 ---
 
