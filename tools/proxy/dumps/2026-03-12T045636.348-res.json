@@ -1,0 +1,923 @@
+{
+  "status": 200,
+  "headers": {
+    "Date": "Thu, 12 Mar 2026 04:56:38 GMT",
+    "Content-Type": "text/event-stream; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Cache-Control": "no-cache",
+    "anthropic-ratelimit-unified-status": "allowed",
+    "anthropic-ratelimit-unified-5h-status": "allowed",
+    "anthropic-ratelimit-unified-5h-reset": "1773291600",
+    "anthropic-ratelimit-unified-5h-utilization": "0.37",
+    "anthropic-ratelimit-unified-7d-status": "allowed",
+    "anthropic-ratelimit-unified-7d-reset": "1773374400",
+    "anthropic-ratelimit-unified-7d-utilization": "0.68",
+    "anthropic-ratelimit-unified-representative-claim": "five_hour",
+    "anthropic-ratelimit-unified-fallback-percentage": "0.5",
+    "anthropic-ratelimit-unified-reset": "1773291600",
+    "anthropic-ratelimit-unified-overage-disabled-reason": "org_level_disabled",
+    "anthropic-ratelimit-unified-overage-status": "rejected",
+    "request-id": "req_011CYxbJ72N9GaWZxQdbvE3F",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "anthropic-organization-id": "84c5153a-d205-4085-8d27-4b1dd3d07776",
+    "Server": "cloudflare",
+    "x-envoy-upstream-service-time": "1365",
+    "Content-Encoding": "gzip",
+    "Vary": "Accept-Encoding",
+    "cf-cache-status": "DYNAMIC",
+    "X-Robots-Tag": "none",
+    "Content-Security-Policy": "default-src 'none'; frame-ancestors 'none'",
+    "CF-RAY": "9db0369b8be229e3-FUK"
+  },
+  "events": [
+    {
+      "type": "message_start",
+      "message": {
+        "model": "claude-haiku-4-5-20251001",
+        "id": "msg_014Q2ZFxKKA8PkXLZXoUNoLA",
+        "type": "message",
+        "role": "assistant",
+        "content": [],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 10,
+          "cache_creation_input_tokens": 61419,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 61419
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "content_block_start",
+      "index": 0,
+      "content_block": {
+        "type": "thinking",
+        "thinking": "",
+        "signature": ""
+      }
+    },
+    {
+      "type": "ping"
+    },
+    {
+      "type": "content_block_delta",
+      "index": 0,
+      "delta": {
+        "type": "signature_delta",
+        "signature": "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"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 0
+    },
+    {
+      "type": "content_block_start",
+      "index": 1,
+      "content_block": {
+        "type": "text",
+        "text": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": "I'm"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": " deleg"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": "ating this"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": " to"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": " an executor agent to"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": " create and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 1,
+      "delta": {
+        "type": "text_delta",
+        "text": " run a sample Go project."
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 1
+    },
+    {
+      "type": "content_block_start",
+      "index": 2,
+      "content_block": {
+        "type": "tool_use",
+        "id": "toolu_01CSQ9478N1nJgaropJpWD2E",
+        "name": "Agent",
+        "input": {},
+        "caller": {
+          "type": "direct"
+        }
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "{\"su"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ba"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ge"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "nt_type\": \""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "oh-m"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "y-cla"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "udecode"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ":executor\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ", \"model\": "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\"sonnet\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ", \"d"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "escription\":"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " \"Create"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "nd run sampl"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e Go p"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "roject\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ", \"prompt\": "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\"Cr"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "eate a simp"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "le, comple"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "te sam"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ple Go p"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "roject in a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " temp"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "or"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ary dire"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ctory and ru"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "n "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "it. The proj"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ect sh"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ould:\\n\\n"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "1. Be a s"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "imple bu"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "t functional"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " progr"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "am "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "(e.g., a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " CLI tool,"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " HTTP server"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ", or"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " util"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ity)\\n"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "2. Include a"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " main"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ".go "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "fil"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e and"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " any "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "necessary s"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "upporti"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ng files\\n"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "3. Be "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "runnable"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " wi"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "th `go"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " run main.g"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "o`\\n4"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": ". Print cl"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ear"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " output when"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " executed\\n"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "\\nAfter cre"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ating t"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "he proj"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ect, run i"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "t "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "and show"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " the"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " output. Kee"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "p "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "it si"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "mple "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "- a \\\"hel"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "lo"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " world\\\""
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": " wi"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "th some b"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "asic functio"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "na"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "lity is fin"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e, but mak"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "e it slig"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "htly more "
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "interes"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ting than ju"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "st p"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "ri"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "nting \\\"Hell"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "o W"
+      }
+    },
+    {
+      "type": "content_block_delta",
+      "index": 2,
+      "delta": {
+        "type": "input_json_delta",
+        "partial_json": "orld\\\".\"}"
+      }
+    },
+    {
+      "type": "content_block_stop",
+      "index": 2
+    },
+    {
+      "type": "message_delta",
+      "delta": {
+        "stop_reason": "tool_use",
+        "stop_sequence": null
+      },
+      "usage": {
+        "input_tokens": 10,
+        "cache_creation_input_tokens": 61419,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1040
+      },
+      "context_management": {
+        "applied_edits": []
+      }
+    },
+    {
+      "type": "message_stop"
+    }
+  ]
+}

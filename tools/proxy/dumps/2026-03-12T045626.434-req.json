@@ -1,0 +1,13 @@
+{
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 1,
+  "messages": [
+    {
+      "role": "user",
+      "content": "quota"
+    }
+  ],
+  "metadata": {
+    "user_id": "user_1a1ecee28ed8346eeafd2311ed49cdfefa8c0f6adc18e14bdfe089a16efc30ee_account_2b1daf41-e537-4899-8fd6-59505ab33228_session_bfedc540-4243-4955-9622-d9c0aa2425de"
+  }
+}

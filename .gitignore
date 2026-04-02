@@ -1,15 +1,15 @@
 
-# Native binary analysis artifacts
-native/
-npm/
+# Native binary analysis artifacts (large extracted files, not tracked)
+sources/native/
 *.strings.txt
 *_extracted.js
 test_binary*
 
 # npm package - large binaries (not needed for prompt analysis)
-npm_*/vendor/
-npm_*/node_modules/
-npm_*/*.wasm
+sources/npm/*/vendor/
+sources/npm/*/node_modules/
+sources/npm/*/*.wasm
+sources/npm/*/.Rhistory
 .DS_Store
 
 # Common excludes
@@ -21,7 +21,7 @@ node_modules/
 .cwf/sessions/
 .omc/sessions/
 .omc/state/
-proxy/.cwf/sessions/
-proxy/.omc/state/
-proxy/dumps/
-npm_*/.Rhistory
+tools/proxy/.cwf/sessions/
+tools/proxy/.omc/state/
+tools/proxy/dumps/
+tools/proxy/.claude-home/

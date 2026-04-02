@@ -2,19 +2,20 @@
 
 ## 프로젝트 성격
 
-Claude Code CLI (`cli.js`)의 내부 구조를 소스코드 수준에서 역공학하는 연구 프로젝트다.
-난독화된 JavaScript 번들을 분석해 프롬프트 구조, 내부 아키텍처, 기능 구현 방식을 추출하고 문서화한다.
+Claude Code CLI의 내부 구조를 소스코드 수준에서 역공학하는 연구 프로젝트다.
+minified 번들, 유출 TypeScript 소스, 실제 API 캡처를 교차 분석해 프롬프트 구조, 내부 아키텍처, 기능 구현 방식을 추출하고 문서화한다.
 
 분석 대상:
-1. npm 패키지 `@anthropic-ai/claude-code`의 `cli.js` (minified JavaScript)
-2. Native 바이너리 (`~/.local/share/claude/versions/`) 에서 추출한 JavaScript
-3. 공식 플러그인 저장소 (`anthropics/claude-plugins-official`)
-4. proxy를 통해 캡처한 실제 API 요청/응답
+1. npm 패키지 `@anthropic-ai/claude-code`의 `cli.js` (minified JavaScript) — `sources/npm/`
+2. 유출 TypeScript 소스 (`ysys143/forked-claude-code`) — `sources/leaked/` (submodule)
+3. Native 바이너리 (`~/.local/share/claude/versions/`) 에서 추출한 JavaScript — `sources/native/` (gitignored)
+4. 공식 플러그인 저장소 (`anthropics/claude-plugins-official`) — `sources/plugins/`
+5. proxy를 통해 캡처한 실제 API 요청/응답 — `tools/proxy/`
 
 분석 방법:
-1. Python/grep으로 minified 파일에서 키워드 위치 추출
-2. 위치 기반 컨텍스트 슬라이싱으로 관련 코드 확보
-3. 난독화 변수명 추적 (함수 호출 관계, 패턴 매칭)
+1. Python 스크립트로 minified 파일에서 키워드 위치 추출 후 슬라이싱
+2. 난독화 변수명 추적 (함수 호출 관계, 패턴 매칭)
+3. 유출 소스와 minified 코드 교차 검증 (cross-ref)
 4. 공식 문서, GitHub, 실제 동작과 교차 검증
 
 ---
@@ -27,12 +28,12 @@ Claude Code CLI (`cli.js`)의 내부 구조를 소스코드 수준에서 역공�
 NN-topic-name.md
 ```
 
-1. NN은 두 자리 숫자 (01, 02, ..., 27, 28, ...)
+1. NN은 두 자리 숫자 (01, 02, ..., 28, 29, ...)
 2. topic-name은 소문자 하이픈 구분
 3. 현재 마지막 번호를 확인하고 다음 번호 사용
 4. 리포트가 아닌 파일 (README, CLAUDE.md 등)은 번호 없음
 
-현재 최신 번호: 28 (`28-claude-code-channels.md`)
+현재 최신 번호: 29 (`reports/reverse/v2.1.80/29-claude-code-builtin-sandbox.md`)
 
 ---
 
@@ -133,12 +134,28 @@ for m in re.finditer(r'키워드', content):
 
 ```
 analyze-cc-prompts/
-1. NN-*.md              -- 분석 리포트 (번호 순)
-2. README.md            -- 프로젝트 소개 (한국어)
-3. README_EN.md         -- 프로젝트 소개 (영어)
-4. CLAUDE.md            -- 이 파일
-5. external_plugins/    -- claude-plugins-official 클론 (채널 구현체)
-6. proxy/               -- API 캡처용 프록시
-7. native/              -- Native 바이너리 분석 결과
-8. npm_2.1.XX/          -- 버전별 npm 패키지 스냅샷
+1. sources/             -- 원본 소스 아카이브
+   1. npm/              -- minified 번들 버전별 스냅샷
+      1. v2.1.29/
+      2. v2.1.38/
+      3. v2.1.70/
+      4. v2.1.80/
+   2. leaked/           -- 유출 TypeScript 소스 (submodule: ysys143/forked-claude-code)
+   3. native/           -- Native 바이너리 추출본 (gitignored)
+   4. plugins/          -- 공식 플러그인 (claude-plugins-official)
+2. reports/             -- 분석 리포트
+   1. reverse/          -- cli.js 리버스 엔지니어링 (버전별)
+      1. v2.1.29/       -- 01-11번 리포트
+      2. v2.1.38/       -- 12-16번 리포트
+      3. v2.1.42/       -- 28번 리포트 (Firecracker/Web)
+      4. v2.1.70/       -- 17-19, 24-25번 리포트
+      5. v2.1.80/       -- 27, 29번 리포트
+   2. api/              -- API 트래픽/인증/빌링 분석 (20-23, 26번)
+   3. source/           -- 유출 TypeScript 소스 직접 분석 (신규)
+   4. cross-ref/        -- minified <-> 소스 대조 분석 (신규)
+3. tools/               -- 분석 도구
+   1. proxy/            -- API 캡처 프록시 (mitmproxy 기반)
+4. README.md            -- 프로젝트 소개 (한국어)
+5. README_EN.md         -- 프로젝트 소개 (영어)
+6. CLAUDE.md            -- 이 파일
 ```

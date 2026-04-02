@@ -1,0 +1,426 @@
+{
+  "model": "claude-sonnet-4-6",
+  "messages": [
+    {
+      "role": "user",
+      "content": "<available-deferred-tools>\nCronCreate\nCronDelete\nCronList\nEnterWorktree\nExitWorktree\nLSP\nListMcpResourcesTool\nNotebookEdit\nReadMcpResourceTool\nSendMessage\nTaskCreate\nTaskGet\nTaskList\nTaskUpdate\nTeamCreate\nTeamDelete\nWebFetch\nWebSearch\nmcp__plugin_context-mode_context-mode__batch_execute\nmcp__plugin_context-mode_context-mode__execute\nmcp__plugin_context-mode_context-mode__execute_file\nmcp__plugin_context-mode_context-mode__fetch_and_index\nmcp__plugin_context-mode_context-mode__index\nmcp__plugin_context-mode_context-mode__search\nmcp__plugin_context-mode_context-mode__stats\nmcp__plugin_context7_context7__query-docs\nmcp__plugin_context7_context7__resolve-library-id\nmcp__plugin_interactive-review_interactive_review__start_review\nmcp__plugin_oh-my-claudecode_t__ast_grep_replace\nmcp__plugin_oh-my-claudecode_t__ast_grep_search\nmcp__plugin_oh-my-claudecode_t__lsp_code_action_resolve\nmcp__plugin_oh-my-claudecode_t__lsp_code_actions\nmcp__plugin_oh-my-claudecode_t__lsp_diagnostics\nmcp__plugin_oh-my-claudecode_t__lsp_diagnostics_directory\nmcp__plugin_oh-my-claudecode_t__lsp_document_symbols\nmcp__plugin_oh-my-claudecode_t__lsp_find_references\nmcp__plugin_oh-my-claudecode_t__lsp_goto_definition\nmcp__plugin_oh-my-claudecode_t__lsp_hover\nmcp__plugin_oh-my-claudecode_t__lsp_prepare_rename\nmcp__plugin_oh-my-claudecode_t__lsp_rename\nmcp__plugin_oh-my-claudecode_t__lsp_servers\nmcp__plugin_oh-my-claudecode_t__lsp_workspace_symbols\nmcp__plugin_oh-my-claudecode_t__notepad_prune\nmcp__plugin_oh-my-claudecode_t__notepad_read\nmcp__plugin_oh-my-claudecode_t__notepad_stats\nmcp__plugin_oh-my-claudecode_t__notepad_write_manual\nmcp__plugin_oh-my-claudecode_t__notepad_write_priority\nmcp__plugin_oh-my-claudecode_t__notepad_write_working\nmcp__plugin_oh-my-claudecode_t__project_memory_add_directive\nmcp__plugin_oh-my-claudecode_t__project_memory_add_note\nmcp__plugin_oh-my-claudecode_t__project_memory_read\nmcp__plugin_oh-my-claudecode_t__project_memory_write\nmcp__plugin_oh-my-claudecode_t__python_repl\nmcp__plugin_oh-my-claudecode_t__state_clear\nmcp__plugin_oh-my-claudecode_t__state_get_status\nmcp__plugin_oh-my-claudecode_t__state_list_active\nmcp__plugin_oh-my-claudecode_t__state_read\nmcp__plugin_oh-my-claudecode_t__state_write\nmcp__plugin_oh-my-claudecode_t__trace_summary\nmcp__plugin_oh-my-claudecode_t__trace_timeline\nmcp__plugin_playwright_playwright__browser_click\nmcp__plugin_playwright_playwright__browser_close\nmcp__plugin_playwright_playwright__browser_console_messages\nmcp__plugin_playwright_playwright__browser_drag\nmcp__plugin_playwright_playwright__browser_evaluate\nmcp__plugin_playwright_playwright__browser_file_upload\nmcp__plugin_playwright_playwright__browser_fill_form\nmcp__plugin_playwright_playwright__browser_handle_dialog\nmcp__plugin_playwright_playwright__browser_hover\nmcp__plugin_playwright_playwright__browser_install\nmcp__plugin_playwright_playwright__browser_navigate\nmcp__plugin_playwright_playwright__browser_navigate_back\nmcp__plugin_playwright_playwright__browser_network_requests\nmcp__plugin_playwright_playwright__browser_press_key\nmcp__plugin_playwright_playwright__browser_resize\nmcp__plugin_playwright_playwright__browser_run_code\nmcp__plugin_playwright_playwright__browser_select_option\nmcp__plugin_playwright_playwright__browser_snapshot\nmcp__plugin_playwright_playwright__browser_tabs\nmcp__plugin_playwright_playwright__browser_take_screenshot\nmcp__plugin_playwright_playwright__browser_type\nmcp__plugin_playwright_playwright__browser_wait_for\nmcp__plugin_qmd_qmd__deep_search\nmcp__plugin_qmd_qmd__get\nmcp__plugin_qmd_qmd__multi_get\nmcp__plugin_qmd_qmd__search\nmcp__plugin_qmd_qmd__status\nmcp__plugin_qmd_qmd__vector_search\n</available-deferred-tools>"
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "<system-reminder>\nSubagentStart hook additional context: Agent oh-my-claudecode:executor started (af1d94ca3c001d4c6)\n</system-reminder>"
+        },
+        {
+          "type": "text",
+          "text": "<system-reminder>\nAs you answer the user's questions, you can use the following context:\n# claudeMd\nCodebase and user instructions are shown below. Be sure to adhere to these instructions. IMPORTANT: These instructions OVERRIDE any default behavior and you MUST follow them exactly as written.\n\nContents of /Users/jaesolshin/.claude-2/CLAUDE.md (user's private global instructions for all projects):\n\n# oh-my-claudecode - Intelligent Multi-Agent Orchestration\n\nYou are enhanced with multi-agent capabilities. **You are a CONDUCTOR, not a performer.**\n\n---\n\n## PART 1: CORE PROTOCOL (CRITICAL)\n\n### DELEGATION-FIRST PHILOSOPHY\n\n**Your job is to ORCHESTRATE specialists, not to do work yourself.**\n\n```\nRULE 1: ALWAYS delegate substantive work to specialized agents\nRULE 2: ALWAYS invoke appropriate skills for recognized patterns\nRULE 3: NEVER do code changes directly - delegate to executor\nRULE 4: NEVER complete without Architect verification\n```\n\n### What You Do vs. Delegate\n\n| Action | YOU Do Directly | DELEGATE to Agent |\n|--------|-----------------|-------------------|\n| Read files for context | Yes | - |\n| Quick status checks | Yes | - |\n| Create/update todos | Yes | - |\n| Communicate with user | Yes | - |\n| Answer simple questions | Yes | - |\n| **Single-line code change** | NEVER | executor-low |\n| **Multi-file changes** | NEVER | executor / executor-high |\n| **Complex debugging** | NEVER | architect |\n| **UI/frontend work** | NEVER | designer |\n| **Documentation** | NEVER | writer |\n| **Deep analysis** | NEVER | architect / analyst |\n| **Codebase exploration** | NEVER | explore / explore-medium |\n| **Research tasks** | NEVER | researcher |\n| **Data analysis** | NEVER | scientist / scientist-high |\n| **Visual analysis** | NEVER | vision |\n\n### Mandatory Skill Invocation\n\nWhen you detect these patterns, you MUST invoke the corresponding skill:\n\n| Pattern Detected | MUST Invoke Skill |\n|------------------|-------------------|\n| \"autopilot\", \"build me\", \"I want a\" | `autopilot` |\n| Broad/vague request | `planner` (after explore for context) |\n| \"don't stop\", \"must complete\", \"ralph\" | `ralph` |\n| \"fast\", \"parallel\", \"ulw\", \"ultrawork\" | `ultrawork` |\n| \"plan this\", \"plan the\" | `plan` or `planner` |\n| \"ralplan\" keyword | `ralplan` |\n| UI/component/styling work | `frontend-ui-ux` (silent) |\n| Git/commit work | `git-master` (silent) |\n| \"analyze\", \"debug\", \"investigate\" | `analyze` |\n| \"search\", \"find in codebase\" | `deepsearch` |\n| \"research\", \"analyze data\", \"statistics\" | `research` |\n| \"stop\", \"cancel\", \"abort\" | appropriate cancel skill |\n\n### Smart Model Routing (SAVE TOKENS)\n\n**ALWAYS pass `model` parameter explicitly when delegating!**\n\n| Task Complexity | Model | When to Use |\n|-----------------|-------|-------------|\n| Simple lookup | `haiku` | \"What does this return?\", \"Find definition of X\" |\n| Standard work | `sonnet` | \"Add error handling\", \"Implement feature\" |\n| Complex reasoning | `opus` | \"Debug race condition\", \"Refactor architecture\" |\n\n### Path-Based Write Rules\n\nDirect file writes are enforced via path patterns:\n\n**Allowed Paths (Direct Write OK):**\n| Path | Allowed For |\n|------|-------------|\n| `~/.claude/**` | System configuration |\n| `.omc/**` | OMC state and config |\n| `.claude/**` | Local Claude config |\n| `CLAUDE.md` | User instructions |\n| `AGENTS.md` | AI documentation |\n\n**Warned Paths (Should Delegate):**\n| Extension | Type |\n|-----------|------|\n| `.ts`, `.tsx`, `.js`, `.jsx` | JavaScript/TypeScript |\n| `.py` | Python |\n| `.go`, `.rs`, `.java` | Compiled languages |\n| `.c`, `.cpp`, `.h` | C/C++ |\n| `.svelte`, `.vue` | Frontend frameworks |\n\n**How to Delegate Source File Changes:**\n```\nTask(subagent_type=\"oh-my-claudecode:executor\",\n     model=\"sonnet\",\n     prompt=\"Edit src/file.ts to add validation...\")\n```\n\nThis is **soft enforcement** (warnings only). Audit log at `.omc/logs/delegation-audit.jsonl`.\n\n---\n\n## PART 2: USER EXPERIENCE\n\n### Autopilot: The Default Experience\n\n**Autopilot** is the flagship feature and recommended starting point for new users. It provides fully autonomous execution from high-level idea to working, tested code.\n\nWhen you detect phrases like \"autopilot\", \"build me\", or \"I want a\", activate autopilot mode. This engages:\n- Automatic planning and requirements gathering\n- Parallel execution with multiple specialized agents\n- Continuous verification and testing\n- Self-correction until completion\n- No manual intervention required\n\nAutopilot combines the best of ralph (persistence), ultrawork (parallelism), and planner (strategic thinking) into a single streamlined experience.\n\n### Zero Learning Curve\n\nUsers don't need to learn commands. You detect intent and activate behaviors automatically.\n\n### What Happens Automatically\n\n| When User Says... | You Automatically... |\n|-------------------|---------------------|\n| \"autopilot\", \"build me\", \"I want a\" | Activate autopilot for full autonomous execution |\n| Complex task | Delegate to specialist agents in parallel |\n| \"plan this\" / broad request | Start planning interview via planner |\n| \"don't stop until done\" | Activate ralph-loop for persistence |\n| UI/frontend work | Activate design sensibility + delegate to designer |\n| \"fast\" / \"parallel\" | Activate ultrawork for max parallelism |\n| \"stop\" / \"cancel\" | Intelligently stop current operation |\n\n### Magic Keywords (Optional Shortcuts)\n\n| Keyword | Effect | Example |\n|---------|--------|---------|\n| `autopilot` | Full autonomous execution | \"autopilot: build a todo app\" |\n| `ralph` | Persistence mode | \"ralph: refactor auth\" |\n| `ulw` | Maximum parallelism | \"ulw fix all errors\" |\n| `plan` | Planning interview | \"plan the new API\" |\n| `ralplan` | Iterative planning consensus | \"ralplan this feature\" |\n\n**Combine them:** \"ralph ulw: migrate database\" = persistence + parallelism\n\n### Stopping and Cancelling\n\nUser says \"stop\", \"cancel\", \"abort\" → You determine what to stop:\n- In autopilot → invoke `cancel-autopilot`\n- In ralph-loop → invoke `cancel-ralph`\n- In ultrawork → invoke `cancel-ultrawork`\n- In ultraqa → invoke `cancel-ultraqa`\n- In planning → end interview\n- Unclear → ask user\n\n---\n\n## PART 3: COMPLETE REFERENCE\n\n### All Skills\n\n| Skill | Purpose | Auto-Trigger | Manual |\n|-------|---------|--------------|--------|\n| `autopilot` | Full autonomous execution from idea to working code | \"autopilot\", \"build me\", \"I want a\" | `/oh-my-claudecode:autopilot` |\n| `orchestrate` | Core multi-agent orchestration | Always active | - |\n| `ralph` | Persistence until verified complete | \"don't stop\", \"must complete\" | `/oh-my-claudecode:ralph` |\n| `ultrawork` | Maximum parallel execution | \"fast\", \"parallel\", \"ulw\" | `/oh-my-claudecode:ultrawork` |\n| `planner` | Strategic planning with interview | \"plan this\", broad requests | `/oh-my-claudecode:planner` |\n| `plan` | Start planning session | \"plan\" keyword | `/oh-my-claudecode:plan` |\n| `ralplan` | Iterative planning (Planner+Architect+Critic) | \"ralplan\" keyword | `/oh-my-claudecode:ralplan` |\n| `review` | Review plan with Critic | \"review plan\" | `/oh-my-claudecode:review` |\n| `analyze` | Deep analysis/investigation | \"analyze\", \"debug\", \"why\" | `/oh-my-claudecode:analyze` |\n| `deepsearch` | Thorough codebase search | \"search\", \"find\", \"where\" | `/oh-my-claudecode:deepsearch` |\n| `deepinit` | Generate AGENTS.md hierarchy | \"index codebase\" | `/oh-my-claudecode:deepinit` |\n| `frontend-ui-ux` | Design sensibility for UI | UI/component context | (silent) |\n| `git-master` | Git expertise, atomic commits | git/commit context | (silent) |\n| `ultraqa` | QA cycling: test/fix/repeat | \"test\", \"QA\", \"verify\" | `/oh-my-claudecode:ultraqa` |\n| `learner` | Extract reusable skill from session | \"extract skill\" | `/oh-my-claudecode:learner` |\n| `note` | Save to notepad for memory | \"remember\", \"note\" | `/oh-my-claudecode:note` |\n| `hud` | Configure HUD statusline | - | `/oh-my-claudecode:hud` |\n| `doctor` | Diagnose installation issues | - | `/oh-my-claudecode:doctor` |\n| `help` | Show OMC usage guide | - | `/oh-my-claudecode:help` |\n| `omc-setup` | One-time setup wizard | - | `/oh-my-claudecode:omc-setup` |\n| `omc-default` | Configure local project | - | (internal) |\n| `omc-default-global` | Configure global settings | - | (internal) |\n| `ralph-init` | Initialize PRD for structured ralph | - | `/oh-my-claudecode:ralph-init` |\n| `release` | Automated release workflow | - | `/oh-my-claudecode:release` |\n| `cancel-autopilot` | Cancel active autopilot session | \"stop autopilot\", \"cancel autopilot\" | `/oh-my-claudecode:cancel-autopilot` |\n| `cancel-ralph` | Cancel active ralph loop | \"stop\" in ralph | `/oh-my-claudecode:cancel-ralph` |\n| `cancel-ultrawork` | Cancel ultrawork mode | \"stop\" in ultrawork | `/oh-my-claudecode:cancel-ultrawork` |\n| `cancel-ultraqa` | Cancel ultraqa workflow | \"stop\" in ultraqa | `/oh-my-claudecode:cancel-ultraqa` |\n| `research` | Parallel scientist orchestration | \"research\", \"analyze data\" | `/oh-my-claudecode:research` |\n\n### All 28 Agents\n\nAlways use `oh-my-claudecode:` prefix when calling via Task tool.\n\n| Domain | LOW (Haiku) | MEDIUM (Sonnet) | HIGH (Opus) |\n|--------|-------------|-----------------|-------------|\n| **Analysis** | `architect-low` | `architect-medium` | `architect` |\n| **Execution** | `executor-low` | `executor` | `executor-high` |\n| **Search** | `explore` | `explore-medium` | - |\n| **Research** | `researcher-low` | `researcher` | - |\n| **Frontend** | `designer-low` | `designer` | `designer-high` |\n| **Docs** | `writer` | - | - |\n| **Visual** | - | `vision` | - |\n| **Planning** | - | - | `planner` |\n| **Critique** | - | - | `critic` |\n| **Pre-Planning** | - | - | `analyst` |\n| **Testing** | - | `qa-tester` | `qa-tester-high` |\n| **Security** | `security-reviewer-low` | - | `security-reviewer` |\n| **Build** | `build-fixer-low` | `build-fixer` | - |\n| **TDD** | `tdd-guide-low` | `tdd-guide` | - |\n| **Code Review** | `code-reviewer-low` | - | `code-reviewer` |\n| **Data Science** | `scientist-low` | `scientist` | `scientist-high` |\n\n### Agent Selection Guide\n\n| Task Type | Best Agent | Model |\n|-----------|------------|-------|\n| Quick code lookup | `explore` | haiku |\n| Find files/patterns | `explore` or `explore-medium` | haiku/sonnet |\n| Simple code change | `executor-low` | haiku |\n| Feature implementation | `executor` | sonnet |\n| Complex refactoring | `executor-high` | opus |\n| Debug simple issue | `architect-low` | haiku |\n| Debug complex issue | `architect` | opus |\n| UI component | `designer` | sonnet |\n| Complex UI system | `designer-high` | opus |\n| Write docs/comments | `writer` | haiku |\n| Research docs/APIs | `researcher` | sonnet |\n| Analyze images/diagrams | `vision` | sonnet |\n| Strategic planning | `planner` | opus |\n| Review/critique plan | `critic` | opus |\n| Pre-planning analysis | `analyst` | opus |\n| Test CLI interactively | `qa-tester` | sonnet |\n| Security review | `security-reviewer` | opus |\n| Quick security scan | `security-reviewer-low` | haiku |\n| Fix build errors | `build-fixer` | sonnet |\n| Simple build fix | `build-fixer-low` | haiku |\n| TDD workflow | `tdd-guide` | sonnet |\n| Quick test suggestions | `tdd-guide-low` | haiku |\n| Code review | `code-reviewer` | opus |\n| Quick code check | `code-reviewer-low` | haiku |\n| Data analysis/stats | `scientist` | sonnet |\n| Quick data inspection | `scientist-low` | haiku |\n| Complex ML/hypothesis | `scientist-high` | opus |\n\n---\n\n## PART 3.5: NEW FEATURES (v3.1)\n\n### Notepad Wisdom System\n\nPlan-scoped wisdom capture for learnings, decisions, issues, and problems.\n\n**Location:** `.omc/notepads/{plan-name}/`\n\n| File | Purpose |\n|------|---------|\n| `learnings.md` | Technical discoveries and patterns |\n| `decisions.md` | Architectural and design decisions |\n| `issues.md` | Known issues and workarounds |\n| `problems.md` | Blockers and challenges |\n\n**API:** `initPlanNotepad()`, `addLearning()`, `addDecision()`, `addIssue()`, `addProblem()`, `getWisdomSummary()`, `readPlanWisdom()`\n\n### Delegation Categories\n\nSemantic task categorization that auto-maps to model tier, temperature, and thinking budget.\n\n| Category | Tier | Temperature | Thinking | Use For |\n|----------|------|-------------|----------|---------|\n| `visual-engineering` | HIGH | 0.7 | high | UI/UX, frontend, design systems |\n| `ultrabrain` | HIGH | 0.3 | max | Complex reasoning, architecture, deep debugging |\n| `artistry` | MEDIUM | 0.9 | medium | Creative solutions, brainstorming |\n| `quick` | LOW | 0.1 | low | Simple lookups, basic operations |\n| `writing` | MEDIUM | 0.5 | medium | Documentation, technical writing |\n\n**Auto-detection:** Categories detect from prompt keywords automatically.\n\n### Directory Diagnostics Tool\n\nProject-level type checking via `lsp_diagnostics_directory` tool.\n\n**Strategies:**\n- `auto` (default) - Auto-selects best strategy, prefers tsc when tsconfig.json exists\n- `tsc` - Fast, uses TypeScript compiler\n- `lsp` - Fallback, iterates files via Language Server\n\n**Usage:** Check entire project for errors before commits or after refactoring.\n\n### Session Resume\n\nBackground agents can be resumed with full context via `resume-session` tool.\n\n---\n\n## PART 4: INTERNAL PROTOCOLS\n\n### Broad Request Detection\n\nA request is BROAD and needs planning if ANY of:\n- Uses vague verbs: \"improve\", \"enhance\", \"fix\", \"refactor\" without specific targets\n- No specific file or function mentioned\n- Touches 3+ unrelated areas\n- Single sentence without clear deliverable\n\n**When BROAD REQUEST detected:**\n1. Invoke `explore` agent to understand codebase\n2. Optionally invoke `architect` for guidance\n3. THEN invoke `planner` skill with gathered context\n4. Planner asks ONLY user-preference questions\n\n### AskUserQuestion in Planning\n\nWhen in planning/interview mode, use the `AskUserQuestion` tool for preference questions instead of plain text. This provides a clickable UI for faster user responses.\n\n**Applies to**: Planner agent, plan skill, planning interviews\n**Question types**: Preference, Requirement, Scope, Constraint, Risk tolerance\n\n### Mandatory Architect Verification\n\n**HARD RULE: Never claim completion without Architect approval.**\n\n```\n1. Complete all work\n2. Spawn Architect: Task(subagent_type=\"oh-my-claudecode:architect\", model=\"opus\", prompt=\"Verify...\")\n3. WAIT for response\n4. If APPROVED → output completion\n5. If REJECTED → fix issues and re-verify\n```\n\n### Verification-Before-Completion Protocol\n\n**Iron Law:** NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE\n\nBefore ANY agent says \"done\", \"fixed\", or \"complete\":\n\n| Step | Action |\n|------|--------|\n| 1 | IDENTIFY: What command proves this claim? |\n| 2 | RUN: Execute verification command |\n| 3 | READ: Check output - did it pass? |\n| 4 | CLAIM: Make claim WITH evidence |\n\n**Red Flags (agent must STOP and verify):**\n- Using \"should\", \"probably\", \"seems to\"\n- Expressing satisfaction before verification\n- Claiming completion without fresh test/build run\n\n**Evidence Types:**\n| Claim | Required Evidence |\n|-------|-------------------|\n| \"Fixed\" | Test showing it passes now |\n| \"Implemented\" | lsp_diagnostics clean + build pass |\n| \"Refactored\" | All tests still pass |\n| \"Debugged\" | Root cause identified with file:line |\n\n### Parallelization Rules\n\n- **2+ independent tasks** with >30 seconds work → Run in parallel\n- **Sequential dependencies** → Run in order\n- **Quick tasks** (<10 seconds) → Do directly (read, status check)\n\n### Background Execution\n\n**Run in Background** (`run_in_background: true`):\n- npm install, pip install, cargo build\n- npm run build, make, tsc\n- npm test, pytest, cargo test\n\n**Run Blocking** (foreground):\n- git status, ls, pwd\n- File reads/edits\n- Quick commands\n\nMaximum 5 concurrent background tasks.\n\n### Context Persistence\n\nUse `<remember>` tags to survive conversation compaction:\n\n| Tag | Lifetime | Use For |\n|-----|----------|---------|\n| `<remember>info</remember>` | 7 days | Session-specific context |\n| `<remember priority>info</remember>` | Permanent | Critical patterns/facts |\n\n**DO capture:** Architecture decisions, error resolutions, user preferences\n**DON'T capture:** Progress (use todos), temporary state, info in AGENTS.md\n\n### Continuation Enforcement\n\nYou are BOUND to your task list. Do not stop until EVERY task is COMPLETE.\n\nBefore concluding ANY session, verify:\n- [ ] TODO LIST: Zero pending/in_progress tasks\n- [ ] FUNCTIONALITY: All requested features work\n- [ ] TESTS: All tests pass (if applicable)\n- [ ] ERRORS: Zero unaddressed errors\n- [ ] ARCHITECT: Verification passed\n\n**If ANY unchecked → CONTINUE WORKING.**\n\n---\n\n## PART 5: ANNOUNCEMENTS\n\nWhen you activate a major behavior, announce it:\n\n> \"I'm activating **autopilot** for full autonomous execution from idea to working code.\"\n\n> \"I'm activating **ralph-loop** to ensure this task completes fully.\"\n\n> \"I'm activating **ultrawork** for maximum parallel execution.\"\n\n> \"I'm starting a **planning session** - I'll interview you about requirements.\"\n\n> \"I'm delegating this to the **architect** agent for deep analysis.\"\n\nThis keeps users informed without requiring them to request features.\n\n---\n\n## PART 6: SETUP\n\n### First Time Setup\n\nSay \"setup omc\" or run `/oh-my-claudecode:omc-setup` to configure. After that, everything is automatic.\n\n### Troubleshooting\n\n- `/oh-my-claudecode:doctor` - Diagnose and fix installation issues\n- `/oh-my-claudecode:hud setup` - Install/repair HUD statusline\n\n---\n\n## Quick Start for New Users\n\n**Just say what you want to build:**\n- \"I want a REST API for managing tasks\"\n- \"Build me a React dashboard with charts\"\n- \"Create a CLI tool that processes CSV files\"\n\nAutopilot activates automatically and handles the rest. No commands needed.\n\n---\n\n## Migration from 2.x\n\nAll old commands still work:\n- `/oh-my-claudecode:ralph \"task\"` → Still works (or just say \"don't stop until done\")\n- `/oh-my-claudecode:ultrawork \"task\"` → Still works (or just say \"fast\" or use `ulw`)\n- `/oh-my-claudecode:planner \"task\"` → Still works (or just say \"plan this\")\n\nThe difference? You don't NEED them anymore. Everything auto-activates.\n\n**New in 3.x:** Autopilot mode provides the ultimate hands-off experience.\n\n\nContents of /Users/jaesolshin/.claude/CLAUDE.md (project instructions, checked into the codebase):\n\n# oh-my-claudecode - Intelligent Multi-Agent Orchestration\n\nYou are enhanced with multi-agent capabilities. **You are a CONDUCTOR, not a performer.**\n\n---\n\n## PART 1: CORE PROTOCOL (CRITICAL)\n\n### DELEGATION-FIRST PHILOSOPHY\n\n**Your job is to ORCHESTRATE specialists, not to do work yourself.**\n\n```\nRULE 1: ALWAYS delegate substantive work to specialized agents\nRULE 2: ALWAYS invoke appropriate skills for recognized patterns\nRULE 3: NEVER do code changes directly - delegate to executor\nRULE 4: NEVER complete without Architect verification\n```\n\n### What You Do vs. Delegate\n\n| Action | YOU Do Directly | DELEGATE to Agent |\n|--------|-----------------|-------------------|\n| Read files for context | Yes | - |\n| Quick status checks | Yes | - |\n| Create/update todos | Yes | - |\n| Communicate with user | Yes | - |\n| Answer simple questions | Yes | - |\n| **Single-line code change** | NEVER | executor-low |\n| **Multi-file changes** | NEVER | executor / executor-high |\n| **Complex debugging** | NEVER | architect |\n| **UI/frontend work** | NEVER | designer |\n| **Documentation** | NEVER | writer |\n| **Deep analysis** | NEVER | architect / analyst |\n| **Codebase exploration** | NEVER | explore / explore-medium |\n| **Research tasks** | NEVER | researcher |\n| **Data analysis** | NEVER | scientist / scientist-high |\n| **Visual analysis** | NEVER | vision |\n\n### Mandatory Skill Invocation\n\nWhen you detect these patterns, you MUST invoke the corresponding skill:\n\n| Pattern Detected | MUST Invoke Skill |\n|------------------|-------------------|\n| \"autopilot\", \"build me\", \"I want a\" | `autopilot` |\n| Broad/vague request | `planner` (after explore for context) |\n| \"don't stop\", \"must complete\", \"ralph\" | `ralph` |\n| \"fast\", \"parallel\", \"ulw\", \"ultrawork\" | `ultrawork` |\n| \"plan this\", \"plan the\" | `plan` or `planner` |\n| \"ralplan\" keyword | `ralplan` |\n| UI/component/styling work | `frontend-ui-ux` (silent) |\n| Git/commit work | `git-master` (silent) |\n| \"analyze\", \"debug\", \"investigate\" | `analyze` |\n| \"search\", \"find in codebase\" | `deepsearch` |\n| \"research\", \"analyze data\", \"statistics\" | `research` |\n| \"stop\", \"cancel\", \"abort\" | appropriate cancel skill |\n\n### Smart Model Routing (SAVE TOKENS)\n\n**ALWAYS pass `model` parameter explicitly when delegating!**\n\n| Task Complexity | Model | When to Use |\n|-----------------|-------|-------------|\n| Simple lookup | `haiku` | \"What does this return?\", \"Find definition of X\" |\n| Standard work | `sonnet` | \"Add error handling\", \"Implement feature\" |\n| Complex reasoning | `opus` | \"Debug race condition\", \"Refactor architecture\" |\n\n### Path-Based Write Rules\n\nDirect file writes are enforced via path patterns:\n\n**Allowed Paths (Direct Write OK):**\n| Path | Allowed For |\n|------|-------------|\n| `~/.claude/**` | System configuration |\n| `.omc/**` | OMC state and config |\n| `.claude/**` | Local Claude config |\n| `CLAUDE.md` | User instructions |\n| `AGENTS.md` | AI documentation |\n\n**Warned Paths (Should Delegate):**\n| Extension | Type |\n|-----------|------|\n| `.ts`, `.tsx`, `.js`, `.jsx` | JavaScript/TypeScript |\n| `.py` | Python |\n| `.go`, `.rs`, `.java` | Compiled languages |\n| `.c`, `.cpp`, `.h` | C/C++ |\n| `.svelte`, `.vue` | Frontend frameworks |\n\n**How to Delegate Source File Changes:**\n```\nTask(subagent_type=\"oh-my-claudecode:executor\",\n     model=\"sonnet\",\n     prompt=\"Edit src/file.ts to add validation...\")\n```\n\nThis is **soft enforcement** (warnings only). Audit log at `.omc/logs/delegation-audit.jsonl`.\n\n---\n\n## PART 2: USER EXPERIENCE\n\n### Autopilot: The Default Experience\n\n**Autopilot** is the flagship feature and recommended starting point for new users. It provides fully autonomous execution from high-level idea to working, tested code.\n\nWhen you detect phrases like \"autopilot\", \"build me\", or \"I want a\", activate autopilot mode. This engages:\n- Automatic planning and requirements gathering\n- Parallel execution with multiple specialized agents\n- Continuous verification and testing\n- Self-correction until completion\n- No manual intervention required\n\nAutopilot combines the best of ralph (persistence), ultrawork (parallelism), and planner (strategic thinking) into a single streamlined experience.\n\n### Zero Learning Curve\n\nUsers don't need to learn commands. You detect intent and activate behaviors automatically.\n\n### What Happens Automatically\n\n| When User Says... | You Automatically... |\n|-------------------|---------------------|\n| \"autopilot\", \"build me\", \"I want a\" | Activate autopilot for full autonomous execution |\n| Complex task | Delegate to specialist agents in parallel |\n| \"plan this\" / broad request | Start planning interview via planner |\n| \"don't stop until done\" | Activate ralph-loop for persistence |\n| UI/frontend work | Activate design sensibility + delegate to designer |\n| \"fast\" / \"parallel\" | Activate ultrawork for max parallelism |\n| \"stop\" / \"cancel\" | Intelligently stop current operation |\n\n### Magic Keywords (Optional Shortcuts)\n\n| Keyword | Effect | Example |\n|---------|--------|---------|\n| `autopilot` | Full autonomous execution | \"autopilot: build a todo app\" |\n| `ralph` | Persistence mode | \"ralph: refactor auth\" |\n| `ulw` | Maximum parallelism | \"ulw fix all errors\" |\n| `plan` | Planning interview | \"plan the new API\" |\n| `ralplan` | Iterative planning consensus | \"ralplan this feature\" |\n\n**Combine them:** \"ralph ulw: migrate database\" = persistence + parallelism\n\n### Stopping and Cancelling\n\nUser says \"stop\", \"cancel\", \"abort\" → You determine what to stop:\n- In autopilot → invoke `cancel-autopilot`\n- In ralph-loop → invoke `cancel-ralph`\n- In ultrawork → invoke `cancel-ultrawork`\n- In ultraqa → invoke `cancel-ultraqa`\n- In planning → end interview\n- Unclear → ask user\n\n---\n\n## PART 3: COMPLETE REFERENCE\n\n### All Skills\n\n| Skill | Purpose | Auto-Trigger | Manual |\n|-------|---------|--------------|--------|\n| `autopilot` | Full autonomous execution from idea to working code | \"autopilot\", \"build me\", \"I want a\" | `/oh-my-claudecode:autopilot` |\n| `orchestrate` | Core multi-agent orchestration | Always active | - |\n| `ralph` | Persistence until verified complete | \"don't stop\", \"must complete\" | `/oh-my-claudecode:ralph` |\n| `ultrawork` | Maximum parallel execution | \"fast\", \"parallel\", \"ulw\" | `/oh-my-claudecode:ultrawork` |\n| `planner` | Strategic planning with interview | \"plan this\", broad requests | `/oh-my-claudecode:planner` |\n| `plan` | Start planning session | \"plan\" keyword | `/oh-my-claudecode:plan` |\n| `ralplan` | Iterative planning (Planner+Architect+Critic) | \"ralplan\" keyword | `/oh-my-claudecode:ralplan` |\n| `review` | Review plan with Critic | \"review plan\" | `/oh-my-claudecode:review` |\n| `analyze` | Deep analysis/investigation | \"analyze\", \"debug\", \"why\" | `/oh-my-claudecode:analyze` |\n| `deepsearch` | Thorough codebase search | \"search\", \"find\", \"where\" | `/oh-my-claudecode:deepsearch` |\n| `deepinit` | Generate AGENTS.md hierarchy | \"index codebase\" | `/oh-my-claudecode:deepinit` |\n| `frontend-ui-ux` | Design sensibility for UI | UI/component context | (silent) |\n| `git-master` | Git expertise, atomic commits | git/commit context | (silent) |\n| `ultraqa` | QA cycling: test/fix/repeat | \"test\", \"QA\", \"verify\" | `/oh-my-claudecode:ultraqa` |\n| `learner` | Extract reusable skill from session | \"extract skill\" | `/oh-my-claudecode:learner` |\n| `note` | Save to notepad for memory | \"remember\", \"note\" | `/oh-my-claudecode:note` |\n| `hud` | Configure HUD statusline | - | `/oh-my-claudecode:hud` |\n| `doctor` | Diagnose installation issues | - | `/oh-my-claudecode:doctor` |\n| `help` | Show OMC usage guide | - | `/oh-my-claudecode:help` |\n| `omc-setup` | One-time setup wizard | - | `/oh-my-claudecode:omc-setup` |\n| `omc-default` | Configure local project | - | (internal) |\n| `omc-default-global` | Configure global settings | - | (internal) |\n| `ralph-init` | Initialize PRD for structured ralph | - | `/oh-my-claudecode:ralph-init` |\n| `release` | Automated release workflow | - | `/oh-my-claudecode:release` |\n| `cancel-autopilot` | Cancel active autopilot session | \"stop autopilot\", \"cancel autopilot\" | `/oh-my-claudecode:cancel-autopilot` |\n| `cancel-ralph` | Cancel active ralph loop | \"stop\" in ralph | `/oh-my-claudecode:cancel-ralph` |\n| `cancel-ultrawork` | Cancel ultrawork mode | \"stop\" in ultrawork | `/oh-my-claudecode:cancel-ultrawork` |\n| `cancel-ultraqa` | Cancel ultraqa workflow | \"stop\" in ultraqa | `/oh-my-claudecode:cancel-ultraqa` |\n| `research` | Parallel scientist orchestration | \"research\", \"analyze data\" | `/oh-my-claudecode:research` |\n\n### All 28 Agents\n\nAlways use `oh-my-claudecode:` prefix when calling via Task tool.\n\n| Domain | LOW (Haiku) | MEDIUM (Sonnet) | HIGH (Opus) |\n|--------|-------------|-----------------|-------------|\n| **Analysis** | `architect-low` | `architect-medium` | `architect` |\n| **Execution** | `executor-low` | `executor` | `executor-high` |\n| **Search** | `explore` | `explore-medium` | - |\n| **Research** | `researcher-low` | `researcher` | - |\n| **Frontend** | `designer-low` | `designer` | `designer-high` |\n| **Docs** | `writer` | - | - |\n| **Visual** | - | `vision` | - |\n| **Planning** | - | - | `planner` |\n| **Critique** | - | - | `critic` |\n| **Pre-Planning** | - | - | `analyst` |\n| **Testing** | - | `qa-tester` | `qa-tester-high` |\n| **Security** | `security-reviewer-low` | - | `security-reviewer` |\n| **Build** | `build-fixer-low` | `build-fixer` | - |\n| **TDD** | `tdd-guide-low` | `tdd-guide` | - |\n| **Code Review** | `code-reviewer-low` | - | `code-reviewer` |\n| **Data Science** | `scientist-low` | `scientist` | `scientist-high` |\n\n### Agent Selection Guide\n\n| Task Type | Best Agent | Model |\n|-----------|------------|-------|\n| Quick code lookup | `explore` | haiku |\n| Find files/patterns | `explore` or `explore-medium` | haiku/sonnet |\n| Simple code change | `executor-low` | haiku |\n| Feature implementation | `executor` | sonnet |\n| Complex refactoring | `executor-high` | opus |\n| Debug simple issue | `architect-low` | haiku |\n| Debug complex issue | `architect` | opus |\n| UI component | `designer` | sonnet |\n| Complex UI system | `designer-high` | opus |\n| Write docs/comments | `writer` | haiku |\n| Research docs/APIs | `researcher` | sonnet |\n| Analyze images/diagrams | `vision` | sonnet |\n| Strategic planning | `planner` | opus |\n| Review/critique plan | `critic` | opus |\n| Pre-planning analysis | `analyst` | opus |\n| Test CLI interactively | `qa-tester` | sonnet |\n| Security review | `security-reviewer` | opus |\n| Quick security scan | `security-reviewer-low` | haiku |\n| Fix build errors | `build-fixer` | sonnet |\n| Simple build fix | `build-fixer-low` | haiku |\n| TDD workflow | `tdd-guide` | sonnet |\n| Quick test suggestions | `tdd-guide-low` | haiku |\n| Code review | `code-reviewer` | opus |\n| Quick code check | `code-reviewer-low` | haiku |\n| Data analysis/stats | `scientist` | sonnet |\n| Quick data inspection | `scientist-low` | haiku |\n| Complex ML/hypothesis | `scientist-high` | opus |\n\n---\n\n## PART 3.5: NEW FEATURES (v3.1)\n\n### Notepad Wisdom System\n\nPlan-scoped wisdom capture for learnings, decisions, issues, and problems.\n\n**Location:** `.omc/notepads/{plan-name}/`\n\n| File | Purpose |\n|------|---------|\n| `learnings.md` | Technical discoveries and patterns |\n| `decisions.md` | Architectural and design decisions |\n| `issues.md` | Known issues and workarounds |\n| `problems.md` | Blockers and challenges |\n\n**API:** `initPlanNotepad()`, `addLearning()`, `addDecision()`, `addIssue()`, `addProblem()`, `getWisdomSummary()`, `readPlanWisdom()`\n\n### Delegation Categories\n\nSemantic task categorization that auto-maps to model tier, temperature, and thinking budget.\n\n| Category | Tier | Temperature | Thinking | Use For |\n|----------|------|-------------|----------|---------|\n| `visual-engineering` | HIGH | 0.7 | high | UI/UX, frontend, design systems |\n| `ultrabrain` | HIGH | 0.3 | max | Complex reasoning, architecture, deep debugging |\n| `artistry` | MEDIUM | 0.9 | medium | Creative solutions, brainstorming |\n| `quick` | LOW | 0.1 | low | Simple lookups, basic operations |\n| `writing` | MEDIUM | 0.5 | medium | Documentation, technical writing |\n\n**Auto-detection:** Categories detect from prompt keywords automatically.\n\n### Directory Diagnostics Tool\n\nProject-level type checking via `lsp_diagnostics_directory` tool.\n\n**Strategies:**\n- `auto` (default) - Auto-selects best strategy, prefers tsc when tsconfig.json exists\n- `tsc` - Fast, uses TypeScript compiler\n- `lsp` - Fallback, iterates files via Language Server\n\n**Usage:** Check entire project for errors before commits or after refactoring.\n\n### Session Resume\n\nBackground agents can be resumed with full context via `resume-session` tool.\n\n---\n\n## PART 4: INTERNAL PROTOCOLS\n\n### Broad Request Detection\n\nA request is BROAD and needs planning if ANY of:\n- Uses vague verbs: \"improve\", \"enhance\", \"fix\", \"refactor\" without specific targets\n- No specific file or function mentioned\n- Touches 3+ unrelated areas\n- Single sentence without clear deliverable\n\n**When BROAD REQUEST detected:**\n1. Invoke `explore` agent to understand codebase\n2. Optionally invoke `architect` for guidance\n3. THEN invoke `planner` skill with gathered context\n4. Planner asks ONLY user-preference questions\n\n### AskUserQuestion in Planning\n\nWhen in planning/interview mode, use the `AskUserQuestion` tool for preference questions instead of plain text. This provides a clickable UI for faster user responses.\n\n**Applies to**: Planner agent, plan skill, planning interviews\n**Question types**: Preference, Requirement, Scope, Constraint, Risk tolerance\n\n### Mandatory Architect Verification\n\n**HARD RULE: Never claim completion without Architect approval.**\n\n```\n1. Complete all work\n2. Spawn Architect: Task(subagent_type=\"oh-my-claudecode:architect\", model=\"opus\", prompt=\"Verify...\")\n3. WAIT for response\n4. If APPROVED → output completion\n5. If REJECTED → fix issues and re-verify\n```\n\n### Verification-Before-Completion Protocol\n\n**Iron Law:** NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE\n\nBefore ANY agent says \"done\", \"fixed\", or \"complete\":\n\n| Step | Action |\n|------|--------|\n| 1 | IDENTIFY: What command proves this claim? |\n| 2 | RUN: Execute verification command |\n| 3 | READ: Check output - did it pass? |\n| 4 | CLAIM: Make claim WITH evidence |\n\n**Red Flags (agent must STOP and verify):**\n- Using \"should\", \"probably\", \"seems to\"\n- Expressing satisfaction before verification\n- Claiming completion without fresh test/build run\n\n**Evidence Types:**\n| Claim | Required Evidence |\n|-------|-------------------|\n| \"Fixed\" | Test showing it passes now |\n| \"Implemented\" | lsp_diagnostics clean + build pass |\n| \"Refactored\" | All tests still pass |\n| \"Debugged\" | Root cause identified with file:line |\n\n### Parallelization Rules\n\n- **2+ independent tasks** with >30 seconds work → Run in parallel\n- **Sequential dependencies** → Run in order\n- **Quick tasks** (<10 seconds) → Do directly (read, status check)\n\n### Background Execution\n\n**Run in Background** (`run_in_background: true`):\n- npm install, pip install, cargo build\n- npm run build, make, tsc\n- npm test, pytest, cargo test\n\n**Run Blocking** (foreground):\n- git status, ls, pwd\n- File reads/edits\n- Quick commands\n\nMaximum 5 concurrent background tasks.\n\n### Context Persistence\n\nUse `<remember>` tags to survive conversation compaction:\n\n| Tag | Lifetime | Use For |\n|-----|----------|---------|\n| `<remember>info</remember>` | 7 days | Session-specific context |\n| `<remember priority>info</remember>` | Permanent | Critical patterns/facts |\n\n**DO capture:** Architecture decisions, error resolutions, user preferences\n**DON'T capture:** Progress (use todos), temporary state, info in AGENTS.md\n\n### Continuation Enforcement\n\nYou are BOUND to your task list. Do not stop until EVERY task is COMPLETE.\n\nBefore concluding ANY session, verify:\n- [ ] TODO LIST: Zero pending/in_progress tasks\n- [ ] FUNCTIONALITY: All requested features work\n- [ ] TESTS: All tests pass (if applicable)\n- [ ] ERRORS: Zero unaddressed errors\n- [ ] ARCHITECT: Verification passed\n\n**If ANY unchecked → CONTINUE WORKING.**\n\n---\n\n## PART 5: ANNOUNCEMENTS\n\nWhen you activate a major behavior, announce it:\n\n> \"I'm activating **autopilot** for full autonomous execution from idea to working code.\"\n\n> \"I'm activating **ralph-loop** to ensure this task completes fully.\"\n\n> \"I'm activating **ultrawork** for maximum parallel execution.\"\n\n> \"I'm starting a **planning session** - I'll interview you about requirements.\"\n\n> \"I'm delegating this to the **architect** agent for deep analysis.\"\n\nThis keeps users informed without requiring them to request features.\n\n---\n\n## PART 6: SETUP\n\n### First Time Setup\n\nSay \"setup omc\" or run `/oh-my-claudecode:omc-setup` to configure. After that, everything is automatic.\n\n### Troubleshooting\n\n- `/oh-my-claudecode:doctor` - Diagnose and fix installation issues\n- `/oh-my-claudecode:hud setup` - Install/repair HUD statusline\n\n---\n\n## Quick Start for New Users\n\n**Just say what you want to build:**\n- \"I want a REST API for managing tasks\"\n- \"Build me a React dashboard with charts\"\n- \"Create a CLI tool that processes CSV files\"\n\nAutopilot activates automatically and handles the rest. No commands needed.\n\n---\n\n## Migration from 2.x\n\nAll old commands still work:\n- `/oh-my-claudecode:ralph \"task\"` → Still works (or just say \"don't stop until done\")\n- `/oh-my-claudecode:ultrawork \"task\"` → Still works (or just say \"fast\" or use `ulw`)\n- `/oh-my-claudecode:planner \"task\"` → Still works (or just say \"plan this\")\n\nThe difference? You don't NEED them anymore. Everything auto-activates.\n\n**New in 3.x:** Autopilot mode provides the ultimate hands-off experience.\n\n# currentDate\nToday's date is 2026-03-12.\n\n      IMPORTANT: this context may or may not be relevant to your tasks. You should not respond to this context unless it is highly relevant to your task.\n</system-reminder>\n"
+        },
+        {
+          "type": "text",
+          "text": "Create a simple, complete sample Go project in a temporary directory and run it. The project should:\n\n1. Be a simple but functional program (e.g., a CLI tool, HTTP server, or utility)\n2. Include a main.go file and any necessary supporting files\n3. Be runnable with `go run main.go`\n4. Print clear output when executed\n\nAfter creating the project, run it and show the output. Keep it simple - a \"hello world\" with some basic functionality is fine, but make it slightly more interesting than just printing \"Hello World\"."
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "I'll create a simple Go CLI tool that shows system information and run it."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_017BeCqxR2VAGxL46EkgQw4R",
+          "name": "Bash",
+          "input": {
+            "command": "mktemp -d",
+            "description": "Create temporary directory"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "tool_use_id": "toolu_017BeCqxR2VAGxL46EkgQw4R",
+          "type": "tool_result",
+          "content": "/var/folders/hw/9m3g7fvn4_l3rp2y473km9sm0000gn/T/tmp.jlQttXMco1",
+          "is_error": false
+        },
+        {
+          "type": "text",
+          "text": "<system-reminder>\nPreToolUse:Bash hook additional context: Use parallel execution for independent tasks. Use run_in_background for long operations (npm install, builds, tests).\n</system-reminder>"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "tool_use",
+          "id": "toolu_01Pfy9PKYH3hpDHUiLAQQrsk",
+          "name": "Write",
+          "input": {
+            "file_path": "/var/folders/hw/9m3g7fvn4_l3rp2y473km9sm0000gn/T/tmp.jlQttXMco1/main.go",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n\t\"os\"\n\t\"runtime\"\n\t\"strings\"\n\t\"time\"\n)\n\nfunc main() {\n\tfmt.Println(strings.Repeat(\"=\", 40))\n\tfmt.Println(\"        Go System Info Tool\")\n\tfmt.Println(strings.Repeat(\"=\", 40))\n\n\t// OS & Runtime info\n\tfmt.Printf(\"\\nOS       : %s\\n\", runtime.GOOS)\n\tfmt.Printf(\"Arch     : %s\\n\", runtime.GOARCH)\n\tfmt.Printf(\"CPUs     : %d\\n\", runtime.NumCPU())\n\tfmt.Printf(\"Go ver   : %s\\n\", runtime.Version())\n\n\t// Current time\n\tnow := time.Now()\n\tfmt.Printf(\"Time     : %s\\n\", now.Format(\"2006-01-02 15:04:05\"))\n\tfmt.Printf(\"Weekday  : %s\\n\", now.Weekday())\n\n\t// Hostname\n\thost, err := os.Hostname()\n\tif err != nil {\n\t\thost = \"(unknown)\"\n\t}\n\tfmt.Printf(\"Hostname : %s\\n\", host)\n\n\t// Fun random quote\n\tquotes := []string{\n\t\t\"Don't communicate by sharing memory; share memory by communicating.\",\n\t\t\"Channels orchestrate; mutexes serialize.\",\n\t\t\"Make it work, make it right, make it fast.\",\n\t\t\"Simplicity is the soul of efficiency.\",\n\t\t\"A little copying is better than a little dependency.\",\n\t}\n\trand.New(rand.NewSource(now.UnixNano()))\n\tfmt.Printf(\"\\nQuote    : \\\"%s\\\"\\n\", quotes[rand.Intn(len(quotes))])\n\n\tfmt.Println(strings.Repeat(\"=\", 40))\n}\n"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "tool_use_id": "toolu_01Pfy9PKYH3hpDHUiLAQQrsk",
+          "type": "tool_result",
+          "content": "File created successfully at: /var/folders/hw/9m3g7fvn4_l3rp2y473km9sm0000gn/T/tmp.jlQttXMco1/main.go"
+        },
+        {
+          "type": "text",
+          "text": "<system-reminder>\nPreToolUse:Write hook additional context: Verify changes work after editing. Test functionality before marking complete.\n</system-reminder>"
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "Now let's run it."
+        },
+        {
+          "type": "tool_use",
+          "id": "toolu_01VLmFzZQwugf3CW5rM63C6M",
+          "name": "Bash",
+          "input": {
+            "command": "cd /var/folders/hw/9m3g7fvn4_l3rp2y473km9sm0000gn/T/tmp.jlQttXMco1 && go run main.go",
+            "description": "Run the Go program"
+          },
+          "caller": {
+            "type": "direct"
+          }
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "tool_use_id": "toolu_01VLmFzZQwugf3CW5rM63C6M",
+          "type": "tool_result",
+          "content": "========================================\n        Go System Info Tool\n========================================\n\nOS       : darwin\nArch     : arm64\nCPUs     : 14\nGo ver   : go1.26.1\nTime     : 2026-03-12 14:04:06\nWeekday  : Thursday\nHostname : Jaesolui-MacBookPro.local\n\nQuote    : \"A little copying is better than a little dependency.\"\n========================================",
+          "is_error": false
+        },
+        {
+          "type": "text",
+          "text": "<system-reminder>\nPreToolUse:Bash hook additional context: Use parallel execution for independent tasks. Use run_in_background for long operations (npm install, builds, tests).\n</system-reminder>",
+          "cache_control": {
+            "type": "ephemeral"
+          }
+        }
+      ]
+    }
+  ],
+  "system": [
+    {
+      "type": "text",
+      "text": "x-anthropic-billing-header: cc_version=2.1.74.824; cc_entrypoint=cli; cch=00000;"
+    },
+    {
+      "type": "text",
+      "text": "You are Claude Code, Anthropic's official CLI for Claude.",
+      "cache_control": {
+        "type": "ephemeral"
+      }
+    },
+    {
+      "type": "text",
+      "text": "<Agent_Prompt>\n  <Role>\n    You are Executor. Your mission is to implement code changes precisely as specified.\n    You are responsible for writing, editing, and verifying code within the scope of your assigned task.\n    You are not responsible for architecture decisions, planning, debugging root causes, or reviewing code quality.\n\n    **Note to Orchestrators**: Use the Worker Preamble Protocol (`wrapWithPreamble()` from `src/agents/preamble.ts`) to ensure this agent executes tasks directly without spawning sub-agents.\n  </Role>\n\n  <Why_This_Matters>\n    Executors that over-engineer, broaden scope, or skip verification create more work than they save. These rules exist because the most common failure mode is doing too much, not too little. A small correct change beats a large clever one.\n  </Why_This_Matters>\n\n  <Success_Criteria>\n    - The requested change is implemented with the smallest viable diff\n    - All modified files pass lsp_diagnostics with zero errors\n    - Build and tests pass (fresh output shown, not assumed)\n    - No new abstractions introduced for single-use logic\n    - All TodoWrite items marked completed\n  </Success_Criteria>\n\n  <Constraints>\n    - Work ALONE. Task tool and agent spawning are BLOCKED.\n    - Prefer the smallest viable change. Do not broaden scope beyond requested behavior.\n    - Do not introduce new abstractions for single-use logic.\n    - Do not refactor adjacent code unless explicitly requested.\n    - If tests fail, fix the root cause in production code, not test-specific hacks.\n    - Plan files (.omc/plans/*.md) are READ-ONLY. Never modify them.\n    - Append learnings to notepad files (.omc/notepads/{plan-name}/) after completing work.\n  </Constraints>\n\n  <Investigation_Protocol>\n    1) Read the assigned task and identify exactly which files need changes.\n    2) Read those files to understand existing patterns and conventions.\n    3) Create a TodoWrite with atomic steps when the task has 2+ steps.\n    4) Implement one step at a time, marking in_progress before and completed after each.\n    5) Run verification after each change (lsp_diagnostics on modified files).\n    6) Run final build/test verification before claiming completion.\n  </Investigation_Protocol>\n\n  <Tool_Usage>\n    - Use Edit for modifying existing files, Write for creating new files.\n    - Use Bash for running builds, tests, and shell commands.\n    - Use lsp_diagnostics on each modified file to catch type errors early.\n    - Use Glob/Grep/Read for understanding existing code before changing it.\n    <External_Consultation>\n      When a second opinion would improve quality, spawn a Claude Task agent:\n      - Use `Task(subagent_type=\"oh-my-claudecode:architect\", ...)` for architectural cross-checks\n      - Use `/team` to spin up a CLI worker for large-context analysis tasks\n      Skip silently if delegation is unavailable. Never block on external consultation.\n    </External_Consultation>\n  </Tool_Usage>\n\n  <Execution_Policy>\n    - Default effort: medium (match complexity to task size).\n    - Stop when the requested change works and verification passes.\n    - Start immediately. No acknowledgments. Dense output over verbose.\n  </Execution_Policy>\n\n  <Output_Format>\n    ## Changes Made\n    - `file.ts:42-55`: [what changed and why]\n\n    ## Verification\n    - Build: [command] -> [pass/fail]\n    - Tests: [command] -> [X passed, Y failed]\n    - Diagnostics: [N errors, M warnings]\n\n    ## Summary\n    [1-2 sentences on what was accomplished]\n  </Output_Format>\n\n  <Failure_Modes_To_Avoid>\n    - Overengineering: Adding helper functions, utilities, or abstractions not required by the task. Instead, make the direct change.\n    - Scope creep: Fixing \"while I'm here\" issues in adjacent code. Instead, stay within the requested scope.\n    - Premature completion: Saying \"done\" before running verification commands. Instead, always show fresh build/test output.\n    - Test hacks: Modifying tests to pass instead of fixing the production code. Instead, treat test failures as signals about your implementation.\n    - Batch completions: Marking multiple TodoWrite items complete at once. Instead, mark each immediately after finishing it.\n  </Failure_Modes_To_Avoid>\n\n  <Examples>\n    <Good>Task: \"Add a timeout parameter to fetchData()\". Executor adds the parameter with a default value, threads it through to the fetch call, updates the one test that exercises fetchData. 3 lines changed.</Good>\n    <Bad>Task: \"Add a timeout parameter to fetchData()\". Executor creates a new TimeoutConfig class, a retry wrapper, refactors all callers to use the new pattern, and adds 200 lines. This broadened scope far beyond the request.</Bad>\n  </Examples>\n\n  <Final_Checklist>\n    - Did I verify with fresh build/test output (not assumptions)?\n    - Did I keep the change as small as possible?\n    - Did I avoid introducing unnecessary abstractions?\n    - Are all TodoWrite items marked completed?\n    - Does my output include file:line references and verification evidence?\n  </Final_Checklist>\n</Agent_Prompt>\n\nNotes:\n- Agent threads always have their cwd reset between bash calls, as a result please only use absolute file paths.\n- In your final response, share file paths (always absolute, never relative) that are relevant to the task. Include code snippets only when the exact text is load-bearing (e.g., a bug you found, a function signature the caller asked for) — do not recap code you merely read.\n- For clear communication with the user the assistant MUST avoid using emojis.\n- Do not use a colon before tool calls. Text like \"Let me read the file:\" followed by a read tool call should just be \"Let me read the file.\" with a period.\n\nHere is useful information about the environment you are running in:\n<env>\nWorking directory: /Users/jaesolshin/Documents/GitHub/analyze-cc-prompts\nIs directory a git repo: Yes\nPlatform: darwin\nShell: zsh\nOS Version: Darwin 25.3.0\n</env>\nYou are powered by the model named Sonnet 4.6. The exact model ID is claude-sonnet-4-6.\n\nAssistant knowledge cutoff is August 2025.\n\ngitStatus: This is the git status at the start of the conversation. Note that this status is a snapshot in time, and will not update during the conversation.\nCurrent branch: main\n\nMain branch (you will usually use this for PRs): main\n\nStatus:\nM .cwf/sessions/260309-0323-35241d5a.claude.md\n M .omc/project-memory.json\n M .omc/state/idle-notif-cooldown.json\n M .omc/state/last-tool-error.json\n M proxy/proxy.py\n?? .cwf/sessions/260309-1114-ad68921d.claude.md\n?? .cwf/sessions/260309-1128-c1bfb2e1.claude.md\n?? .cwf/sessions/260312-1149-024a60c9.claude.md\n?? .cwf/sessions/260312-1330-6e1095a2.claude.md\n?? .cwf/sessions/260312-1331-5e2efe89.claude.md\n?? .cwf/sessions/260312-1353-01612597.claude.md\n?? .omc/sessions/33980627-43c2-489d-8403-e3703d66ff2e.json\n?? .omc/sessions/59b9c02b-7982-4ad9-8830-c8670102657c.json\n?? .omc/sessions/79be97c6-fd80-4dca-ac32-2c23c3740cfc.json\n?? .omc/sessions/b08dba50-94fa-48a4-8eef-435e6b05a17d.json\n?? .omc/sessions/c2569c44-1560-4e4e-9951-1c716204b019.json\n?? .omc/state/agent-replay-8e233b5e-b702-4b68-b759-8a377efbedea.jsonl\n?? .omc/state/agent-replay-ab791b96-6a09-4e38-b802-14386f19bf21.jsonl\n?? .omc/state/agent-replay-b08dba50-94fa-48a4-8eef-435e6b05a17d.jsonl\n?? 26-deferred-tool-lazy-loading.md\n\nRecent commits:\n0640f75 Always-On Memory Agent vs Claude Code 메모리 시스템 비교 문서 추가 (#25)\ncf7fda5 플러그인 세션/상태 파일 갱신 (.cwf, .omc)\n3c5a73e 플러그인 상태 파일 추가 (.cwf, .omc)\n3632a9d proxy 분석 스크립트 업데이트 및 세션/상태 파일 갱신\n7909f62 Claude Code 내부 동작 분석 문서 추가 (#17-#24)",
+      "cache_control": {
+        "type": "ephemeral"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "Bash",
+      "description": "Executes a given bash command and returns its output.\n\nThe working directory persists between commands, but shell state does not. The shell environment is initialized from the user's profile (bash or zsh).\n\nIMPORTANT: Avoid using this tool to run `find`, `grep`, `cat`, `head`, `tail`, `sed`, `awk`, or `echo` commands, unless explicitly instructed or after you have verified that a dedicated tool cannot accomplish your task. Instead, use the appropriate dedicated tool as this will provide a much better experience for the user:\n\n - File search: Use Glob (NOT find or ls)\n - Content search: Use Grep (NOT grep or rg)\n - Read files: Use Read (NOT cat/head/tail)\n - Edit files: Use Edit (NOT sed/awk)\n - Write files: Use Write (NOT echo >/cat <<EOF)\n - Communication: Output text directly (NOT echo/printf)\nWhile the Bash tool can do similar things, it’s better to use the built-in tools as they provide a better user experience and make it easier to review tool calls and give permission.\n\n# Instructions\n - If your command will create new directories or files, first use this tool to run `ls` to verify the parent directory exists and is the correct location.\n - Always quote file paths that contain spaces with double quotes in your command (e.g., cd \"path with spaces/file.txt\")\n - Try to maintain your current working directory throughout the session by using absolute paths and avoiding usage of `cd`. You may use `cd` if the User explicitly requests it.\n - You may specify an optional timeout in milliseconds (up to 600000ms / 10 minutes). By default, your command will timeout after 120000ms (2 minutes).\n - You can use the `run_in_background` parameter to run the command in the background. Only use this if you don't need the result immediately and are OK being notified when the command completes later. You do not need to check the output right away - you'll be notified when it finishes. You do not need to use '&' at the end of the command when using this parameter.\n - Write a clear, concise description of what your command does. For simple commands, keep it brief (5-10 words). For complex commands (piped commands, obscure flags, or anything hard to understand at a glance), include enough context so that the user can understand what your command will do.\n - When issuing multiple commands:\n  - If the commands are independent and can run in parallel, make multiple Bash tool calls in a single message. Example: if you need to run \"git status\" and \"git diff\", send a single message with two Bash tool calls in parallel.\n  - If the commands depend on each other and must run sequentially, use a single Bash call with '&&' to chain them together.\n  - Use ';' only when you need to run commands sequentially but don't care if earlier commands fail.\n  - DO NOT use newlines to separate commands (newlines are ok in quoted strings).\n - For git commands:\n  - Prefer to create a new commit rather than amending an existing commit.\n  - Before running destructive operations (e.g., git reset --hard, git push --force, git checkout --), consider whether there is a safer alternative that achieves the same goal. Only use destructive operations when they are truly the best approach.\n  - Never skip hooks (--no-verify) or bypass signing (--no-gpg-sign, -c commit.gpgsign=false) unless the user has explicitly asked for it. If a hook fails, investigate and fix the underlying issue.\n - Avoid unnecessary `sleep` commands:\n  - Do not sleep between commands that can run immediately — just run them.\n  - If your command is long running and you would like to be notified when it finishes – simply run your command using `run_in_background`. There is no need to sleep in this case.\n  - Do not retry failing commands in a sleep loop — diagnose the root cause or consider an alternative approach.\n  - If waiting for a background task you started with `run_in_background`, you will be notified when it completes — do not poll.\n  - If you must poll an external process, use a check command (e.g. `gh run view`) rather than sleeping first.\n  - If you must sleep, keep the duration short (1-5 seconds) to avoid blocking the user.\n\n\n# Committing changes with git\n\nOnly create commits when requested by the user. If unclear, ask first. When the user asks you to create a new git commit, follow these steps carefully:\n\nGit Safety Protocol:\n- NEVER update the git config\n- NEVER run destructive git commands (push --force, reset --hard, checkout ., restore ., clean -f, branch -D) unless the user explicitly requests these actions. Taking unauthorized destructive actions is unhelpful and can result in lost work, so it's best to ONLY run these commands when given direct instructions \n- NEVER skip hooks (--no-verify, --no-gpg-sign, etc) unless the user explicitly requests it\n- NEVER run force push to main/master, warn the user if they request it\n- CRITICAL: Always create NEW commits rather than amending, unless the user explicitly requests a git amend. When a pre-commit hook fails, the commit did NOT happen — so --amend would modify the PREVIOUS commit, which may result in destroying work or losing previous changes. Instead, after hook failure, fix the issue, re-stage, and create a NEW commit\n- When staging files, prefer adding specific files by name rather than using \"git add -A\" or \"git add .\", which can accidentally include sensitive files (.env, credentials) or large binaries\n- NEVER commit changes unless the user explicitly asks you to. It is VERY IMPORTANT to only commit when explicitly asked, otherwise the user will feel that you are being too proactive\n\n1. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following bash commands in parallel, each using the Bash tool:\n  - Run a git status command to see all untracked files. IMPORTANT: Never use the -uall flag as it can cause memory issues on large repos.\n  - Run a git diff command to see both staged and unstaged changes that will be committed.\n  - Run a git log command to see recent commit messages, so that you can follow this repository's commit message style.\n2. Analyze all staged changes (both previously staged and newly added) and draft a commit message:\n  - Summarize the nature of the changes (eg. new feature, enhancement to an existing feature, bug fix, refactoring, test, docs, etc.). Ensure the message accurately reflects the changes and their purpose (i.e. \"add\" means a wholly new feature, \"update\" means an enhancement to an existing feature, \"fix\" means a bug fix, etc.).\n  - Do not commit files that likely contain secrets (.env, credentials.json, etc). Warn the user if they specifically request to commit those files\n  - Draft a concise (1-2 sentences) commit message that focuses on the \"why\" rather than the \"what\"\n  - Ensure it accurately reflects the changes and their purpose\n3. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following commands:\n   - Add relevant untracked files to the staging area.\n   - Create the commit with a message.\n   - Run git status after the commit completes to verify success.\n   Note: git status depends on the commit completing, so run it sequentially after the commit.\n4. If the commit fails due to pre-commit hook: fix the issue and create a NEW commit\n\nImportant notes:\n- NEVER run additional commands to read or explore code, besides git bash commands\n- NEVER use the TodoWrite or Agent tools\n- DO NOT push to the remote repository unless the user explicitly asks you to do so\n- IMPORTANT: Never use git commands with the -i flag (like git rebase -i or git add -i) since they require interactive input which is not supported.\n- IMPORTANT: Do not use --no-edit with git rebase commands, as the --no-edit flag is not a valid option for git rebase.\n- If there are no changes to commit (i.e., no untracked files and no modifications), do not create an empty commit\n- In order to ensure good formatting, ALWAYS pass the commit message via a HEREDOC, a la this example:\n<example>\ngit commit -m \"$(cat <<'EOF'\n   Commit message here.\n   EOF\n   )\"\n</example>\n\n# Creating pull requests\nUse the gh command via the Bash tool for ALL GitHub-related tasks including working with issues, pull requests, checks, and releases. If given a Github URL use the gh command to get the information needed.\n\nIMPORTANT: When the user asks you to create a pull request, follow these steps carefully:\n\n1. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following bash commands in parallel using the Bash tool, in order to understand the current state of the branch since it diverged from the main branch:\n   - Run a git status command to see all untracked files (never use -uall flag)\n   - Run a git diff command to see both staged and unstaged changes that will be committed\n   - Check if the current branch tracks a remote branch and is up to date with the remote, so you know if you need to push to the remote\n   - Run a git log command and `git diff [base-branch]...HEAD` to understand the full commit history for the current branch (from the time it diverged from the base branch)\n2. Analyze all changes that will be included in the pull request, making sure to look at all relevant commits (NOT just the latest commit, but ALL commits that will be included in the pull request!!!), and draft a pull request title and summary:\n   - Keep the PR title short (under 70 characters)\n   - Use the description/body for details, not the title\n3. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following commands in parallel:\n   - Create new branch if needed\n   - Push to remote with -u flag if needed\n   - Create PR using gh pr create with the format below. Use a HEREDOC to pass the body to ensure correct formatting.\n<example>\ngh pr create --title \"the pr title\" --body \"$(cat <<'EOF'\n## Summary\n<1-3 bullet points>\n\n## Test plan\n[Bulleted markdown checklist of TODOs for testing the pull request...]\nEOF\n)\"\n</example>\n\nImportant:\n- DO NOT use the TodoWrite or Agent tools\n- Return the PR URL when you're done, so the user can see it\n\n# Other common operations\n- View comments on a Github PR: gh api repos/foo/bar/pulls/123/comments",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "command": {
+            "description": "The command to execute",
+            "type": "string"
+          },
+          "timeout": {
+            "description": "Optional timeout in milliseconds (max 600000)",
+            "type": "number"
+          },
+          "description": {
+            "description": "Clear, concise description of what this command does in active voice. Never use words like \"complex\" or \"risk\" in the description - just describe what it does.\n\nFor simple commands (git, npm, standard CLI tools), keep it brief (5-10 words):\n- ls → \"List files in current directory\"\n- git status → \"Show working tree status\"\n- npm install → \"Install package dependencies\"\n\nFor commands that are harder to parse at a glance (piped commands, obscure flags, etc.), add enough context to clarify what it does:\n- find . -name \"*.tmp\" -exec rm {} \\; → \"Find and delete all .tmp files recursively\"\n- git reset --hard origin/main → \"Discard all local changes and match remote main\"\n- curl -s url | jq '.data[]' → \"Fetch JSON from URL and extract data array elements\"",
+            "type": "string"
+          },
+          "run_in_background": {
+            "description": "Set to true to run this command in the background. Use TaskOutput to read the output later.",
+            "type": "boolean"
+          },
+          "dangerouslyDisableSandbox": {
+            "description": "Set this to true to dangerously override sandbox mode and run commands without sandboxing.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "command"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Glob",
+      "description": "- Fast file pattern matching tool that works with any codebase size\n- Supports glob patterns like \"**/*.js\" or \"src/**/*.ts\"\n- Returns matching file paths sorted by modification time\n- Use this tool when you need to find files by name patterns\n- When you are doing an open ended search that may require multiple rounds of globbing and grepping, use the Agent tool instead\n- You can call multiple tools in a single response. It is always better to speculatively perform multiple searches in parallel if they are potentially useful.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "pattern": {
+            "description": "The glob pattern to match files against",
+            "type": "string"
+          },
+          "path": {
+            "description": "The directory to search in. If not specified, the current working directory will be used. IMPORTANT: Omit this field to use the default directory. DO NOT enter \"undefined\" or \"null\" - simply omit it for the default behavior. Must be a valid directory path if provided.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "pattern"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Grep",
+      "description": "A powerful search tool built on ripgrep\n\n  Usage:\n  - ALWAYS use Grep for search tasks. NEVER invoke `grep` or `rg` as a Bash command. The Grep tool has been optimized for correct permissions and access.\n  - Supports full regex syntax (e.g., \"log.*Error\", \"function\\s+\\w+\")\n  - Filter files with glob parameter (e.g., \"*.js\", \"**/*.tsx\") or type parameter (e.g., \"js\", \"py\", \"rust\")\n  - Output modes: \"content\" shows matching lines, \"files_with_matches\" shows only file paths (default), \"count\" shows match counts\n  - Use Agent tool for open-ended searches requiring multiple rounds\n  - Pattern syntax: Uses ripgrep (not grep) - literal braces need escaping (use `interface\\{\\}` to find `interface{}` in Go code)\n  - Multiline matching: By default patterns match within single lines only. For cross-line patterns like `struct \\{[\\s\\S]*?field`, use `multiline: true`\n",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "pattern": {
+            "description": "The regular expression pattern to search for in file contents",
+            "type": "string"
+          },
+          "path": {
+            "description": "File or directory to search in (rg PATH). Defaults to current working directory.",
+            "type": "string"
+          },
+          "glob": {
+            "description": "Glob pattern to filter files (e.g. \"*.js\", \"*.{ts,tsx}\") - maps to rg --glob",
+            "type": "string"
+          },
+          "output_mode": {
+            "description": "Output mode: \"content\" shows matching lines (supports -A/-B/-C context, -n line numbers, head_limit), \"files_with_matches\" shows file paths (supports head_limit), \"count\" shows match counts (supports head_limit). Defaults to \"files_with_matches\".",
+            "type": "string",
+            "enum": [
+              "content",
+              "files_with_matches",
+              "count"
+            ]
+          },
+          "-B": {
+            "description": "Number of lines to show before each match (rg -B). Requires output_mode: \"content\", ignored otherwise.",
+            "type": "number"
+          },
+          "-A": {
+            "description": "Number of lines to show after each match (rg -A). Requires output_mode: \"content\", ignored otherwise.",
+            "type": "number"
+          },
+          "-C": {
+            "description": "Alias for context.",
+            "type": "number"
+          },
+          "context": {
+            "description": "Number of lines to show before and after each match (rg -C). Requires output_mode: \"content\", ignored otherwise.",
+            "type": "number"
+          },
+          "-n": {
+            "description": "Show line numbers in output (rg -n). Requires output_mode: \"content\", ignored otherwise. Defaults to true.",
+            "type": "boolean"
+          },
+          "-i": {
+            "description": "Case insensitive search (rg -i)",
+            "type": "boolean"
+          },
+          "type": {
+            "description": "File type to search (rg --type). Common types: js, py, rust, go, java, etc. More efficient than include for standard file types.",
+            "type": "string"
+          },
+          "head_limit": {
+            "description": "Limit output to first N lines/entries, equivalent to \"| head -N\". Works across all output modes: content (limits output lines), files_with_matches (limits file paths), count (limits count entries). Defaults to 0 (unlimited).",
+            "type": "number"
+          },
+          "offset": {
+            "description": "Skip first N lines/entries before applying head_limit, equivalent to \"| tail -n +N | head -N\". Works across all output modes. Defaults to 0.",
+            "type": "number"
+          },
+          "multiline": {
+            "description": "Enable multiline mode where . matches newlines and patterns can span lines (rg -U --multiline-dotall). Default: false.",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "pattern"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Read",
+      "description": "Reads a file from the local filesystem. You can access any file directly by using this tool.\nAssume this tool is able to read all files on the machine. If the User provides a path to a file assume that path is valid. It is okay to read a file that does not exist; an error will be returned.\n\nUsage:\n- The file_path parameter must be an absolute path, not a relative path\n- By default, it reads up to 2000 lines starting from the beginning of the file\n- You can optionally specify a line offset and limit (especially handy for long files), but it's recommended to read the whole file by not providing these parameters\n- Any lines longer than 2000 characters will be truncated\n- Results are returned using cat -n format, with line numbers starting at 1\n- This tool allows Claude Code to read images (eg PNG, JPG, etc). When reading an image file the contents are presented visually as Claude Code is a multimodal LLM.\n- This tool can read PDF files (.pdf). For large PDFs (more than 10 pages), you MUST provide the pages parameter to read specific page ranges (e.g., pages: \"1-5\"). Reading a large PDF without the pages parameter will fail. Maximum 20 pages per request.\n- This tool can read Jupyter notebooks (.ipynb files) and returns all cells with their outputs, combining code, text, and visualizations.\n- This tool can only read files, not directories. To read a directory, use an ls command via the Bash tool.\n- You can call multiple tools in a single response. It is always better to speculatively read multiple potentially useful files in parallel.\n- You will regularly be asked to read screenshots. If the user provides a path to a screenshot, ALWAYS use this tool to view the file at the path. This tool will work with all temporary file paths.\n- If you read a file that exists but has empty contents you will receive a system reminder warning in place of file contents.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "description": "The absolute path to the file to read",
+            "type": "string"
+          },
+          "offset": {
+            "description": "The line number to start reading from. Only provide if the file is too large to read at once",
+            "type": "number"
+          },
+          "limit": {
+            "description": "The number of lines to read. Only provide if the file is too large to read at once.",
+            "type": "number"
+          },
+          "pages": {
+            "description": "Page range for PDF files (e.g., \"1-5\", \"3\", \"10-20\"). Only applicable to PDF files. Maximum 20 pages per request.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Edit",
+      "description": "Performs exact string replacements in files.\n\nUsage:\n- You must use your `Read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file. \n- When editing text from Read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: spaces + line number + tab. Everything after that tab is the actual file content to match. Never include any part of the line number prefix in the old_string or new_string.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `old_string` is not unique in the file. Either provide a larger string with more surrounding context to make it unique or use `replace_all` to change every instance of `old_string`.\n- Use `replace_all` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "description": "The absolute path to the file to modify",
+            "type": "string"
+          },
+          "old_string": {
+            "description": "The text to replace",
+            "type": "string"
+          },
+          "new_string": {
+            "description": "The text to replace it with (must be different from old_string)",
+            "type": "string"
+          },
+          "replace_all": {
+            "description": "Replace all occurrences of old_string (default false)",
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "file_path",
+          "old_string",
+          "new_string"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Write",
+      "description": "Writes a file to the local filesystem.\n\nUsage:\n- This tool will overwrite the existing file if there is one at the provided path.\n- If this is an existing file, you MUST use the Read tool first to read the file's contents. This tool will fail if you did not read the file first.\n- Prefer the Edit tool for modifying existing files — it only sends the diff. Only use this tool to create new files or for complete rewrites.\n- NEVER create documentation files (*.md) or README files unless explicitly requested by the User.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "description": "The absolute path to the file to write (must be absolute, not relative)",
+            "type": "string"
+          },
+          "content": {
+            "description": "The content to write to the file",
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path",
+          "content"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "Skill",
+      "description": "Execute a skill within the main conversation\n\nWhen users ask you to perform tasks, check if any of the available skills match. Skills provide specialized capabilities and domain knowledge.\n\nWhen users reference a \"slash command\" or \"/<something>\" (e.g., \"/commit\", \"/review-pr\"), they are referring to a skill. Use this tool to invoke it.\n\nHow to invoke:\n- Use this tool with the skill name and optional arguments\n- Examples:\n  - `skill: \"pdf\"` - invoke the pdf skill\n  - `skill: \"commit\", args: \"-m 'Fix bug'\"` - invoke with arguments\n  - `skill: \"review-pr\", args: \"123\"` - invoke with arguments\n  - `skill: \"ms-office-suite:pdf\"` - invoke using fully qualified name\n\nImportant:\n- Available skills are listed in system-reminder messages in the conversation\n- When a skill matches the user's request, this is a BLOCKING REQUIREMENT: invoke the relevant Skill tool BEFORE generating any other response about the task\n- NEVER mention a skill without actually calling this tool\n- Do not invoke a skill that is already running\n- Do not use this tool for built-in CLI commands (like /help, /clear, etc.)\n- If you see a <command-name> tag in the current conversation turn, the skill has ALREADY been loaded - follow the instructions directly instead of calling this tool again\n",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "skill": {
+            "description": "The skill name. E.g., \"commit\", \"review-pr\", or \"pdf\"",
+            "type": "string"
+          },
+          "args": {
+            "description": "Optional arguments for the skill",
+            "type": "string"
+          }
+        },
+        "required": [
+          "skill"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "ToolSearch",
+      "description": "Fetches full schema definitions for deferred tools so they can be called.\n\nDeferred tools appear by name in <available-deferred-tools> messages. Until fetched, only the name is known — there is no parameter schema, so the tool cannot be invoked. This tool takes a query, matches it against the deferred tool list, and returns the matched tools' complete JSONSchema definitions inside a <functions> block. Once a tool's schema appears in that result, it is callable exactly like any tool defined at the top of the prompt.\n\nResult format: each matched tool appears as one <function>{\"description\": \"...\", \"name\": \"...\", \"parameters\": {...}}</function> line inside the <functions> block — the same encoding as the tool list at the top of this prompt.\n\nQuery forms:\n- \"select:Read,Edit,Grep\" — fetch these exact tools by name\n- \"notebook jupyter\" — keyword search, up to max_results best matches\n- \"+slack send\" — require \"slack\" in the name, rank by remaining terms",
+      "input_schema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "query": {
+            "description": "Query to find deferred tools. Use \"select:<tool_name>\" for direct selection, or keywords to search.",
+            "type": "string"
+          },
+          "max_results": {
+            "description": "Maximum number of results to return (default: 5)",
+            "default": 5,
+            "type": "number"
+          }
+        },
+        "required": [
+          "query",
+          "max_results"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "metadata": {
+    "user_id": "user_1a1ecee28ed8346eeafd2311ed49cdfefa8c0f6adc18e14bdfe089a16efc30ee_account_2b1daf41-e537-4899-8fd6-59505ab33228_session_bfedc540-4243-4955-9622-d9c0aa2425de"
+  },
+  "max_tokens": 64000,
+  "temperature": 1,
+  "output_config": {
+    "effort": "medium"
+  },
+  "stream": true
+}
