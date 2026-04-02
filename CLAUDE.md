@@ -7,7 +7,7 @@ minified 번들, 유출 TypeScript 소스, 실제 API 캡처를 교차 분석해
 
 분석 대상:
 1. npm 패키지 `@anthropic-ai/claude-code`의 `cli.js` (minified JavaScript) — `sources/npm/`
-2. 유출 TypeScript 소스 (`ysys143/forked-claude-code`) — `sources/leaked/` (submodule)
+2. 유출 TypeScript 소스 — `sources/leaked/` (submodule)
 3. Native 바이너리 (`~/.local/share/claude/versions/`) 에서 추출한 JavaScript — `sources/native/` (gitignored)
 4. 공식 플러그인 저장소 (`anthropics/claude-plugins-official`) — `sources/plugins/`
 5. proxy를 통해 캡처한 실제 API 요청/응답 — `tools/proxy/`
@@ -140,7 +140,7 @@ analyze-cc-prompts/
       2. v2.1.38/
       3. v2.1.70/
       4. v2.1.80/
-   2. leaked/           -- 유출 TypeScript 소스 (submodule: ysys143/forked-claude-code)
+   2. leaked/           -- 유출 TypeScript 소스 (submodule)
    3. native/           -- Native 바이너리 추출본 (gitignored)
    4. plugins/          -- 공식 플러그인 (claude-plugins-official)
 2. reports/             -- 분석 리포트
