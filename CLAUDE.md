@@ -33,7 +33,7 @@ NN-topic-name.md
 3. 현재 마지막 번호를 확인하고 다음 번호 사용
 4. 리포트가 아닌 파일 (README, CLAUDE.md 등)은 번호 없음
 
-현재 최신 번호: 29 (`reports/reverse/v2.1.80/29-claude-code-builtin-sandbox.md`)
+현재 최신 번호: 30 (`reports/cross-ref/30-source-verification.md`)
 
 ---
 
