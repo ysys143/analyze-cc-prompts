@@ -33,7 +33,7 @@ NN-topic-name.md
 3. 현재 마지막 번호를 확인하고 다음 번호 사용
 4. 리포트가 아닌 파일 (README, CLAUDE.md 등)은 번호 없음
 
-현재 최신 번호: 32 (`reports/source/32-autodream-memory-consolidation.md`)
+현재 최신 번호: 33 (`reports/cross-ref/33-autodream-vs-gcp-always-on-memory.md`)
 
 ---
 
